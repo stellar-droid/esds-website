@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* SECTION 1 */
+
+.legacyCloudMigration {
+  position: relative;
+  width: 100%;
+}
+
+.legacyCloudMigration {
+  /* position: relative; */
+  min-height: 100vh; /* Full viewport height */
+  background: url("../../../images/Managed services/bgLegacyCloudMigration.jpg")
+    no-repeat center center/cover; /* Replace with your background image path */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #ffffff;
+  /* text-align: center; */
+  padding: 90px;
+}
+
+.legacyCloudMigrationContainer > h3 {
+  font-size: clamp(1.75rem, 4.474vw - 1.119rem, 4.25rem);
+  line-height: 65px;
+  margin-bottom: 50px;
+}
+
+.legacyCloudMigrationContainer > span {
+  /* position: relative; */
+  /* left: -380px; */
+  /* bottom: 100px; */
+  margin-top: 10px;
+}
+
+/* SECTION 2 */
+
+.itInfraStructureContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.itInfraStructureImg {
+  width: 50%;
+}
+
+.itInfraStructureInfo {
+  width: 50%;
+  margin-top: 90px;
+  padding-right: 50px;
+}
+
+.itInfraStructureInfo > h3 {
+  font-size: clamp(1.75rem, 2.685vw + 0.029rem, 3.25rem);
+}
+
+.itInfraStructureInfo :nth-child(2) {
+  position: relative !important;
+}
+
+.itInfraStructureInfo > p {
+  margin-top: 30px;
+  font-size: clamp(0.875rem, 1.566vw - 0.129rem, 1.75rem);
+}
+
+/* SECTION 3 */
+
+/* .criticalQuestionsContainer :nth-child(2){
+    position: relative !important;
+    margin-top: 100px;
+} */
+
+.criticalQuestionsContainer {
+  padding-bottom: 13%;
+}
+
+.questionMarkLines {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 60px;
+}
+.questionMarkLine {
+  width: 50%;
+  height: 2px;
+  background-color: #0ea5e9;
+  margin-left: 80px;
+  margin-top: 198px;
+}
+.questionMarkLine1 {
+  width: 15%;
+  height: 2px;
+  background-color: #0ea5e9;
+  /* margin-left: 80px; */
+  /* margin-top: 80px; */
+  position: relative;
+  top: 200px;
+  left: 297px;
+}
+
+.questionMarkHalfCircle {
+  width: 300px;
+  height: 150px;
+  border: 2px solid #0ea5e9;
+  border-bottom: none;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  position: relative;
+  top: 50px;
+  right: 203px;
+}
+
+.questionMarkHalfCircle > :nth-child(1) {
+  width: 100%;
+  /* margin-left: 80px; */
+  /* margin-top: -40px; */
+  scale: 1.5;
+}
+
+.criticalQuestionsContainer > :nth-child(1) {
+  font-size: clamp(1.563rem, 2.573vw - 0.087rem, 3rem);
+  position: relative;
+  top: 170px;
+  left: 90px;
+}
+
+.criticalQuestionsContainer > :nth-child(2) {
+  position: relative !important;
+  left: 100px !important;
+  width: 0 !important;
+  top: 180px !important;
+}
+
+.criticalQuestionsContainer > :nth-child(2) :first-child {
+  width: 50vw !important;
+}
+
+.criticalQuestionsContainer > :nth-child(3) {
+  font-size: clamp(0.75rem, 1.454vw - 0.182rem, 1.563rem);
+  position: relative;
+  left: 83px;
+  top: 215px;
+}
+
+/* SECTION 4 */
+
+
+.cloudMigrationSolution > :nth-child(1) {
+    font-size: clamp(1.625rem, 2.908vw - 0.24rem, 3.25rem);
+    text-align: center;
+  }
+
+  
+.cloudMigrationSolution > :nth-child(2) {
+    position: relative !important;
+    width: 50% !important;
+    left: 20%  !important;
+}
+
+.cloudMigrationSolution > :nth-child(3) {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+
+.cloudMigrationSolutionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; gap: 15px;
+}
+.card1 {
+    background: url("/src/images/Managed services/triangleShadow.png") top right no-repeat;
+    padding:0 45px;
+    background-size: contain;
+    height: 190px;
+    display: inline-grid;
+    place-items: center;
+    text-align: right;
+    overflow: hidden;
+}
+
+.card2{
+    background: url("/src/images/Managed services/triangleShadow2.png") top left no-repeat;
+    height: 190px;
+    background-size: contain;
+    display: inline-grid;
+    place-items: center;
+    text-align: left;
+    padding:0 45px;
+}
+
+.card3 {
+    background: url("/src/images/Managed services/triangleShadow3.png") top right no-repeat;
+    padding:0 45px;
+    height: 190px;
+    background-size: contain;
+    display: inline-grid;
+    place-items: center;
+    text-align: right;
+}
+
+.card4{
+    background: url("/src/images/Managed services/triangleShadow4.png") top left no-repeat;
+    padding:0 45px;
+    height: 190px;
+    background-size: contain;
+    display: inline-grid;
+    place-items: center;
+    text-align: left;
+}
+
+.card1 > div ,.card2 > div, .card3 > div  , .card4 > div {
+    gap: 5px;
+    display: inline-grid;
+}
+
+.card1 > div :first-child ,.card2 > div :first-child, .card3 > div :first-child , .card4 > div :first-child {
+
+    font-size: clamp(1.125rem, 0.783vw + 0.623rem, 1.563rem);
+    font-weight: 600;
+}
+
+
+/* SECTION 5  */
+.trustTeam{
+    padding: 0 5vw;
+    padding-top: 100px;
+}
+
+.trustTeam > :nth-child(1){
+    font-size: clamp(2.5rem, 1.342vw + 1.639rem, 3.25rem);
+}
+
+.trustTeam > :nth-child(2){
+   position: relative !important;
+}
+
+.trustTeamInfo {
+    display: flex;
+    align-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.trustTeamInfo > * {
+    width: 30%;
+    
+}
+.trustTeamInfo > .info1 > h1 , .trustTeamInfo > .info2 > h1 , .trustTeamInfo > .info3 > h1 , .trustTeamInfo > .info4 > h1 , .trustTeamInfo > .info5 > h1 , .trustTeamInfo > .info6 > h1 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.trustTeamInfo > .info1 > p , .trustTeamInfo > .info2 > p , .trustTeamInfo > .info3 > p , .trustTeamInfo > .info4 > p , .trustTeamInfo > .info5 > p , .trustTeamInfo > .info6 > p {
+    text-align: center;
+}
+
+
+/* SECTION 6  */
+
+.sixStepBluePrint > h3 {
+    font-size: clamp(2.5rem, 1.342vw + 1.639rem, 3.25rem);
+    text-align: center;
+    padding-top: 100px;
+}
+
+.sixStepBluePrint > :nth-child(2){
+    position: relative !important;
+    margin-top: 30px;
+}
+
+.sixSteps > .steps {
+    background: url("/src/images/Managed services/bgSteps.svg") no-repeat;
+    background-size: contain;
+    padding: 0 20px;
+    height: 28vh;
+    width: 56vh;
+    display: inline-grid;
+    place-items: center;
+    text-align: center;
+}
+
+.innerStep {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+
+.innerStep > span {
+    width: 50%;
+}
+
+.innerStep > h3 {
+    width: 50%;
+    text-align: center;
+    color: #0ea5e9;
+    font-weight: 600;
+}
+
+.sixSteps > .steps > p {
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.sixSteps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 5vw;
+}

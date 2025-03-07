@@ -1,0 +1,936 @@
+.leadership-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.image-text {
+    font-size: calc(clamp(3.125rem, 5.593vw - 0.461rem, 6.25rem));
+    font-weight: bold;
+    background-image: url('../../images/leaders/op-loader-background.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  .image-text1 {
+    font-size: calc(clamp(3.125rem, 5.593vw - 0.461rem, 6.25rem));
+    font-weight: bold;
+    background-image: url('../../images/leaders/op-loader-background.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+.loader-full {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    pointer-events: none;
+}
+.upper-div, .lower-div {
+   position: relative;
+   width: 100%;
+   background-color: #fff;
+   height: 50%;
+}
+.upper-div {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.lower-div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.loader-full{ height: 100vh;}
+.upper-div .loader-bg{
+    position: absolute;
+    bottom: 0;
+    z-index: -2;
+    width: 100%;
+}
+.lower-div .loader-bg  {
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    width: 100%;
+}
+.Board-member {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(8, 13, 36, 1) 0%, rgba(47, 83, 170, 1) 42%, rgba(112, 154, 255, 1) 70%, rgb(187 207 255) 100%);
+}
+
+.whole-bg-gradient, .Sameer-redij, .rishikesh-jadhav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all 1.2s ease;
+    align-items: center;
+}
+
+.card-outline {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(8, 13, 36, 1) 0%, rgba(47, 83, 170, 1) 42%, rgba(112, 154, 255, 1) 70%, rgb(187 207 255) 100%);
+    /* background-size: 114%; */
+}
+
+
+
+.card-outline h2 {
+    font-size: calc(clamp(3.125rem, 5.593vw - 0.461rem, 6.25rem));
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    transition: all 1.5s ease-out;
+}
+.card-outline .linear-grad {   
+transform: scale(1.3)!important;
+    font-weight: 700;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(11,53,144,1) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transition: all 1.5s ease-out;
+}
+.card-outline .stats {
+    font-size: calc(clamp(1rem, 1.79vw - 0.148rem, 2rem));
+    position: relative;
+    width: 35%;
+    transform: translateX(10px);
+    padding-left: 1.5vw;
+    font-weight: 600;
+    text-align: end;
+}
+.card-outline .stats span:first-child {
+    font-size: calc(clamp(3.25rem, 5.928vw - 0.552rem, 6.563rem));
+    font-weight: 700;
+    line-height: 95px;
+    top: 0;
+    left: 5%;
+    position: absolute;
+    color: #FFA800;
+}
+.card-outline .stats span:last-child {
+    color: #FFA800;
+}
+.book-1, .book-2 {
+    font-size: calc(clamp(1rem, 1.566vw - 0.004rem, 1.875rem));
+}
+.book-1 {
+    position: relative;
+    width: 29%;
+    color: #000;
+    line-height: 38px;
+    font-weight: 500;
+}
+.card-outline .top-div {
+    position: relative;
+    display: flex;
+    margin-top: 1.5vw;
+    justify-content: space-between;
+}
+.card-outline .middle-div {
+    position: relative;
+    width: 100%;
+}
+.card-outline .middle-div .book-2 {
+    font-size: calc(clamp(0.875rem, 1.566vw - 0.129rem, 1.75rem));
+    width: 25%;
+    text-align: end;
+    padding-top: 4vw;
+    line-height: 38px;
+    padding-left: 1.5vw;
+    color: #000;
+    font-weight: 500;
+}
+.piyush-img {
+    position: absolute;
+    width: 58%;
+    top: 17%;
+    left: 24%;
+}
+.other-desig {
+    position: absolute;
+    top: -8%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1vw;
+}
+.other-desig span:first-child {
+    font-size: calc(clamp(1.125rem, 2.013vw - 0.166rem, 2.25rem));
+    text-align: end;
+}
+.other-desig span:last-child{
+    line-height: 50px;
+    color: #FFA800;
+    font-weight: 600;
+   font-size: calc(clamp(1.875rem, 3.356vw - 0.277rem, 3.75rem));
+}
+.designation {
+    position: relative;
+    font-size: calc(clamp(3.125rem, 5.593vw - 0.461rem, 6.25rem));
+    font-weight: 700;
+    width: 100%;
+    z-index: 2;
+    padding-top: 0.5vw;
+    text-align: center;
+    color: #00195A;
+}
+.hasttag-name {
+    font-size: calc(clamp(1.438rem, 2.685vw - 0.284rem, 2.938rem));
+    font-weight: 600;
+    color: #DC3500;
+    position: absolute;
+    right: 2%;
+    bottom: 18%;
+}
+.hasttag-name  p:first-child{
+    line-height: 39px;
+}
+.hasttag-name  p:last-child{
+    opacity: 0;
+    font-size: calc(clamp(0.563rem, 1.007vw - 0.083rem, 1.125rem));
+    text-align: end;
+    font-weight: 700;
+}
+.social-media {
+    display: flex;
+    padding-bottom: 0.5vw!important;
+    gap: 0.9vw;
+}
+.leader-page-logo {
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    width: 9%;
+    z-index: 29;
+}
+/* .social-media:first-child {
+    padding-bottom: 1vw;
+} */
+.social-media .insta, .social-media .linkedin, .social-media .facebook, .social-media  .twitter {
+    font-size:calc(clamp(1.313rem, 2.349vw - 0.194rem, 2.625rem));
+    color: #000;
+    font-weight: 500;
+}
+
+.social-media  .twitter:hover {
+    color: #fff;
+}
+.social-media .facebook:hover {
+    color: #316FF6;
+}
+ .linkedin:hover {
+    color: #0077B5;
+}
+.bottom-gradient {
+    position: absolute;
+    bottom: -6%;
+    height: 10vw;
+    left: 0;
+    z-index: 4;
+    width: 50vw;
+    background: #a5bfff;
+    filter: blur(35px);
+}
+.scanner-box {
+    position: absolute;
+    bottom: 6%;
+    left: 5%;
+    z-index: 5;
+    width: 16%;
+}
+.scanner-box p {
+    opacity: 0;
+    width: 110%;
+    margin-top: 5px;
+    font-size: calc(clamp(0.5rem, 0.895vw - 0.074rem, 1rem));
+    color: #0500FF;
+}
+.side-toggle {
+    position: absolute;
+ display: flex;
+ align-items: center;
+ left: 0;
+ top: 45%;
+ z-index: 9;
+width: 29%;
+}
+.previoues-btn {
+    position: absolute;
+    font-size: calc(clamp(0.938rem, 1.678vw - 0.138rem, 1.875rem));
+    left: 4%;
+    pointer-events: none;
+    z-index: 2;
+    top: 48%;
+    mix-blend-mode: difference;
+    cursor: pointer;
+}
+.next-btn {
+    position: absolute;
+    font-size: calc(clamp(0.938rem, 1.678vw - 0.138rem, 1.875rem));
+    right: 4%;
+    z-index: 2;
+    pointer-events: none;
+    top: 48%;
+    mix-blend-mode: exclusion;
+    cursor: pointer;
+}
+.two-btn-toggle .board-memeber {
+    font-size: calc(clamp(0.75rem, 1.454vw - 0.182rem, 1.563rem));
+    position: relative;
+    padding-left: 4vw;
+    color: #ffffff91;
+    cursor: pointer;
+} 
+
+.two-btn-toggle .active-toggle-btn::before {
+    content: "";
+    position: absolute;
+    top: 46%;
+    left: 10%;
+    width: 8%;
+    border-radius: 50px;
+    height: 3px;
+    background-color: #fff;
+}
+.info-btn {
+    position: fixed;
+    top: 6%;
+    
+    right: 5%;
+    z-index: 9;
+    cursor: pointer;
+    border-radius: 9px;
+    pointer-events: none;
+    padding: 0.5vw;
+    font-size: calc(clamp(0.75rem, 1.342vw - 0.111rem, 1.5rem));
+}
+.two-btn-toggle .executive-leadership {
+    font-size: calc(clamp(0.75rem, 1.454vw - 0.182rem, 1.563rem));
+    padding-left: 4vw;
+    margin-top: 1vw;
+    color: #ffffff91;
+    cursor: pointer;
+}
+.two-btn-toggle .active-toggle-btn {
+    color: #ffffff;
+    transform: scale(1.2) translateX(2.5vw);
+
+}
+.last-slide {
+    position: absolute;
+    bottom: 2%;
+    width: 22%;
+    right: 3%;
+}
+.boss-qoute {
+    position: absolute;
+    left: -18%;
+    top: 0;
+    opacity: 0;
+    line-height: 48px;
+    font-size: calc(clamp(1.25rem, 2.237vw - 0.185rem, 2.5rem));
+    font-weight: 400;
+    color: #fff;
+    width: 70%;
+    text-align: end;
+}
+.boss-qoute img {
+    position: absolute;
+
+}
+.boss-qoute img:first-child {
+    top: 1%;
+    width: 6%;
+    left: -8%;
+}
+.boss-qoute img:last-child {
+    bottom: 1%;
+    width: 6%;
+    right: -8%;
+    transform: rotateY(180deg);
+}
+/* -----------------------------------------------------------slide list -------------------------------------------------------------------- */
+.leader-slider-list,.executive-slider-list{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 9;
+    display: flex;
+    gap: 10px;
+}
+
+.executive-slider-list .exec-box-1, .executive-slider-list .exec-box-2, .executive-slider-list .exec-box-3, .executive-slider-list .exec-box-4, .executive-slider-list .exec-box-5, .executive-slider-list .exec-box-6 {
+    position: relative;
+    width: 3vw;
+    cursor: pointer;
+    height: 2.5vw;
+    background-size: cover;
+    background-position: top;
+    background-color: #d2ddf7;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+.leader-slider-list .box-1, .leader-slider-list .box-2, .leader-slider-list .box-3, .leader-slider-list .box-4, .leader-slider-list .box-5, .leader-slider-list .box-6 {
+    position: relative;
+    width: 3vw;
+    cursor: pointer;
+    height: 2.5vw;
+    background-size: cover;
+    background-position: top;
+    background-color: #d2ddf7;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+.box-1 {
+    background: url('../../images/leaders/piyush-somani.jpeg');
+}
+.exec-box-1 {
+    background: url('../../images/leaders/rajeev-photo.png');
+}
+.exec-box-2 {
+    background: url('../../images/leaders/jitendra_pathak.jpeg');
+}
+.exec-box-3 {
+    background: url('../../images/leaders/Rishikeh-jadhav.jpeg');
+}
+.exec-box-4 {
+    background: url('../../images/leaders/sameer_redij.jpeg');
+}
+.exec-box-5 {
+    background: url('../../images/leaders/Sita-Ramiah.jpeg');
+}
+.exec-box-6 {
+    background: url('../../images/leaders/sajiv-nair.jpeg');
+}
+.box-2 {
+    background: url('../../images/leaders/komalSomani.jpeg');
+   
+}
+.box-3 {
+    background: url('../../images/leaders/pamela-kumar.jpeg');
+}
+.box-4 {
+    background: url('../../images/leaders/alipt-sharma.jpeg');
+}
+.box-5 {
+    background: url('../../images/leaders/dhandapani.jpeg');
+}
+.box-6 {
+    background: url('../../images/leaders/Mr_Venkatesh_Natarajan.jpeg');
+}
+.prev-btn {
+    position: fixed;
+    top: 6%;
+    display: none;
+    left: 17%;
+    z-index: 9;
+    font-size: calc(clamp(0.75rem, 1.342vw - 0.111rem, 1.5rem));
+    left: 3%;
+    cursor: pointer;
+    border-radius: 9px;
+    padding: 0.5vw;
+    /* background-color: #a5beff37; */
+}
+
+.leader-slider-list .slide-active {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    opacity: 1;
+}
+.executive-slider-list .slide-active {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    opacity: 1;
+}
+/* ----------------------------------------------------------pamela page ------------------------------------------------------------------------------------------------------------ */
+.pamela-img {
+    position: absolute;
+    width: 58%;
+    top: 8%;
+    right: 0;
+}
+.pamela-card h2 {
+    text-align: start;
+    padding-left: 2vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+.FIDD-IISC {
+    font-size: calc(clamp(1.25rem, 2.237vw - 0.185rem, 2.5rem));
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 2vw;
+    width: 60%;
+    padding-left: 2vw;
+}
+.FIDD-IISC span {
+    font-weight: 700;
+    background-image: linear-gradient(90deg, #FF9900 0%, #FFD600 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transition: all 1.5s ease-out;
+}
+.innovation-council {
+    font-size: calc(clamp(0.875rem, 1.566vw - 0.129rem, 1.75rem));
+    font-weight: 400;
+    padding-left: 2vw;
+    position: relative;
+    width: 45%;
+}
+.innovation-council span {
+    font-weight: 700;
+    display: block;
+    font-size: calc(clamp(1.25rem, 2.237vw - 0.185rem, 2.5rem));
+    background-image: linear-gradient(90deg, #FF9900 0%, #FFD600 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transition: all 1.5s ease-out;
+}
+.TSDSI {
+    font-size: calc(clamp(1.063rem, 1.902vw - 0.157rem, 2.125rem));
+    width: 45%;
+    font-weight: 400;
+    padding-left: 2.5vw;
+    position: relative;
+    padding-top: 2.5vw;
+}
+.TSDSI span  {
+    font-size: calc(clamp(1.313rem, 2.349vw - 0.194rem, 2.625rem));
+    font-weight: 700;
+    line-height: 2vw;
+    display: block;
+    font-size: calc(clamp(1.25rem, 2.237vw - 0.185rem, 2.5rem));
+    background-image: linear-gradient(90deg, #FF9900 0%, #FFD600 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transition: all 1.5s ease-out;
+}
+.scanner-general {
+    display: flex;
+    margin-top: 2vw;
+    padding-left: 1vw;
+    gap: 4.5vw;
+    align-items: end;
+    position: relative;
+}
+.scanner-general p {
+  font-size: calc(clamp(0.75rem, 1.342vw - 0.111rem, 1.5rem));
+  text-align: end;
+  width: 30%;
+}
+.scanner-general p span {
+    font-size: calc(clamp(1.313rem, 2.349vw - 0.194rem, 2.625rem));
+    font-weight: 700;
+    line-height: 2vw;
+    display: block;
+    font-size: calc(clamp(1.25rem, 2.237vw - 0.185rem, 2.5rem));
+    background-image: linear-gradient(90deg, #FF9900 70%, #FFD600 120%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transition: all 1.5s ease-out;
+}
+.scanner-general .scanner {
+    width: 13%;
+}
+.pamela-card .social-media {
+    bottom: 6%;
+    left: 4%;
+}
+/* --------------------------------------------------komal card-------------------------------------------------------------------- */
+.komal-card h2 {
+    font-size: clamp(1.75rem, 5.817vw - 1.98rem, 5rem);
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #FFF500 0%, #FF9900 100%);
+    background-size: 100%;
+    font-weight: 700;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transition: all 1.5s ease-out;
+}
+.komal-card h2 img{ width: 100%;}
+.komal-img {
+    position: absolute;
+    width: 58%;
+    top: 5%;
+    left: 20%;
+}
+
+.Komal_info {
+    padding: 0px  1.5vw;
+    position: relative;
+    z-index: 99;
+    height: 100%;
+}
+.name-designation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.name-designation h3 {
+    font-size: calc(clamp(1.125rem, 2.013vw - 0.166rem, 2.25rem));
+    line-height: 2.3vw;
+}
+.name-designation p.whiteColor{ color: #FFF;   font-weight: 600;}
+
+
+.name-designation p{
+    color: #FFBC03;
+  font-size: calc(clamp(1.125rem, 2.013vw - 0.166rem, 2.25rem));
+  font-weight: 400;
+
+}
+.w-designation, .w-name-designation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.w-designation p, .w-name-designation p{
+    color: #FFF;
+  font-size: calc(clamp(1.125rem, 2.013vw - 0.166rem, 2.25rem));
+  line-height: 2.3vw;
+  font-weight: 600;
+
+}
+
+.aw1 {
+    display: flex;
+    gap: 10px;
+    width: 50%;
+    align-items: center;
+}
+
+.great_place_icon{
+    width: 30%;
+}
+
+.w-designation p.whiteColor {
+    color: #FFF;
+    font-weight: 800;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.mr-5{ margin-right: 50px;}
+
+.w-designation p.fontLight{ font-weight: 500;}
+
+.w-name-designation p{font-size: clamp(1.75rem, 4.474vw - 1.119rem, 4.25rem);margin-top: 2vw;   line-height: 3vw; font-weight: 600; text-transform: uppercase;}
+
+.mt-5{ margin-top: 2rem;}
+.mb-5{ margin-bottom: 2rem;}
+
+
+.komal-info-designation p{
+    color: #FFF;
+    font-size: clamp(1rem, 0.895vw + 0.426rem, 1.5rem);
+    font-weight: 600;
+
+    
+}
+
+
+.greatPlace-wall-frame {
+    display: flex;
+    position: relative;
+    padding-left: 3.5vw;
+    margin-top: 2vw;
+    align-items: end;
+}
+.greatPlace-wall-frame  img {
+    width: 30%;
+}
+.greatPlace-wall-frame p {
+    font-size: calc(clamp(1.188rem, 2.125vw - 0.175rem, 2.375rem));
+    width: 33.5%;
+    line-height: 2.5vw;
+    color: #FFA800;
+    padding-left: 1vw;
+}
+.creative-innovation {
+    font-size: calc(clamp(1.188rem, 2.125vw - 0.175rem, 2.375rem));
+    font-weight: 600;
+    padding-left: 3vw;
+    margin-top: 1vw;
+    position: relative;
+}
+.creative-innovation p {
+    margin-bottom: 1vw;
+}
+.creative-innovation p span {
+    font-weight: 300;
+}
+.scanner-women {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 2vw;
+}
+.scanner-women  p {
+    font-size: calc(clamp(1.188rem, 2.125vw - 0.175rem, 2.375rem));
+    font-weight: 500;
+    width: 40%;
+    line-height: 2.5vw;
+    text-align: end;
+}
+.scanner-women img {
+    width: 13%;
+}
+.scanner-women  p span {
+    color: #000;
+    font-size: calc(clamp(0.938rem, 1.678vw - 0.138rem, 1.875rem));
+}
+
+/* -----------------------------------------------executive memeber ----------------------------------------------------- */
+.Executive-member {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(8, 13, 36, 1) 0%, rgba(47, 83, 170, 1) 42%, rgba(112, 154, 255, 1) 70%, rgb(187 207 255) 100%);
+}
+/* ------------------------------------------rishikesh jadhav-------------------------------------------------------------------------- */
+.rishikesh-jadhav .title {
+    font-size: calc(clamp(2.625rem, 4.81vw - 0.459rem, 5.313rem));
+}
+/* ----------------------------------sameer redij----------------------------------------- */
+
+.Sameer-redij .sameer-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.Sameer-redij .title {
+    font-size: calc(clamp(2.625rem, 4.81vw - 0.459rem, 5.313rem));
+}
+
+
+/*social-media-new**/
+.social-media-new {
+   position: absolute;
+   width: 100%;
+   bottom: 35px;
+   left: 31%;
+  }
+.social-media-new h3{ line-height: normal; font-size: clamp(1.5rem, 2.237vw + 0.065rem, 2.75rem); color: #020059; margin: 0; padding: 0; font-weight: 600;
+}
+
+
+
+.leadership-page{ display: block;}
+.leadership-page-mobile{ display: none;}
+.mobileleadership h2{font-size: clamp(1.5rem, 1.119vw + 0.783rem, 2.125rem); font-weight: 700; color: #FFF; margin: 0 0 15px 0; padding: 0;}
+.mobileleadership strong{font-size:clamp(1.125rem, 0.447vw + 0.838rem, 1.375rem); font-weight: 700; color: #FFF; margin: 0; padding: 0;}
+.leadership1 img.mt_15, .slick-slide img {
+    border-radius: 10px;
+}
+.leadership1 {
+    position: relative;
+    margin-top: 10px
+}
+.leadership1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+.nameInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 7px;
+    z-index: 9;
+    position: relative;
+    width: 99px;
+}
+.mobileleadership ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+.mt_15{ margin-top: 15px;}
+.mt_45{ margin-top: 35px !important;}
+.mobileleadership ul li{padding: 0; margin: 0; font-size: clamp(1.375rem, 0.224vw + 1.232rem, 1.5rem); }
+.mobileleadership ul li a{ color: #FFF;}
+.mobileleadership ul li a:hover{ color: #0066ff}
+
+.slider-container img{ width: 100%;}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 10px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: #FFF !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots {
+    bottom: -30px !important;
+    width: 80px !important;
+    right: 0 !important;
+}
+.magazine-bg {
+    width: 100%!important;
+    height: 100%;
+}
+
+/* Mobile Responsive css start */
+@media (max-width: 1400px){}
+@media (max-width: 1280px){
+ 
+}
+@media (max-width: 1199px){
+
+    .social-media-new {
+        position: absolute;
+        width: 100%;
+        bottom: 35px;
+        left:0%;
+        transform: translate(20px, 10px);
+    }
+    .image-text { 
+        font-size: calc(clamp(1.875rem, 7.564vw + 0.149rem, 5rem));
+    }
+    .image-text1 { 
+        font-size: calc(clamp(1.875rem, 7.564vw + 0.149rem, 5rem));
+    }
+    .page p img {
+        width: 100%;
+        height: 100vh;
+      
+      }
+      .leadership-page{ display: none;}
+      .leadership-page-mobile{ display: block;}
+      .leader-page-logo {
+          width: 15%;
+      }
+  
+      .mobileleadership {
+          position: absolute;
+          top: 25%;
+          padding: 0 5% 5% 5%; width: 100%;
+      }
+}
+@media (max-width: 991px){
+    .leadership-page{ display: none;}
+    .leadership-page-mobile{ display: block;}
+    .leader-page-logo {
+        width: 15%;
+    }
+
+    .mobileleadership {
+        position: absolute;
+        top: 15%;
+        padding: 0 5% 5% 5%; width: 100%;
+    }
+
+
+}
+@media (max-width: 896px){
+  
+    .mobileleadership {
+      position: absolute;
+      top: 20%;
+      padding: 0 5% 5% 5%; width: 100%;
+  }
+  }
+
+@media (max-width: 768px){
+  .leadership-page{ display: none;}
+  .leadership-page-mobile{ display: block;}
+
+  .mobileleadership {
+    position: absolute;
+    top: 20%;
+    padding: 0 5% 5% 5%; width: 100%;
+}
+}
+
+@media (max-width: 767px){
+    .leadership-page{ display: none;}
+    .leadership-page-mobile{ display: block;}
+  
+    .mobileleadership {
+      position: absolute;
+      top: 50%;
+      padding: 0 5% 5% 5%; width: 100%;
+  }
+  }
+@media (max-width: 667px){
+
+    .leader-page-logo {
+        width: 25%;
+    }
+    
+  .mobileleadership {
+    position: absolute;
+    top: 40%;
+    padding: 0 5% 5% 5%; width: 100%;
+}
+}
+@media (max-width: 480px){
+    .leader-page-logo {
+        width:30%;
+    }
+    
+  .mobileleadership {
+    position: absolute;
+    top: 15%;
+    padding: 0 5% 10% 5%; width: 100%;
+}
+}
+@media (max-width: 360px){}
+

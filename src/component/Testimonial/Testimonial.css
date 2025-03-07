@@ -1,0 +1,490 @@
+
+/* --------------------------------------------------------testimonial ----------------------- */
+
+.testimonil-section {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 110vh;
+  }
+  .info-btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 99;
+    width: 100%;
+  }
+  .testimonil-section::before {
+    content: "";
+    position: absolute;
+    top: -14vh;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(0deg, rgb(6 9 16) 58%, rgba(221, 221, 220, 0) 100%);
+    z-index: 2;
+}
+.testimonial-CTA {
+  position: absolute;
+  top: 60%;
+  z-index: 5;
+}
+  .wrapper {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    /* bottom: 0; */
+    display: flex;
+    flex-direction: column;
+    transform: none!important;
+    justify-content: center;
+    align-items: center;
+  }
+  .bg-image {
+    width: 100%;
+    height:  180vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+background: linear-gradient(180deg, rgba(6,9,16,1) 34%, rgba(11,42,105,1) 50%, rgba(36,91,154,1) 65%, rgba(128,174,207,1) 82%, rgba(192,210,217,1) 89%);
+    }
+
+  .center-text {
+    position: absolute;
+    z-index: 5;
+    pointer-events: none;
+    /* will-change: transform; */
+    opacity:  3;
+    
+  }
+  .button-testimonial {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 0vh; */
+    top: 7vh;
+}
+  .center-text h2{
+    color: #fff;
+    font-size: calc(clamp(2.5rem, 5.593vw - 1.096rem, 5.625rem));
+    font-weight: 700;
+  }
+  .top-comma {
+    position: absolute;
+    top: -1px;
+    width: 2vw;
+    left: -47px;
+  }
+  .bottom-comma {
+    position: absolute;
+    bottom: -6px;
+    right: -51px;
+    width: 2vw;
+    rotate: -180deg;
+  }
+  .secondsection {
+    position: relative;
+    width: 100vw;
+    /* z-index: ; */
+    height: 100vh;
+  }
+  .third {
+    width: 100vw;
+    position: relative;
+     height: 100vh;
+     /* z-index: -3; */
+  }
+  .main {
+    position:relative;
+    overflow: hidden;
+  }
+  .review p {
+    font-size: 1vw;
+  }
+  .review .overlay.close {
+    left: 0;
+  }
+  .review .overlay2.close {
+    right: 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: -23vw;
+    /* left: 0; */
+    width: 50%;
+    background: #fff;
+    height: 100%;
+    transition: 0.4s cubic-bezier(0.55, 0.06, 0.6, 0.19);
+  }
+  .overlay2 {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: -23vw;
+    /* right: 0;   */
+    background: #fff;
+    height: 100%;
+    transition: 0.4s cubic-bezier(0.55, 0.06, 0.6, 0.19);
+  }
+  .quote-symbol  {
+    font-size: 10vw;
+    width: 10%;
+    position: absolute;
+    z-index: 8;
+    right: 14px;
+    top: -50px;
+    color: #088dff
+  }
+  .quote-symbol2 {
+    font-size: 10vw;
+    width: 10%;
+    position: absolute;
+    z-index: 8;
+    left: 14px;
+    rotate: -180deg;
+    top: -14vh;
+    color: #088dff
+  }
+  
+  #fourbm {
+
+    font-weight: 900;
+    font-size: 4.5vw;
+    
+    background-image: linear-gradient( to right, #00950F, #00950F);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  
+  
+  .testimonial .floating-bubble1, .testimonial .floating-bubble2, .testimonial .floating-bubble3, .testimonial .floating-bubble4, .testimonial .floating-bubble5, .testimonial .floating-bubble6, .testimonial .floating-bubble7 {
+    position: absolute;
+  
+    width: 4vw;
+   
+    border: 8px solid #fff;
+    outline: none;
+  background-size: contain;
+    z-index: 5;
+    height: 4vw;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s;
+    box-shadow: 0px 6px 16px #ffffffe1;
+   
+  }
+  
+  
+  .testimonial .floating-bubble1 {
+   
+    animation-name: example4;
+    animation-duration: 7.1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .testimonial .buble-img:nth-child(1) {
+    background: url(../../images/clients/client2.png);
+    background-size: cover;
+    transition: all 1s ease;
+  }
+  
+  
+  .testimonial-heading h2 {
+    font-size: 2vw;
+    color: #fff;
+  }
+  .testimonial {
+    opacity: 1;
+  }
+  
+  .testimonial-without-cloud {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: -25;
+  will-change: opacity;
+  }
+  .testimonial .floating-bubble2 {
+    /* background: url(./images/clients/client1.png); */
+  /* background-size: contain; */
+  transform: translate(26vw, 17vh);
+    left: 0;
+    top: 0;
+    will-change: transform;
+  
+  }
+  .testimonial .buble-img:nth-child(2){
+    background: url(../../images/clients/client1.png);
+    background-size: cover;
+    transition: all 1s ease;
+  }
+  .testimonial .floating-bubble3 {
+  transform: translate(86vw, 32vh);
+    left: 0;
+    top: 0;
+    /* animation-name: example4;
+    animation-duration: 6.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+  }
+  .testimonial .buble-img:nth-child(3) {
+    background: url(../../images/clients/client8.png);
+    background-size: cover;
+    transition: all 1s ease;
+  }
+  .testimonial .floating-bubble4 {
+  transform: translate(10vw, 21vh);
+    left: 0;
+    top: 0;
+    /* animation-name: example3;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+  }
+  .testimonial .buble-img:nth-child(4) {
+    background: url(../../images/clients/client5.png);
+    background-size: cover;
+    transition: all 1s ease;
+  }
+  .testimonial .floating-bubble5 {
+   transform: translate(81vw, 60vh);
+    left: 0;
+    top: 0;
+    /* animation-name: example5;
+    animation-duration: 6.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+  }
+  .testimonial .buble-img:nth-child(5) {
+    background: url(../../images/clients/client4.png);
+    background-size: cover;
+    transition: all 1s ease;
+  }
+  .testimonial .floating-bubble6 {
+  transform: translate(71vw,24vh);
+    left: 0;
+    top: 0;
+    /* animation-name: example4;
+    animation-duration: 5.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+  }
+  .testimonial .buble-img:nth-child(6) {
+    background: url(../../images/clients/client7.png);
+  background-size: cover;
+  transition: all 1s ease;
+  }
+  .testimonial .floating-bubble7 {
+    transform: translate(14vw, 58vh);
+    left: 0;
+    top: 0;
+    /* animation-name: example4;
+    animation-duration: 7.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+  }
+  .testimonial .buble-img:nth-child(7) {
+    background: url(../../images/clients/client6.png);
+  background-size: cover;
+  transition: all 1s ease;
+  }
+  .designation-company {
+  
+      display: flex;
+      justify-content: space-between;
+     
+  
+  }
+  .designation-company p:nth-child(2) {
+    margin: 0 0.5vw;
+  }
+  .testimonial .active {
+    position: absolute;
+    left :0;
+    top : 0;
+    width: 7vw;
+    box-shadow: none;
+    transform: translate(46vw, 13vw);
+    border: none;
+    outline: none;
+    height: 7vw;
+    overflow: hidden;
+    border-radius: 50%;
+    animation: none;
+  }
+  
+  
+  .testimonial .floating-bubble1 img {
+    width: 100%;
+    height: 100%;
+  }
+  
+    .testimonial {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .testimonial .testimonial-heading {
+      position: absolute;
+      top: 4vh;
+  }
+    .testimonial .cloud-bg-outline {
+      width: 57%;
+      position: absolute;
+      top: 14vh;
+  }
+  .testimonial .cloud-bg-outline img{
+      width: 100%;
+      height: 100%;
+      
+    }
+    .testimonial .active-client {
+      width: 40%;
+  
+  }
+  .testimonial .active-client .testimonial-img {
+    height: 7vw;
+  }
+    .testimonial .active-client .testimonial-img,   .testimonial .active-client .client-info {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
+  .testimonial .active-client .testimonial-img span {
+    width: 7vw;
+    height: 15vh;
+    border-radius: 50%;
+  }
+  .testimonial .active-client .testimonial-img span img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .testimonial .active-client .client-info  h3 {
+    font-size: 1.75vw;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+  
+  }
+  .testimonial .active-client .client-info p{
+    font-size: 1vw;
+    color: #ffffffc0;
+  }
+  .testimonial .active-client .review {
+    color: #fff;
+    /* font-size: 3vw; */
+    overflow: hidden;
+    
+    text-align: center;
+    position: relative;
+  }
+  .testimonial .active-client .review-without-overlay {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  .testimonial .active-client .review-without-overlay .review-top-comma {
+    position: absolute;
+    top: -1vw;
+    width: 2.5vw;
+    left: -3vw;
+}
+  .testimonial .active-client .review-without-overlay .review-bottom-comma {
+    position: absolute;
+    bottom: -5vh;
+    width: 2.5vw;
+    right: -2vw;
+  }
+  .testimonial .parallex-cloud {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+  }
+  .testimonial .parallex-cloud  img {
+    height: 100%;
+    position: absolute;
+   
+  }
+  .testimonial .parallex-cloud .right-cloud {
+    transform: translateY(18vw);
+    bottom: 0;
+    right: 0;
+    will-change: transform;
+  }
+  .testimonial .parallex-cloud .left-cloud {
+    bottom: 0;
+    transform: translateY(18vw);
+    will-change: transform;
+  }
+  .testimonial .parallex-cloud .center-cloud {
+    bottom: 0;
+    left: 0;
+    transform: translate(1vw , 13vw);
+    will-change: transform;
+  }
+  .testimonial .parallex-cloud .center-cloud2 {
+    left: 0;
+    bottom: 0;
+   transform: translate(42vw, 14vw);
+   will-change: transform;
+  }
+  /* @keyframes example3 {
+    0%   {transform: translate(0, 0);}
+    50% {transform: translate(0px, 15px)}
+    100% {transform: translate(0, 0)}
+  }
+  @keyframes example4 {
+    0%   {top: 0 ;left: 0;}
+    50% {left: 15px; top: 5px;}
+    100% {top: 0; left: 0;}
+  }
+  @keyframes example5 {
+    0%   {transform: translate(0, 0);}
+    50% {transform: translate(12px, 5px)}
+    100% {transform: translate(0, 0)}
+  }
+  
+  @keyframes example2 {
+    0%   {transform: translate(0, 0);}
+    50% {transform: translate(8px, 15px)}
+    100% {transform: translate(0, 0)}
+  }
+   */
+   .testimonial-hand-gif {
+      position: absolute;
+      width: 3%;
+      right: 13%;
+      bottom: 35%;
+      animation: myfirst 0.5s ease-out infinite alternate;
+   }
+   
+@keyframes myfirst {
+  0%   {transform: rotateY(0deg) rotateZ(0deg)}
+  50%  {transform: rotateY(-25deg) rotateZ(-5deg)}
+  100% {transform: rotateY(0deg) rotateZ(0deg)}
+}

@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* -------------------------------------------------Four B ------------------------------------------ */
+
+.FourB {
+    position: relative;
+    height: 500vh;
+    font-family: "Ubuntu", sans-serif;
+
+    }
+    .FourB::before {
+      content: "";
+      position: absolute;
+      top: -0.5vw;
+      left: 0;
+      z-index: 8;
+      width: 100%;
+      height: 5vh;
+      background-color: #fff;
+  }
+  
+    .FourB::after {
+      content:  "";
+      width: 100%;
+      height: 20vh;
+      bottom: 0;
+      z-index: 8;
+      left: 0;
+      position: absolute;
+      background: linear-gradient(180deg, rgba(6,39,0,0) 0%, rgba(0,0,0,1) 81%);;
+    }
+    .cloud-section {
+      position: relative;
+      background: url(../../images/Four-B/sky-bg-2.jpg);
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    
+    .Indiaimage {
+      position: relative;
+      top: 115vh;
+    width: 56%;
+      left: 10vw;
+    }
+    .Indiaimage .Four-B-indian:first-child {
+      position: absolute;
+      bottom: 21%;
+    left: -8%;
+      font-size: calc(clamp(17.188rem, 30.761vw - 2.538rem, 34.375rem));
+      font-weight: 500;
+      line-height: 19vw;
+      overflow: hidden;
+  }
+  .Indiaimage .Four-B-indian:last-child {
+    position: absolute;
+    bottom: 25%;
+    left: 14%;
+    font-size: calc(clamp(6.875rem, 11.186vw - 0.298rem, 13.125rem));
+    font-weight: 800;
+    overflow: hidden;
+}
+.Indiaimage .fourb-indain-touching {
+  position: absolute;
+  bottom: 129%;
+  left: 14%;
+  font-size: calc(clamp(1.875rem, 4.474vw - 0.994rem, 4.375rem));
+  font-weight: 300;
+  overflow: hidden;
+}
+
+.Indiaimage .fourb-1B {
+  overflow: hidden;
+}
+.Indiaimage .Four-B-indian-text {
+  position: absolute;
+  font-size: calc(clamp(2.5rem, 5.593vw - 1.086rem, 5.625rem));
+  bottom: 0%;
+  line-height: 4vw;
+  right: -27%;
+  overflow: hidden;
+}
+.Indiaimage img {
+position: relative;
+z-index: 5;
+  width: 100%;
+}
+    .india-1B-div {
+      position: absolute;
+      top: -148%;
+      left: -8%;
+      z-index: 0;
+  }
+    .india-1B-div .one-billion-ind .ind-inner-text:nth-child(1) {
+      font-size: 18vw;
+      font-weight: 900;
+  }
+  .india-1B-div .one-billion-ind .ind-inner-text:nth-child(2) {
+    font-size: 8vw;
+    position: relative;
+    left: -16%;
+    bottom: 10%;
+    font-weight: 900;
+  }
+  .TLO-div {
+    position: absolute;
+    top: -78%;
+    left: -10%;
+  }
+  .TLO-div .touching-live-of .TLO-inner-text {
+    font-size: 2.8vw;
+  }
+  .india-text-div {
+    position: absolute;
+    bottom: -20%;
+    align-items: end;
+    right: -33%;
+    justify-content: end;
+  }
+  .india-text-div .india-text .india-inner-text{
+    font-size: 5vw;
+  }
+.FB-second-cloud {
+      position: absolute;
+      top: 30vh;
+      left: -2vw;
+    }
+    .FB-first-cloud {
+      position: absolute;
+      top: 61vh;
+      right: 5vw;
+    }
+    .FB-first-cloud img {
+      width: 100%;
+
+    }
+
+
+
+    .smart-device {
+      position: relative;
+      top: 180vh;
+      width: 33%;
+      left: 23vw;
+  }
+  .smart-device .Four-B-connecting-text {
+    position: absolute;
+    right: -60%;
+    top: 16%;
+    overflow: hidden;
+    font-weight: 100;
+    font-size: calc(clamp(1.875rem, 4.474vw - 0.994rem, 4.375rem));
+}
+.smart-device .Four-B-devices:first-child {
+  bottom: 35%;
+  position: absolute;
+  right: -30%;
+  line-height: 20vw;
+  z-index: 0;
+  overflow: hidden;
+  font-size: calc(clamp(17.188rem, 30.761vw - 2.538rem, 34.375rem));
+  font-weight: 700;
+}
+
+.smart-device .Four-B-devices:last-child {
+  position: absolute;
+  right: -110%;
+  font-weight: 800;
+  bottom: 40%;
+  /* width: 85%; */
+  line-height: 9vw;
+  z-index: 0;
+  font-size: calc(clamp(6.875rem, 11.186vw - 0.298rem, 13.125rem));
+}
+.smart-device .Four-B-smart-text {
+  font-size: calc(clamp(2.5rem, 5.593vw - 1.086rem, 5.625rem))
+}
+.smart-device .fourb-smart-text {
+  position: absolute;
+  bottom: 19%;
+  right: -88%;
+}
+
+.smart-device img {
+  width: 100%;
+  /* height: 100%; */
+  position: relative;
+}
+
+.FB-third-cloud {
+  position: absolute;
+  top: 187vh;
+  width: 33vw;
+  left: 1;
+}
+.FB-fourth-cloud {
+  position: absolute;
+  top: 251vh;
+  width: 33vw;
+  right: 0;
+}
+.FB-fifth-cloud {
+  position: absolute;
+  top: 339vh;
+  width: 33vw;
+  left: 0;
+}
+.oneB-connecting-char {
+  transform: translateY(5vw);
+  opacity: 0;
+}
+.oneB-devices-char {
+  transform: translateY(5vw);
+  opacity: 0;
+}
+.oneB-unicorn-char {
+  transform: translateY(5vw);
+  opacity: 0;
+}
+.oneB-technology-char {
+  transform: translateY(5vw);
+  opacity: 0;
+}
+.oneB-indian-touching-char{
+  opacity: 0;
+}
+.oneB-indian-char {
+  opacity: 0;
+}
+    .technology {
+      position: relative;
+     width: 48%;
+      top: 254vh;
+      left: 5vw;
+    }
+    .technology .Four-B-technology:first-child {
+      font-size: calc(clamp(17.188rem, 30.761vw - 2.538rem, 34.375rem));
+      font-weight: 800;
+      line-height: 20vw;
+      position: absolute;
+      top: -24%;
+      left: -3%;
+  }
+  .technology .Four-B-technology:last-child {
+    font-size: calc(clamp(6.875rem, 11.186vw - 0.298rem, 13.125rem));
+    font-weight: 800;
+    position: absolute;
+    bottom: 14%;
+    left: 24%;
+}
+.technology .fourb-technology {
+  position: absolute;
+  bottom: 29%;
+  width: 22vw;
+  right: -45%;
+  font-size: calc(clamp(1.875rem, 2.874vw - 0.994rem, 4.375rem));
+}
+.technology .Four-B-unicorn-text {
+  overflow: hidden;
+line-height: 2.5vw;
+}
+/* .technology .oneB-unicorn-char {
+  transform: translateY(2vh);
+  opacity: 0;
+}
+.technology .oneB-technology-char {
+  transform: translateY(15vh);
+  opacity: 0;
+} */
+    .technology img {
+      width: 100%;
+      position: relative;
+    }
+    .technology .lion-img {
+      position: absolute;
+      top: 3%;
+      width: 34%;
+      left: 89%;
+  }
+    .third-cloud {
+      position: absolute;
+      top: 153vh;
+      right: 5vw;
+    }
+   
+
+#ground {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+
+  overflow: hidden;
+}
+#ground .inner-div {
+  height: 100%;
+}
+#ground .mountain-img {
+  position: absolute;
+  bottom: -25%;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+}
+#ground .tree-img {
+  position: relative;
+
+  width: 100%;
+  z-index: 3;
+}
+#ground .Four-B-tree:first-child {
+  position: absolute;
+  bottom: 35%;
+  left: 15%;
+  line-height: 22vw;
+  z-index: 2;
+  overflow: hidden;
+  font-weight: 900;
+  font-size: calc(clamp(12.5rem, 33.557vw - 9.018rem, 31.25rem));
+}
+#ground .Four-B-tree:last-child {
+  position: absolute;
+  bottom: 28%;
+  left: 26%;
+  z-index: 2;
+  overflow: hidden;
+  font-weight: 900;
+  font-size: calc(clamp(9.25rem, 23.779vw - 4.509rem, 20.625rem));
+}
+#ground .Four-B-growing-text {
+  position: absolute;
+  top: 21%;
+  left: 21%;
+  color: #000 !important;
+  font-weight: 500;
+  z-index: 1;
+  overflow: hidden;
+  font-size: calc(3em + 0.5vw + 21px);
+}
+#ground .Four-B-tree-text {
+  position: absolute;
+  bottom: 16%;
+  right: 7%;
+  overflow: hidden;
+  z-index: 3;
+  font-size: calc(5em + 0.5vw + 21px);
+}
+/* #ground .mountain-img {
+  transform: translateY(35vh);
+}
+#ground .tree-img {
+  transform: translateY(45vh);
+}
+#ground .oneB-tree-char {
+  transform: translateY(35vh);
+  opacity: 0;
+}
+#ground .oneB-growing-char {
+  transform: translateY(17vh);
+} */
+
+
+.blend-testimonial {
+  width: 100vw;
+  z-index: 9;
+  height: 65vh;
+  top: -7vw;
+  position: absolute;
+}
+
+.blend-testimonial img:nth-child(2){
+  position: absolute;
+  width: 100%;
+ top: 20%;
+}
+.blend-testimonial img:nth-child(3) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.blend-testimonial .blend-img-text {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  top: 29%;
+}
+.blend-testimonial .blend-img-text p:first-child {
+  margin-bottom: -15px;
+}
+.blend-testimonial .blend-img-text h2{
+  font-size: calc(clamp(1.125rem, 2.692vw + 0.519rem, 3.75rem));
+  font-weight: 600;
+  text-align: center;
+  background-image: linear-gradient( to right, #002368, #0066FF);
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.contact-us-footer-btn {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  color: #fff;
+  padding: 0.5vw 1.2vw;
+  border-radius: 10px;
+  background: linear-gradient(352deg, rgb(0 135 255) 22%, rgb(0 217 255) 98%);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+@media (max-width: 1400px){}
+@media (max-width: 1280px){}
+@media (max-width: 1199px){
+  .blend-testimonial { width: 100vw; z-index: 9; height: 36vh; top: -14vh; position: absolute; } 
+  .blend-testimonial .blend-img-text p {font-size: calc(clamp(1.563rem, 1.847vw + 1.193rem, 2.375rem));line-height: 6vh;}
+  .FourB { height: 280vh; }
+  .FB-second-cloud { position: absolute; top: 4vh; left: -2vw; }
+  .FB-first-cloud { position: absolute; top: 36vh; right: 5vw; }
+  .Indiaimage { position: relative; top: 71vh; width: 56%; left: 8vw; }
+  .smart-device { position: relative; top: 129vh; width: 33%; left: 23vw; }
+  .FB-third-cloud { position: absolute; top: 99vh; width: 33vw; left: 1; }
+  .FB-fourth-cloud { position: absolute; top: 129vh; width: 33vw; right: 0; }
+  .FB-fifth-cloud { position: absolute; top: 163vh; width: 33vw; left: 66%; }
+  .technology .Four-B-unicorn-text { overflow: hidden; line-height: 2vh; }
+.technology .fourb-technology { position: absolute; bottom: -9%; width: 22vw; right: -45%; font-size: calc(clamp(1.875rem, 2.874vw - 0.994rem, 4.375rem)); }
+  .technology { position: relative; width: 45%; top: 182vh; left: 5vw; }
+
+}
+@media (max-width: 991px){
+
+.FB-first-cloud {
+  display: none;
+}
+.smart-device .Four-B-connecting-text {
+  top: 3%;
+}
+.smart-device .Four-B-devices:first-child {
+  line-height: 30vw;
+}
+.smart-device .Four-B-devices:last-child {
+  position: absolute;
+  right: -121%;
+  bottom: 45%;
+}
+.smart-device .fourb-smart-text {
+  position: absolute;
+  bottom: 19%;
+  right: -101%;
+}
+#ground .Four-B-growing-text {
+  position: absolute;
+  top: 19%;
+  left: 21%;
+  color: #000 !important;
+  font-weight: 500;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 38px;
+}
+#ground .Four-B-tree-text {
+  position: absolute;
+  bottom: 16%;
+  right: 7%;
+  overflow: hidden;
+  z-index: 3;
+  font-size: 63px;
+}
+#ground .Four-B-tree:last-child {
+  position: absolute;
+  top: 31%;
+  left: 27%;
+  z-index: 2;
+  overflow: hidden;
+  font-weight: 900;
+  font-size: 117px;
+}
+.technology .Four-B-technology:last-child {
+  font-size: calc(clamp(6.875rem, 11.186vw - 0.298rem, 13.125rem));
+  font-weight: 800;
+  position: absolute;
+  bottom: 72%;
+  right: -35%;
+}
+.technology .fourb-technology {
+  position: absolute;
+  bottom: -9%;
+  width: 38vw;
+  right: -83%;
+  font-size: calc(clamp(1.875rem, 2.874vw - 0.994rem, 4.375rem));
+}
+.Indiaimage .fourb-indain-touching {
+  position: absolute;
+  bottom: 129%;
+  left: 19%;
+  font-size: calc(clamp(1.875rem, 4.474vw - 0.994rem, 4.375rem));
+  font-weight: 300;
+  overflow: hidden;
+}
+.Indiaimage .Four-B-indian:last-child {
+  position: absolute;
+  bottom: 34%;
+  left: 21%;
+  font-size: 79px;
+  font-weight: 800;
+  overflow: hidden;
+}
+.Indiaimage .Four-B-indian:first-child {
+  line-height: 23vw;
+}
+}
+@media (max-width: 767px){
+  .FB-second-cloud {
+    position: absolute;
+    top: 4vh;
+    width: 50%;
+    left: 36vw;
+}
+  .Indiaimage {
+    width: 60%;
+  }
+  .FourB { height: 200vh; }
+  .blend-testimonial img:nth-child(2) {
+    top: 50%;
+  }
+  .blend-testimonial .blend-img-text p {
+    font-size: 15px;
+  }
+  .FB-first-cloud {
+    display: none;
+  }
+  .Indiaimage {
+    position: relative;
+    top: 51vh;
+    width: 56%;
+    left: 8vw;
+}
+  .Indiaimage .Four-B-indian:first-child {
+    font-size: 120px;
+    line-height: 15vh;
+  }
+  .smart-device {
+    position: relative;
+    top: 84vh;
+    width: 33%;
+    left: 23vw;
+}
+.technology {
+  position: relative;
+  width: 49%;
+  top: 137vh;
+  left: 5vw;
+}
+  .Indiaimage .Four-B-indian:last-child {
+    font-size: 43px;
+  }
+  .Indiaimage .fourb-indain-touching {
+    font-size: 15px;
+    bottom: 150%;
+  }
+  .Indiaimage .Four-B-indian-text {
+    font-size: 20px;
+    right: -32%;
+}
+  .smart-device .Four-B-connecting-text {
+    font-size: 18px;
+    top: -10%;
+    right: -65%;
+  }
+  .smart-device .Four-B-devices:first-child {
+    font-size: 120px;
+    line-height: 29vw;
+    right: -25%;
+  }
+  .smart-device .Four-B-devices:last-child {
+    font-size: 43px;
+    right: -120%;
+    bottom: 55%;
+  }
+  .smart-device .fourb-smart-text {
+    bottom: 30%;
+  }
+  .smart-device .Four-B-smart-text {
+    font-size:15px;
+  }
+  .technology .Four-B-technology:first-child {
+    font-size: 120px;
+  }
+  .technology .Four-B-technology:last-child {
+    font-size: 41px;
+    bottom: 74%;
+    left: 29%;
+  }
+  .technology .fourb-technology {
+    font-size: 15px;
+    bottom: -9%;
+    width: 45vw;
+    right: -94%;
+  }
+  #ground .mountain-img {
+    bottom: -13%;
+  }
+  #ground .Four-B-tree:first-child {
+    font-size: 120px;
+  }
+  #ground .Four-B-tree:last-child {
+    font-size: 50px;
+    left: 31%;
+  }
+  #ground .Four-B-growing-text {
+    font-size: 18px;
+    top: 15%;
+  }
+  #ground .Four-B-tree-text {
+    font-size: 25px;
+    z-index: 25;
+  }
+}
+@media (max-width: 667px){
+  .Indiaimage .Four-B-indian:last-child {
+    font-size: 43px;
+    left: 18%;
+}
+.smart-device .Four-B-devices:last-child {
+  font-size: 43px;
+  right: -104%;
+  bottom: 55%;
+}
+.smart-device .fourb-smart-text {
+  bottom: 29%;
+  right: -81%;
+}
+.technology .Four-B-technology:last-child {
+  font-size: 41px;
+  bottom: 74%;
+  right: -7%;
+}
+}
+@media (max-width: 480px){
+  .technology {
+    position: relative;
+   width: 48%;
+    top: 124vh;
+    left: 5vw;
+  }
+.FourB {
+  position: relative;
+  height: 120vh;
+  font-family: "Ubuntu", sans-serif;
+
+  }
+  .Indiaimage {
+
+    top: 22%;
+   
+}
+.oneB-devices-char {
+  opacity: 1;
+  transform: 0;
+}
+.oneB-indian-char {
+  opacity: 1;
+}
+.smart-device {
+  position: relative;
+  top: 30%;
+  width: 33%;
+  left: 23vw;
+}
+.technology {
+  position: relative;
+  width: 48%;
+  top: 40%;
+  left: 5vw;
+}
+.oneB-technology-char {
+  opacity: 1;
+  transform: translate(0);
+}
+.technology .Four-B-technology:last-child {
+  font-size: 41px;
+  bottom: 79%;
+  right: -7%;
+}
+}
+@media (max-width: 360px){}

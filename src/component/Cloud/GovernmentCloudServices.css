@@ -1,0 +1,987 @@
+:root {
+
+}
+
+.bgBlack {
+    background: #000;
+}
+.GovCloudSerbanner-hight {
+    overflow-x: hidden;
+}
+.bannerGov {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* overflow-x: hidden; */
+}
+
+/* .Government-Cloud-Services-banner {
+    background: url(../../images/cloud/GovernmentCloudServices/GovernmentCloudServices.png) top center no-repeat;
+    width: 100%;
+    background-size: cover;
+
+} */
+
+.GovCloudSerbanner-hight img.bannerImg {
+    width: 100%;
+    position: absolute;
+    bottom: -7%;
+    left: 0;
+}
+
+/* .GovCloudServices-container img {
+    position: absolute;
+    left: 31%;
+    bottom: 10%;
+} */
+
+.GovCloudServices-container {
+    position: relative;
+    padding: 0 7vw;
+}
+.GovCloudServices-container  .government-cta {
+    text-align: center;
+    margin-top: 6vw;
+}
+.GovCloudServices-container  .government-cta2 {
+    text-align: center;
+    margin-top: 1vw;
+}
+.government-cta2 .CTA-button .hover-text {
+    --animation-color : #DE9B23
+}
+.GovCloudServices-container  .government-cta2 .CTA-button .hover-text {
+    --animation-color : #DE9B23
+}
+.GovCloudServices-container  .government-cta .CTA-button .hover-text {
+        /* color: #DE9B23; */
+        --animation-color : #DE9B23
+}
+.GovCloudServices-head {
+    position: relative;
+    padding: 17vw 0vw 4vw 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.govCloud-heading {
+    text-align: center;
+}
+
+.govCloud-heading h1 {
+    position: relative;
+    background: linear-gradient(90deg, #DE9B23 0.37%, #FCCF5A 10.28%, #FFD45F 48.69%, #DE9B23 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: calc(clamp(1.5rem, 2.573vw - 0.15rem, 2.938rem));
+    margin: -50px auto 0;
+    text-align: center;
+    padding: 0;
+    font-weight: 600;
+    width: 70%;
+    line-height: 54px;
+}
+
+.govCloud-heading img.govLogo {
+    width: 361px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.govCloud-heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    transform: translate(0%, 0px);
+}
+
+.didYouKnow_section {
+    background: url(/src/images/cloud/GovernmentCloudServices/didYouKnow.svg) top center no-repeat;
+    width: 100%;
+    height: 320px;
+    /* min-height: 350px; */
+    /* background-size: 100%; */
+    margin: 5vw 0;
+}
+
+.twoSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.twoSection h3 {
+    font-size: calc(clamp(1.125rem, 0.671vw + 0.695rem, 1.5rem));
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+.twoSection h3 span {
+    color: #FFB800;
+    font-weight: 600;
+}
+
+.twoSection div.leftSection_text {
+    width: 40%;
+    margin-top: 2vw;
+    text-align: end;
+}
+
+
+.twoSection div.rightSection_text {
+    width: 40%;
+    margin-top: 2vw;
+}
+
+.twoSection div.rightSection_text h3 {
+    width: 70%;
+}
+
+.leftSection_text {
+    text-align: end;
+    padding-right: 45px;
+}
+
+.govInitiatives {
+    padding: 2vw 0;
+}
+.govInitiatives .heading {
+    position: relative;
+    width: 100%;
+}
+
+.govInitiatives h3 {
+    font-size: calc(clamp(1.5rem, 3.132vw - 0.508rem, 3.25rem));
+    width: 75%;
+    margin: 0 auto 5vw;
+    color: #FFF;
+    padding: 0 0 2vw 0;
+    text-align: center;
+    font-weight: 400;
+    line-height: 55px;
+}
+
+.govInitiatives h3 span {
+    font-weight: 600;
+}
+
+.govInitiatives_dflex {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.govInitiatives_img {
+    width: 35%;
+}
+
+.govInitiatives_info {
+    width: 65%;
+}
+
+.govInitiatives_info strong {
+    font-size: calc(clamp(0.875rem, 0.895vw + 0.301rem, 1.375rem));
+    color: #FFF;
+    font-weight: 400;
+    position: relative;
+    padding: 0 0 0 15px;
+    display: block;
+    margin: 0 0 15px 0;
+}
+
+.govInitiatives_info strong:after {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    content: "";
+    border-radius: 50%;
+    background: #FFB800;
+    width: 5px;
+    height: 5px;
+}
+
+.mudraLoan_Img {
+    width: 100%;
+    height: 100%;
+}
+
+.govInitiatives_info span {
+    color: #FFB800;
+    font-weight: 600;
+}
+
+
+
+
+.govAgencySolution {
+    padding: 5vw 0;
+    position: relative;
+}
+.govAgencySolution .heading {
+    position: relative;
+    width: 100%;
+}
+
+.govAgencySolution h2 {
+    font-size: calc(clamp(1.5rem, 3.132vw - 0.508rem, 3.25rem));
+    width: 75%;
+    margin: 0 auto 5vw;
+    color: #FFF;
+    padding: 0 0 2vw 0;
+    text-align: center;
+    font-weight: 400;
+    line-height: 55px;
+}
+
+.govAgencySolution h2 span {
+    font-weight: 600;
+}
+
+.govAgencySolution_info {
+    position: relative;
+    margin: 2vw 0 0 0;
+    background: url(../../images/cloud/GovernmentCloudServices/GovAgencySolution.svg) top center no-repeat;
+    height: 623px;
+    width: 100%;
+    background-size: auto;
+}
+
+.govAgencySolution_info strong {
+    font-size: calc(clamp(1.5rem, 0.895vw + 0.926rem, 2rem));
+    color: #FFB800;
+}
+
+.govAgencySolution_info p {
+    font-size: calc(clamp(0.875rem, 0.671vw + 0.445rem, 1.25rem));
+    color: #FFF;
+    font-weight: 400;
+}
+
+.govAgencySolution_info1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    text-align: end;
+    transform: translate(160px, 20px);
+}
+
+.govAgencySolution_info2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 360px;
+    text-align: start;
+    transform: translate(-30px, 20px);
+}
+
+.govAgencySolution_info3 {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 360px;
+    text-align: end;
+    transform: translate(30px, 230px);
+}
+
+.govAgencySolution_info4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 360px;
+    text-align: start;
+    transform: translate(40px, 200px);
+}
+
+.govAgencySolution_info5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 360px;
+    text-align: start;
+    transform: translate(-100px, 430px);
+}
+
+
+.governmentAgency {
+    padding: 4vw 0;
+    position: relative;
+}
+.governmentAgency .heading {
+    position: relative;
+    width: 100%;
+}
+.governmentAgency h3 {
+    font-size: calc(clamp(1.5rem, 3.132vw - 0.508rem, 3.25rem));
+    width: 65%;
+    margin: 0 auto 5vw;
+    color: #FFF;
+    padding: 0 0 1vw 0;
+    text-align: center;
+    font-weight: 400;
+    line-height: initial;
+}
+
+.governmentAgency h3 span {
+    font-weight: 600;
+}
+
+
+.governmentAgency_dflex {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.governmentAgency_img {
+    width: 35%;
+    position: relative;
+}
+
+.governmentAgency_img::after {
+    width: 50px;
+    height: 50px;
+    filter: blur(30px);
+    background-color: #FFB800;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.governmentAgency_info {
+    width: 65%;
+}
+
+.governmentAgency_info strong {
+    font-size: calc(clamp(0.875rem, 1.566vw - 0.129rem, 1.75rem));
+    color: #FFF;
+    font-weight: 600;
+    position: relative;
+    padding: 0px;
+    display: block;
+    margin: 0 0 15px 0;
+}
+
+.governmentAgency_info p {
+    font-size: calc(clamp(0.875rem, 1.119vw + 0.158rem, 1.5rem));
+    color: #FFF;
+    font-weight: 300;
+    position: relative;
+    padding: 0;
+    display: block;
+    margin: 0 0 0 0;
+}
+
+
+.governmentAgency_Img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 99;
+}
+
+.governmentAgency_info p span {
+    color: #FFB800;
+    font-weight: 600;
+}
+
+
+/***/
+.DigitallyEmpoweredgovernment {
+    padding: 5vw 0;
+    position: relative;
+}
+
+.DigitallyEmpoweredgovernment h3 {
+    font-size: calc(clamp(1.5rem, 3.132vw - 0.508rem, 3.25rem));
+    width: 65%;
+    margin: 0 0 55px;
+    color: #FFF;
+    padding: 0;
+    text-align: center;
+    font-weight: 400;
+    line-height: calc(clamp(3.125rem, 2.796vw + 1.332rem, 4.688rem));
+}
+
+.DigitallyEmpoweredgovernment h3 span {
+    font-weight: 600;
+    color: #DE9B23;
+}
+
+
+.DigitallyEmpoweredgovernment_dflex {
+    display: flex;
+    align-items: start;
+    gap: 80px;
+}
+
+.DigitallyEmpoweredgovernment_img {
+    width: 45%;
+    position: relative;
+}
+
+
+.DigitallyEmpoweredgovernment_info {
+    width: 65%;
+}
+
+.DigitallyEmpoweredgovernment_info strong {
+    font-size: calc(clamp(0.875rem, 0.895vw + 0.301rem, 1.375rem));
+    color: #FFF;
+    font-weight: 400;
+    position: relative;
+    padding: 0 0 0 15px;
+    display: block;
+    margin: 0 0 15px 0;
+}
+
+.DigitallyEmpoweredgovernment_info strong:after {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    content: "";
+    border-radius: 50%;
+    background: #FFB800;
+    width: 5px;
+    height: 5px;
+}
+
+.DigitallyEmpoweredgovernment_info p {
+    font-size: calc(clamp(0.875rem, 1.119vw + 0.158rem, 1.5rem));
+    color: #FFF;
+    font-weight: 300;
+    position: relative;
+    padding: 0;
+    display: block;
+    margin: 0 0 0 0;
+}
+
+.DigitallyEmpoweredgovernment_info strong span {
+    color: #FFB800;
+    font-weight: 600;
+}
+
+.DigitallyEmpoweredgovernment_Img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 99;
+}
+/* --------------------------------------------------------------------------------------------------------------------- */
+.realWorlImpact {
+    position: relative;
+    width: 100%;
+    padding: 5vw 4vw;
+
+}
+.realWorlImpact .heading {
+    position: relative;
+    width: 100%;
+}
+.realWorlImpact h3 {
+    font-size: calc(clamp(1.5rem, 3.132vw - 0.508rem, 3.25rem));
+    width: 100%;
+    margin: 0 auto 55px;
+    color: #FFF;
+    padding: 0 0 1vw 0;
+    text-align: center;
+    font-weight: 400;
+    line-height:inherit;
+}
+.realWorlImpact h3 span {
+    font-weight: 600;
+}
+.list-of-GCC-logo {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    align-items: center;
+}
+.didYouKnowMobile {
+    display: none;
+}
+.Last-cta-section {
+    position: relative;
+    width: 100%;
+   
+}
+.Last-cta-section .para{
+    font-size: calc(clamp(1.25rem, 2.461vw - 0.328rem, 2.625rem));
+    text-align: center;
+    margin-bottom: 2vw;
+    width: 66%;
+}
+.last-section-cta {
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Last-cta-section .LastCTA-section-btn {
+    font-size: calc(clamp(0.938rem, 2.349vw - 0.569rem, 2.25rem));
+    color: #FFB800; 
+    font-weight: 600;
+}
+.Last-cta-section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+}
+.via-gov-500 {
+    --tw-gradient-gov: var(--tw-gradient-from), #e9da0e var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+.bg-gradient-to-l {
+    background-image: linear-gradient(to right, var(--tw-gradient-gov));
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+.banking-reimagined {
+    position: relative;
+    width: 100%;
+    padding: 5vw 5vw;
+    background-color: #00000b;
+}
+.banking-reimagined .heading {
+    width: 100%;
+    position: relative;
+}
+.banking-reimagined .heading h3{
+    padding-bottom: 1vw;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+   font-size: calc(clamp(1.625rem, 2.908vw - 0.24rem, 3.25rem));
+}
+.banking-reimagined .heading h3 span {
+    font-weight: 600;
+}
+.bank-reimagined-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vw;
+    gap: 5vw;
+    padding: 0 2vw;
+}
+.bank-reimagined-list .BR-list{
+    display: flex;
+    gap: 2vw;
+    cursor: pointer;
+    align-items: center;
+}
+.bank-reimagined-list .BR-list .bank1-img, .bank-reimagined-list .BR-list .bank2-img, .bank-reimagined-list .BR-list .bank3-img {
+    width: 8%;
+}
+.bank-reimagined-list .BR-list .list-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.bank-reimagined-list .BR-list .list-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+.bank-reimagined-list .BR-list .list-content .arrow {
+    font-size: calc(clamp(2.5rem, 4.474vw - 0.369rem, 5rem));
+}
+.bank-reimagined-list .BR-list .list-content p:first-child {
+    font-size: calc(clamp(0.938rem, 1.678vw - 0.138rem, 1.875rem));
+    font-weight: 600;
+    width: 80%;
+    padding-bottom: 0.5vw;
+}
+.bank-reimagined-list .BR-list .list-content p:last-child {
+    font-size: calc(clamp(1.125rem, 0.671vw + 0.695rem, 1.5rem));
+    font-weight: 400;
+
+    padding-bottom: 0.5vw;
+}
+
+.bank-reimagined-list .BR-list .list-content div {
+    width: 70%;
+    margin-bottom: 0.5vw;
+}
+.bank-reimagined-list .BR-list .list-content p:first-child {
+    color: #FFB800;
+}
+.banking-reimagined::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 38%;
+    border-radius: 47%;
+    filter: blur(124px);
+    z-index: -2;
+    background: linear-gradient(94deg, rgba(0, 230, 255, 1) 13%, rgba(0, 102, 255, 1) 100%);
+    width: 8vw;
+    height: 39%;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Mobile Responsive css start */
+
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1280px) {
+    .govAgencySolution_info1 {
+        transform: translate(0px, 20px);
+        width: 400px;
+    }
+
+    .govAgencySolution_info2 {
+        transform: translate(50px, 20px);
+        width: 300px;
+    }
+
+    .govAgencySolution_info3 {
+        transform: translate(-50px, 230px);
+        width: 300px;
+    }
+
+    .govAgencySolution_info4 {
+        transform: translate(70px, 200px);
+        width: 250px;
+
+    }
+
+    .govAgencySolution_info5 {
+        transform: translate(-20px, 430px);
+        width: 300px;
+
+    }
+    .DigitallyEmpoweredgovernment h2  {
+        padding: 0 5vw;
+    }
+}
+
+
+@media (max-width: 1199px) {
+
+    .bannerGov {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+   .GovCloudSerbanner-hight .GovCloudServices-container {
+        margin-top: 140px;
+    }
+    .govAgencySolution .GovCloudServices-container {
+        margin-top: 60px;
+    }
+    .governmentAgency .GovCloudServices-container {
+        margin-top: 60px;
+    }
+    .DigitallyEmpoweredgovernment .GovCloudServices-container {
+        margin-top: 60px;
+    }
+    .govCloud-heading {
+        position: relative;
+        left: 0;
+        padding: calc(clamp(4.375rem, 4.622vw + 3.292rem, 6.25rem)) 0 calc(clamp(8.75rem, 26.194vw + 2.611rem, 19.375rem)) 0;
+        z-index: 99;
+        width: 100%;
+    }
+    .govAgencySolution_info1 {
+        transform: translate(0px, 20px);
+        width: 330px;
+    }
+
+    .govAgencySolution_info2 {
+        transform: translate(50px, 20px);
+        width: 230px;
+    }
+
+    .govAgencySolution_info3 {
+        transform: translate(-10px, 230px);
+        width: 220px;
+    }
+
+    .govAgencySolution_info4 {
+        transform: translate(70px, 200px);
+        width: 170px;
+
+    }
+
+    .govAgencySolution_info5 {
+        transform: translate(-20px, 430px);
+        width: 230px;
+
+    }
+    .bank-reimagined-list .BR-list .bank1-img, .bank-reimagined-list .BR-list .bank2-img, .bank-reimagined-list .BR-list .bank3-img {
+        width: 20%;
+    }
+}
+
+@media (max-width: 991px) {
+    .govCloud-heading h1,
+    .govInitiatives h2,
+    .govAgencySolution h2,
+    .governmentAgency h2,
+    .DigitallyEmpoweredgovernment h2 {
+        line-height: 28px;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .govCloud-heading img.govLogo {
+        width: 241px;
+    }
+
+    .govCloud-heading {
+        top: 0%;
+    }
+
+    .bannerGov {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .twoSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .twoSection div.leftSection_text,
+    .twoSection div.rightSection_text {
+        width: 100%;
+        margin-top: 2vw;
+        text-align: center;
+        padding: 0;
+    }
+
+    .didYouKnow_section {
+        background: none;
+    }
+.DigitallyEmpoweredgovernment h2  {
+    padding: 0;
+}
+    .twoSection div.rightSection_text h3 {
+        width: 100%;
+    }
+
+    .didYouKnowMobile {
+        display: block;
+        margin: 5vw 0;
+    }
+
+    .govInitiatives_dflex {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        margin: 5vw 0;
+    }
+
+    .govInitiatives_img,
+    .govInitiatives_info {
+        width: 100%;
+
+    }
+
+    .govAgencySolution_info1,
+    .govAgencySolution_info2,
+    .govAgencySolution_info3,
+    .govAgencySolution_info4,
+    .govAgencySolution_info5 {
+        position: relative;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        border-bottom: solid 1px #e2a30026;
+    }
+
+    .govAgencySolution_info {
+        background: none;
+        row-gap: 35px;
+        display: inline-grid;
+    }
+
+    .governmentAgency_dflex,
+    .DigitallyEmpoweredgovernment_dflex {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        flex-wrap: wrap;
+        row-gap: 0px;
+        margin-top: 15px;
+    }
+
+    .governmentAgency_img,
+    .governmentAgency_info,
+    .DigitallyEmpoweredgovernment_img,
+    .DigitallyEmpoweredgovernment_info {
+        width: 100%;
+    }
+
+    .DigitallyEmpoweredgovernment_info strong:after,
+    .govInitiatives_info strong:after {
+        top: 8px;
+    }
+
+    .GovCloudSerbanner-hight img.bannerImg {
+        width: 100%;
+        position: absolute;
+        bottom: -17%;
+        left: 0;
+        opacity: 1;
+    }
+
+    .DigitallyEmpoweredgovernment, .governmentAgency, .govAgencySolution, .govInitiatives {
+        padding: 4vw 0;
+        position: relative;
+    }
+    .govCloud-heading h1 br{ display: none;}
+    .realWorlImpact h2{ line-height: inherit;}
+    .last-section-cta {
+        position: relative;
+        bottom: 25%;
+    }
+
+    .Last-cta-section .para {
+        text-align: center;
+        width: 95%;
+    }
+
+    .Last-cta-section::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 230px;
+    }
+
+    .govInitiatives_img {
+        order: 2;
+    }
+    .governmentAgency_img {
+        order: 2;
+        margin-top: 25px;
+    }
+
+    .DigitallyEmpoweredgovernment h2 {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+
+   
+    .govCloud-heading {
+        top: 0%;
+    }
+
+    .bannerGov {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .GovCloudSerbanner-hight img.bannerImg {
+        width: 100%;
+        position: absolute;
+        bottom: -8%;
+        left: 0;
+        transform: scale(1.8);
+        opacity: 1;
+    }
+
+    .govInitiatives h1 br{ display: none;}
+    .DigitallyEmpoweredgovernment, .governmentAgency, .govAgencySolution, .govInitiatives {
+        padding: 5vw 0;
+        position: relative;
+    }
+    
+    .list-of-GCC-logo {
+        padding: 15px;
+    }
+    .Last-cta-section .background-img {
+        position: absolute;
+        top: 0;
+    }
+
+
+   
+}
+
+@media (max-width: 667px) {
+    .bannerGov {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .bank-reimagined-list .BR-list .bank1-img, .bank-reimagined-list .BR-list .bank2-img, .bank-reimagined-list .BR-list .bank3-img {
+        width: 25%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .bannerGov {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .last-section-cta {
+        position: relative;
+        bottom: 0;
+        padding-top: 15vw;
+        padding-bottom: 10vw;
+    }
+    .govInitiatives h3 {
+        line-height: 35px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .governmentAgency h3 {
+        line-height: 35px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .governmentAgency .heading {
+        padding: 0 20px;
+    }
+    .DigitallyEmpoweredgovernment h3 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        line-height: 30px;
+    }
+    .DigitallyEmpoweredgovernment .GovCloudServices-container {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 360px) {}
+
+/***/
+.background-img img{ width: 100%;}

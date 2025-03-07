@@ -1,0 +1,287 @@
+
+/* ------------------------------------------------Counter ------------------------------------------- */
+.counter-CTA button {
+  font-size: calc(clamp(0.938rem, 1.007vw + 0.292rem, 1.5rem));
+}
+.sixth {
+  position: relative;
+  width: 100vw;
+  height: 35vw;
+  background-color: #010614;
+}
+.second-counter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  width: 100%;
+  margin-top: 5vh;
+  
+  }
+  .third-counter {
+    display: flex;
+    justify-content: center;
+  }
+  .counter-span {
+    width: 20%;
+  }
+  .second-number-counter {
+    text-align: center;
+  }
+  
+  .company_name {
+    font-size: 5vw;
+    color: #000;
+  }
+  .client_name {
+    font-size: 2vw;
+  }
+  .Earthdiv {
+    position: "relative";
+     width: "100vw";
+     top: 8%;
+     height: 100vh;
+       background: "#010614";
+        overflow : "hidden"
+  }
+  .Earthdiv::before {
+    content: "";
+    position: absolute;
+    top: 16%;
+    left: 0;
+    width: 100%;
+    height: 11vw;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 32, 1) 72%);
+}
+  
+  .globe {
+    position: relative;
+    z-index: 0;
+    /* top: -2vh; */
+    /* top: -96px; */
+    background-color: #010614;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .bottom-img-globe {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .slider_text {
+    font-size: 2vw;
+  }
+  
+  .esdsCounter {
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;
+    /* background: rgb(14, 50, 163); */
+   background-color: #010614;
+    width: 100%;
+
+  }
+  
+  .head-count {
+    position: relative;
+    margin-bottom: 10vh;
+    text-align: center;
+  }
+  .head-count .year {
+    position: absolute;
+    top: 2vh;
+    font-size: calc(clamp(1.875rem, 2.796vw + 0.082rem, 3.438rem));
+    font-weight: 600;
+    left: 56vw;
+    background-image: linear-gradient(44deg, #0085FF 17%, #00FFF0 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  .esdsHeading h1 {
+    font-size: 9vw;
+    color: #b6b4b4;
+    margin: 0 0 0px 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 900;
+  
+    background-image: linear-gradient(40deg, #0085FF 32%, #00FFF0 69%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  
+  }
+  .earthmodel  { 
+    width: 100vw;
+   height: 100vh;
+  /* background: #fff; */
+   transform: translateY(15vw);
+  }
+  
+  .count-heading-top, .count-heading-bottom {
+    color: #fff;
+    display: flex;
+    font-size: 1.5vw;
+    font-weight: 300;
+    justify-content: center;
+  }
+  .count-heading-bottom {
+    margin-bottom: 5vh;
+  }
+  .counter-col {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .esdsHeading {
+    font-family: "clash-display";
+    margin-bottom: -1vh;
+  }
+  .esdsHeading p {
+    font-size: clamp(0.875rem, 0.447vw + 0.588rem, 0.8rem);
+    color: #FFF;
+    margin: -11px auto 46px;
+    padding: 0;
+    width: 50%;
+  }
+  .counter-wrapper {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    font-family: "clash-display";
+    font-size: 2.2vw;
+    color: #FFF;
+    justify-content: center;
+    font-weight: 500;
+    
+  }
+  
+  
+  .counter-wrapper span{
+    background-image:  linear-gradient( to right, #00F0FF, #00C2FF);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  background-position: center;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  
+  }
+  
+  
+  .esdsHeading h1 span {
+    font-size: clamp(2.125rem, 2.119vw + 0.408rem, 2.75rem);
+    margin: 15px 0px 0px 10px;
+    padding: 0;
+    font-weight: 200;
+  }
+  
+  
+  .esdsCounter_text{
+    font-size: 1vw;
+    margin: 0 ;
+    font-weight: 300;
+    padding: 5px 10px;
+    width: 13vw;
+    text-align: center;
+    line-height: 25px;
+  }
+  
+  .second-counter-row {
+    display: flex;
+    align-items: start;
+    padding: 0 3vw;
+  }
+  .third-counter-col {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .third-counter-row {
+    display: flex;
+    position: absolute;
+    top: 6vh;
+    z-index: 9;
+    width: 100vw;
+    padding:  0 3vw;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .earth-bg-blend {
+    position: relative;
+  }
+  .earth-bg-blend img {
+    width: 100%;
+  }
+  .earth-bg-blend::before {
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(180deg, rgba(1, 6, 20, 1) 0%, rgba(6, 3, 27, 0) 100%);
+}
+
+
+  @media (max-width: 1400px){}
+@media (max-width: 1280px){}
+@media (max-width: 1199px){
+  .sixth { 
+    height: auto;
+  }
+  .esdsHeading h1 { display: block ;font-size: calc(clamp(6.25rem, 14.205vw + 3.409rem, 12.5rem)); }
+  .text-center { display: flex; justify-content: center; }
+  .head-count .year { position: relative; font-size: calc(clamp(1.125rem, 2.415vw + 0.642rem, 2.188rem)); margin-top: 5vh; font-weight: 500; top: 0; left: 0; }
+  .count-heading-top { font-weight: 500; margin-bottom: 1vh; }
+  .count-heading-top, .count-heading-bottom { font-size: calc(clamp(0.938rem, 2.131vw + 0.511rem, 1.875rem)); }
+  .counter-wrapper {font-size: 30px;}
+  .second-counter-row { display: flex; align-items: start; padding: 0 3vw; flex-wrap: wrap; row-gap: 5vh;}
+  .counter-col { width: 25%; }
+  .esdsCounter_text {font-size: calc(clamp(0.938rem, 0.284vw + 0.881rem, 1.063rem)); width: 100%; padding: 0 2vh;}
+  .globe {
+    height: auto;
+  }
+}
+@media (max-width: 991px){
+  .counter-col {
+    width: 33%;
+}
+
+}
+@media (max-width: 767px){
+  .counter-col {
+    width: 50%;
+}
+.counter-wrapper {
+  font-size: 23px;
+}
+}
+@media (max-width: 667px){}
+@media (max-width: 480px){}
+@media (max-width: 360px){}

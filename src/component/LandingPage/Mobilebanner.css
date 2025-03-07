@@ -1,0 +1,93 @@
+.mobile-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.space-bg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.mobile-splash-screen {
+    position: absolute;
+    top: 16%;
+    left: 0;
+}
+.mobile-banner-container {
+   
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.mobile-banner-container .top-server {
+    width: 100%;
+    height: 50%;
+}
+
+.mobile-first-screen {
+    position: absolute;
+    opacity: 0;
+    bottom: 19%;
+    left: 0;
+}
+.mobile-second-screen {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    bottom: 17%;
+}
+.mobile-third-screen {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    bottom: 14%;
+}
+.mobile-fourth-screen {
+    position: absolute;
+    opacity: 0;
+    bottom: 14%;
+}
+.banner-content {
+    height: 100%;
+   position: absolute;  
+   top: 0%;
+   width: 100%;
+    padding: 4vh 5vw;
+}
+.splash-screen-first p , .mobile-screen-first p ,.mobile-screen-third p,.mobile-screen-fifth p,.mobile-screen-seventh p {
+    font-size: calc(clamp(1.875rem, 3.551vw + 1.165rem, 3.438rem));
+    padding-bottom: 3vh;
+    text-align: center;
+}
+.splash-screen-second p, .mobile-screen-second p, .mobile-screen-fourth p, .mobile-screen-sixth p, .mobile-screen-eight p{
+    font-size: calc(clamp(1.25rem, 2.841vw + 0.682rem, 2.5rem));
+    padding: 0 8vh;
+    text-align: center;
+}
+.mobile-screen-second p {
+    padding: 0 4vh;
+}
+
+@media (max-width: 1400px){}
+@media (max-width: 1280px){}
+@media (max-width: 1199px){}
+@media (max-width: 991px){}
+@media (max-width: 767px){
+    .splash-screen-first p , .mobile-screen-first p ,.mobile-screen-third p,.mobile-screen-fifth p,.mobile-screen-seventh p {
+        padding: 0 3vw;
+        font-size: 25px;
+        font-weight: 500;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+    .splash-screen-second p, .mobile-screen-second p, .mobile-screen-fourth p, .mobile-screen-sixth p, .mobile-screen-eight p {
+        font-size: 18px;
+        padding: 0 7vw;
+        width: 100%;
+    }
+    .bg-linear-gradient { height: 21%; filter: blur(35px); background: linear-gradient(94deg, rgba(0, 102, 255, 1) 13%, rgba(0, 230, 255, 1) 100%); }
+}
+@media (max-width: 667px){}
+@media (max-width: 480px){}
+@media (max-width: 360px){}

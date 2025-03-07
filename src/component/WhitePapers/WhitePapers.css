@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.anime-list {
+  margin: 0;
+  padding: 5%;
+  color: #fff;
+}
+.anime-list .title {
+  /* text-transform: uppercase; */
+  margin: 0px auto 60px;
+  width: fit-content;
+  max-width: 1170px;
+  text-align: center;
+}
+.anime-list ul li {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  padding: 26px 0px;
+  margin: 0px -12px;
+  opacity: 0.4;
+}
+.anime-list ul li::before,
+.anime-list ul li::after {
+  content: "";
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+}
+.anime-list ul li::after {
+  opacity: 1;
+  width: 0%;
+}
+.anime-list ul li:hover {
+  opacity: 1;
+}
+.anime-list ul li:hover::after {
+  width: 100%;
+}
+.anime-list ul li > div:not(.hover-img) {
+  padding: 0px 12px;
+}
+.anime-list .index {
+  width: calc(100% / 12);
+}
+.anime-list .release-year {
+  width: calc((100% / 12) * 2);
+}
+.anime-list .anime-name {
+  width: calc((100% / 12) * 9);
+}
+.anime-list .genere {
+  width: calc((100% / 12) * 5);
+}
+.anime-list .redirect-link {
+  width: calc((100% / 12) * 2);
+}
+.anime-list .redirect-link a {
+  width: 30px;
+  height: 30px;
+  margin: 0px auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  border-radius: 50%;
+  background: var(--white-color);
+}
+.anime-list .redirect-link svg {
+  color: var(--black-color);
+}
+.anime-list .hover-img {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0%;
+  width: 34vw;
+  height: 34vw;
+}
+.anime-list .hover-img img {
+  transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.anime-list li:hover .hover-img img {
+  opacity: 1;
+}
+
+.ball {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  backdrop-filter: invert(1) grayscale(1);
+  -webkit-backdrop-filter: invert(1) grayscale(1);
+  z-index: 99999;
+}
+
+
+.bannerWhitepapers{ color: #fff;  position: relative; overflow: hidden; width: 100%; height:auto; background: url(../../images/investorReports.png) center center no-repeat; background-size:100%;}
+.headingText h2{ font-size: calc(clamp(1.875rem, 3.356vw - 0.277rem, 3.75rem)); margin: 50px 0 0 0; padding: 0;}
+.headingText p { font-size: calc(clamp(1.125rem, 1.119vw + 0.408rem, 1.75rem)); padding: 0; margin: 0; }
+.headingText { width: 100%; padding: 0 3vw; height: 530px; display: flex; position: relative; z-index: 99; /* align-items: center; */ flex-direction: column; justify-content: center; }
+.downloadButton{ background: #fff; color: #000000; padding: 5px 15px; border-radius: 5px; transition: background-color 0.3s ease, color 0.3s ease; text-wrap: nowrap; }
+.downloadButton:hover { background-color: #007dff; color: #fff; cursor: pointer; }
+
+
+/* Mobile Responsive css start */
+@media (max-width: 1400px){}
+@media (max-width: 1280px){}
+@media (max-width: 1199px){}
+@media (max-width: 991px){
+  .anime-list .anime-name { width: calc((100% / 12) * 8); }
+}
+@media (max-width: 767px){
+.bannerWhitepapers, #WhitePapers .bannerWhitepapers { background: #07111A; }
+.headingText { width: 100%; padding: 0 3vw; text-align: center; height: 350px; display: flex; /* align-items: center; */ flex-direction: column; justify-content: center; align-content: center; }
+.anime-list .anime-name { width: 100%; text-align: left; margin-bottom: 10px; }
+.anime-list .redirect-link{ width: 100%; }
+.bannerWhitepapers:before { content: ""; position: absolute; top: 0%; right: 0; z-index: 9; width: 100%; filter: blur(115px); height: 100vh; background: radial-gradient(circle at 50%,#007dff 2%,#00112600 68%); }
+}
+@media (max-width: 667px){}
+@media (max-width: 480px){}
+@media (max-width: 360px){}

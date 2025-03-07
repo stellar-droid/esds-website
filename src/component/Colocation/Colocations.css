@@ -1,0 +1,1004 @@
+:root {
+    --heading-font-size : calc(clamp(1.875rem, 3.356vw - 0.277rem, 3.75rem));
+}
+
+.CTA-bottom-line {
+    width: 13vw;
+    left: 22%;
+}
+
+.colo-heading {
+    transform:  translateY(-20px) ;
+    opacity: 0;
+}
+.colo-banner-content {
+    position: fixed;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.884);
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+.colo-banner-content .center-btn-colo{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    padding: 0.5vw 1vw;
+}
+.Entry-overlay {
+    position: fixed;
+    width: 100vw;
+ 
+    background-color: #000408d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.Entry-overlay button {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    padding: 0.8vh 0.8vw;
+    font-size: 1.2vw;
+}
+.Colocation-banner {
+    position: relative;
+    width: 100%;
+}
+.Colocation-banner .banner-video {
+    width: 100%;
+    z-index: 0;
+
+}
+.Colocation-banner .banner-video video {
+    position: relative;
+    top: 0;
+    width: 100%;
+    
+}
+
+.Colocation-banner::after {
+    content:  "";
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0,5,14,1) 46%, rgba(0,5,14,0) 95%);
+}
+.Colocation-banner .banner-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5vw;
+    background: linear-gradient(263deg, rgba(0, 4, 20, 1) 59%, rgba(0, 5, 14, 0) 87%);
+}
+.Colocation-banner .banner-content .Manage-secu-banner-text {
+    font-size: calc(clamp(2.188rem, 3.915vw - 0.323rem, 4.375rem));;
+    font-weight: 500;
+    line-height: calc(clamp(3.125rem, 5.593vw - 0.461rem, 6.25rem));
+    text-align: end;
+}
+.Colocation-banner .banner-content h3 span{
+    background-image: linear-gradient(90deg, #00C2FF 42%, #0596FF 50%);
+    background-size: 100%;
+   font-weight: 800;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.Colocation-banner .banner-content p {
+    font-size: calc(0.2em + 1.5vw + 9px);
+    width: 58%;
+    text-align: right;
+    font-weight: 300;
+    padding: 6vh 0;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    margin-left: auto;
+}
+
+
+.Colocation-banner .banner-content .Colo-CTA-btn {
+    text-align: end;
+    margin-top: 2vw;
+}
+
+/* ------------------------------------------------------------------------ */
+.colo-partner {
+    position: relative;
+    width: 100%;
+    padding: 2vh 3vw;
+    background-color: #00050A;
+    
+}
+.colo-partner .heading  {
+    margin-bottom: 8vh;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.colo-partner .heading h3 {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 300;
+}
+.colo-partner .heading h3 span {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+} 
+.colo-partner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    background-color: #00050A;
+    top: -1vh;
+    left: 0;
+}
+.colo-partner .bg-linear-gradient {
+    position: absolute;
+    width: 100%;
+    height: 19%;
+    top: 59%;
+    left: 0;
+    z-index: 0;
+    border-radius: 50%;
+    filter: blur(49px);
+    background: linear-gradient(94deg, rgba(0, 102, 255, 1) 13%, rgba(0, 230, 255, 1) 100%);
+}
+
+  
+
+.powerOfcolocation {
+    position: relative;
+    width: 100%;
+    background-color: #00050E;
+}
+.powerOfcolocation .PowerOfColocation-innerdiv {
+    width: 100%;
+    height: 100%;
+    padding: 3vw 0;
+}
+.powerOfcolocation .PowerOfColocation-innerdiv .colocation-header {
+    padding: 2vw 5vw 5vw 5vw;
+    position: relative;
+}
+.Horizontol-slider {
+    display: flex;
+    margin-top: 5vh;
+    }
+    .Horizontol-slider .slide-list {
+        margin-left: 5vw;
+    }
+    .Horizontol-slider .slide-list .slide-list-inner {
+        display: flex;
+        justify-content: space-around;
+    }
+    .Horizontol-slider .slide-list .slide-list-inner .slide-item {
+        width: 40vw;
+        height: 50vh;
+        /* background-color: aqua; */
+        position: relative;
+        margin: 2vw 2vw;
+    }
+    
+    .Horizontol-slider .slide-list .slide-list-inner .slide-item img {
+        width: 100%;
+        height: 100%;
+    }
+.powerOfcolocation .PowerOfColocation-innerdiv  .Horizontol-slider .slide-list .slide-list-inner .slide-item  {
+    width: 30vw;   
+    margin: 2vw 1vw;
+}
+.powerOfcolocation .PowerOfColocation-innerdiv  .Horizontol-slider  {
+    margin-top: 0;
+}
+
+.powerOfcolocation .PowerOfColocation-innerdiv  .Horizontol-slider .slide-list .slide-list-inner .slide-item  .image-div {
+    width: 100%;
+    height: 36vh;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.powerOfcolocation .PowerOfColocation-innerdiv  .Horizontol-slider .slide-list .slide-list-inner .slide-item .slide-title {
+    font-size:  calc(clamp(0.938rem, 1.678vw - 0.138rem, 1.875rem));
+    padding: 0.7vh 0 0 1vw;
+}
+.powerOfcolocation .PowerOfColocation-innerdiv .colocation-header .third-section-head {
+    font-size: var(--heading-font-size);
+    text-align: center;
+    font-weight: 500;
+    line-height: 3vw;
+    margin-bottom: 2vw;
+    opacity: 0;
+    transform: translateY(-40px);
+}
+.powerOfcolocation .PowerOfColocation-innerdiv .colocation-header .third-section-subtitle {
+    position: absolute;
+    top: 10%;
+    font-size: var(--heading-font-size);
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    line-height: 5vw;
+    left: 0;
+    opacity: 0;
+    padding: 0 13vw;
+    transform: translateY(-40px);
+}
+/* .powerOfcolocation .PowerOfColocation-innerdiv .colocation-header h3 {
+    font-size: var(--heading-font-size);
+    text-align: center;
+    font-weight: 400;
+    line-height: 5vw;
+    margin-bottom: 3vw;
+} */
+
+.powerOfcolocation .PowerOfColocation-innerdiv .colocation-header .third-section-question {
+    font-size: calc(clamp(1.125rem, 1.566vw + 0.121rem, 2rem));
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(-40px);
+}
+
+/* ---------------------------------------------------- */
+.world-class-data-center {
+    position: relative;
+    width: 100%;
+    background-color: #00050E;
+}
+.world-class-data-center .world-class-data-center-innerdiv .header {
+    position: relative;
+    z-index: 2;
+}
+.world-class-data-center .world-class-data-center-innerdiv .header h3 {
+    font-size: var(--heading-font-size);
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+    padding: 0 7vw 1vw 7vw;
+    margin-bottom: 3vw;
+}
+.world-class-data-center .world-class-data-center-innerdiv .header h3 span {
+    font-weight: 600;
+}
+.world-class-data-center .world-class-data-center-innerdiv .header p {
+    font-size: calc(0.2em + 0.5vw + 14px);
+    text-align: center;
+}
+.world-class-data-center .world-class-data-center-innerdiv .Data-center-service-counter {
+    width: 100%;
+    padding: 0 16vw;
+    margin-top: 10vh;
+}
+.world-class-data-center .world-class-data-center-innerdiv .Data-center-service-counter .counter-grid {
+    display: flex;
+    justify-content: space-between;
+}
+.world-class-data-center .world-class-data-center-innerdiv .Data-center-service-counter .counter-grid .counter-box {
+    display: flex;
+    align-items: center;
+}
+.world-class-data-center .world-class-data-center-innerdiv .Data-center-service-counter .counter-grid .counter-box .number span {
+    background-image: linear-gradient(180deg, #00C2FF 42%, #0596FF 50%);
+    background-size: 100%;
+    font-size: calc(0.2em + 1.5vw + 40px);
+    font-weight: 800;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+  .world-class-data-center .world-class-data-center-innerdiv .Data-center-service-counter .counter-grid .counter-box .number-title {
+    font-size: calc(clamp(0.75rem, 1.342vw - 0.111rem, 1.5rem));
+width: 10vw;
+padding-left: 1vw;
+  }
+
+  /* --------------------------------------- */
+  .DC-map {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .DC-map::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 12vh;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 5, 14, 1) -11%, rgba(0, 0, 0, 0) 79%);
+}
+.DC-map::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 6vh;
+    z-index: 2;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 5, 14, 1) 0%, rgba(0, 0, 0, 0) 79%);
+}
+  .DC-map .map-image {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .DC-map .Data-Center .DC-image.hide-map-dc {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+
+  .DC-map .Data-Center .DC-image.show-map-dc {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .DC-map .map-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .DC-map .radial-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 5;
+    left: 0;
+    pointer-events: none;
+    background:radial-gradient(circle, rgba(0, 0, 0, 0) 44%, #000408 84%, #00050A 0%);
+}
+.DC-map .DC-rack {
+    position: absolute;
+ 
+    width: 1.5vw;
+    animation: FloatingMove 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes FloatingMove {
+    0% {transform: translateY(0);}
+    50%{transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+  }
+  .DC-map .nashik-Data-center {
+    position: absolute;
+    left: 44vw;
+    top: 42vh;
+}
+.DC-map .airoli-Data-center {
+    position: absolute;
+    top: 47vh;
+    left: 43vw;
+}
+ .DC-map .mohali-Data-center {
+    position: absolute;
+    top: 14vh;
+    left: 46vw;
+
+ }
+ .DC-map .nashik-Data-center {
+    position: absolute;
+    top: 43vh;
+    left: 45vw;
+ }
+ .DC-map .banglore-Data-center {
+    position: absolute;
+    top: 70vh;
+    left: 46vw;
+}
+.DC-map .mumbai-Data-center {
+    position: absolute;
+    top: 51vh;
+    left: 41vw;
+}
+.DC-map .nashik-Data-center .DC-image-nashik {
+    width: 8vw;
+    height: 8vw;
+    bottom: 0;
+    border-radius: 15px;
+    position: absolute;
+    
+    transition: all 0.5s ease-in-out;
+    background-image: url('../../images/colocation/Nashik.png');
+    background-size: cover;
+}
+.DC-map .mohali-Data-center .DC-image-mohali {
+    width: 8vw;
+    height: 8vw;
+    bottom: 0;
+    border-radius: 15px;
+    position: absolute;
+    
+    transition: all 0.5s ease-in-out;
+    background-image: url('../../images/colocation/mohali.png');
+    background-size: cover;
+}
+.DC-map .mumbai-Data-center .DC-image-mumbai {
+    width: 8vw;
+    height: 8vw;
+    bottom: 3vw;
+    border-radius: 15px;
+    position: absolute;
+    transform: translateX(-7vw);
+    transition: all 0.5s ease-in-out;
+    background-image: url('../../images/colocation/mumbai.png');
+    background-size: cover;
+}
+.DC-map .banglore-Data-center .DC-image-banglore {
+    width: 8vw;
+    height: 8vw;
+    bottom: 0;
+    border-radius: 15px;
+    position: absolute;
+    
+    transition: all 0.5s ease-in-out;
+    background-image: url('../../images/colocation/banglore.png');
+    background-size: cover;
+}
+.DC-map .airoli-Data-center .DC-image-airoli {
+    width: 8vw;
+    height: 8vw;
+    bottom: 0;
+    border-radius: 15px;
+    position: absolute;
+    
+    transition: all 0.5s ease-in-out;
+    background-image: url('../../images/colocation/airoli.png');
+    background-size: cover;
+}
+/* ------------------------------------------------------------------------------------
+ */
+
+ .explore-plan {
+    position: relative;
+    width: 100%;
+    padding: 3vw 2vw;
+    background-color: #00050E;
+}
+.explore-plan::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 17vh;
+    top: -12%;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 5, 14, 1) 11%, rgba(0, 0, 0, 0) 79%);
+}
+.explore-plan .header h3 {
+    font-size: var(--heading-font-size);
+  font-weight: 500;
+  padding-bottom: 1vw;
+  margin-bottom: 3vw;
+  padding: 0 10vw;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.explore-plan .header {
+    position: relative;
+    z-index: 2;
+}
+
+.explore-plan .header h3 span {
+    font-weight: 600;
+}
+.explore-plan .header p {
+    font-size:calc(0.5em + 0.5vw + 8px);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.explore-plan .plans {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 5vw;
+}
+.explore-plan .plans .plan-outline {
+    padding: 1px;
+    background: linear-gradient(180deg, rgba(81,192,255,1) 22%, rgba(0,5,10,1) 98%);
+    border-radius: 43px;
+    overflow: hidden;
+}
+.explore-plan .plans .plan {
+    background: #00050A;
+    position: relative;
+    height: 100%;
+    /* border-radius: 10px; */
+    padding: 2.5vh 2vw;
+    border-radius: 43px;
+    width: 26vw;
+}
+.explore-plan .plans .plan-outline:nth-child(odd) .plan::before {
+    content: "";
+    position: absolute;
+    top: -13%;
+    border-radius: 50%;
+    width: 100%;
+    overflow: hidden;
+    height: 20%;
+    left: 0;
+    filter: blur(105px);
+    background: linear-gradient(96deg, rgba(0, 230, 255, 1) -18%, rgba(0, 102, 255, 1) 104%);
+}
+.explore-plan .plans .plan-outline:nth-child(even) .plan::before {
+    content: "";
+    position: absolute;
+    top: -15%;
+    border-radius: 50%;
+    width: 100%;
+    overflow: hidden;
+    height: 31%;
+    left: 0;
+    filter: blur(78px);
+    background: linear-gradient(96deg, rgba(0, 230, 255, 1) -18%, rgba(0, 102, 255, 1) 104%);
+}
+
+/* .explore-plan .plans .plan.popular span {
+    font-size:calc(0.5em + 0.5vw + 6px) ;
+    font-weight: 400;
+    margin-bottom: 0.5vh;
+    position: relative;
+}  */
+.explore-plan .plan h2 {
+    position: relative;
+    font-size: calc(clamp(1.313rem, 2.349vw - 0.194rem, 2.625rem));
+    font-weight: 700;
+    margin-bottom: 3vw;
+}
+.explore-plan .plan h2 span {
+    font-size: calc(clamp(0.875rem, 0.895vw + 0.301rem, 1.375rem));
+}
+.explore-plan .plan h2::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #51C0FF;
+}
+.explore-plan .plans .plan-outline:nth-child(odd) .plan h2{
+    padding-top: 1.3vw;
+ }
+.plan ul {
+    list-style: none;
+    padding: 0 1.5vw;
+    margin: 0 0 20px 0;
+}
+.plan ul li:nth-child(1) {
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+.plan ul li {
+    margin: 2.5vh 0;
+    font-weight: 300;
+    display: flex;
+    
+    align-items: center;
+    gap: 1vw;
+    font-size: calc(0.5em + 0.5vw + 3px);
+}
+.explore-plan .plans .plan-outline:first-child .plan .get-quote {
+    padding: 7.6vw 0 0.6vw 0vw; 
+}
+
+ .plan .get-quote {
+    padding: 2vw 0 1.5vh 0vw; 
+    text-align: center;
+}
+.plan button.get-quote svg {
+    font-size: calc(0.8em + 0.5vw + 15px);
+    color:#00C2FF ;
+}
+
+/* ------------------------------------------------------------------ */
+.expert-colocation {
+    position: relative;
+    width: 100%;
+    padding: 3vw 5vw;
+    background: #00050A;
+}
+.expert-colocation .expert-innerdiv {
+    display: flex;
+    align-items: center;
+}
+.expert-colocation .expert-innerdiv .Description {
+    position: relative;
+    z-index: 2;
+}
+.expert-colocation .expert-innerdiv .Description h3 {
+    font-size: var(--heading-font-size);
+    font-weight: 800;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    line-height: 3.5vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+ margin: 1vw 0 3vw 0;
+    -moz-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #00C2FF 42%, #0596FF 50%);
+}
+
+.expert-colocation .expert-innerdiv .expert-colocation-img div:nth-child(2) {
+    width: 100%;
+    /* height: 100%; */
+}
+.expert-colocation .expert-innerdiv .expert-colocation-img div:nth-child(2) img {
+    width: 100%;
+    transform: translateX(-5vw) scale(1.5);
+    /* height: 100%; */
+}
+.expert-colocation .expert-innerdiv .Description ul li {
+    padding: 0 0 0 0.8vw;
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: calc(clamp(0.75rem, 0.895vw + 0.176rem, 1.25rem));
+}
+.expert-colocation .expert-innerdiv .Description ul li::before {
+    content: "";
+    position: absolute;
+    top: 36%;
+    left: -1%;
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+/* ------------------------------------------------------------------------------------- */
+.Services-design {
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    padding: 3vw 5vw;
+    background-color: #00050E;
+}
+.Services-design .service-design-innerdiv .header {
+    text-align: center;
+    position: relative;
+   
+}
+
+.Services-design .service-design-innerdiv .header h3 {
+    font-size: calc(1.2em + 0.5vw + 17px);
+    position: relative;
+    font-weight: 400;
+    margin-bottom: 5vh;
+}
+.Services-design .service-design-innerdiv .header h3 span {
+    font-weight: 600;
+}
+.Services-design .service-design-innerdiv .header p {
+    text-align: center;
+    font-size: calc(0.5em + 0.5vw + 8px);
+    padding: 0 20vw;
+    font-weight: 300;
+}
+.Services-design .service-design-innerdiv  .detail-services-design {
+    width: 100%;
+    display: flex;
+    padding-top: 8vh;
+}
+.Services-design .service-design-innerdiv .detail-services-design .titles {
+    position: relative;
+    width: 31%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* .Services-design .service-design-innerdiv .detail-services-design .titles::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    width: 56%;
+    height: 73%;
+    filter: blur(180px);
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient(183deg, rgba(0, 230, 255, 1) 44%, rgba(0, 102, 255, 1) 92%);
+} */
+
+
+.Services-design .service-design-innerdiv .detail-services-design .titles .single-server-colocation {
+    font-size: calc(1.2em + 0.5vw + 18px);
+    line-height: 8.5vh;
+    padding: 0 0 0 10vw;
+    position: relative;
+    font-weight: 600;
+}
+.Services-design .service-design-innerdiv .detail-services-design .titles .second-header .single-server-colocation {
+    line-height: 5vh;
+}
+.Services-design .service-design-innerdiv .detail-services-design .titles .second-header, .Services-design .service-design-innerdiv .detail-services-design .titles .third-header{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+}
+.Services-design .service-design-innerdiv  .detail-services-design .description {
+    position: relative;
+    width: 35%;
+}
+
+.Services-design .service-design-innerdiv  .detail-services-design .description .description-box {
+    position: relative;
+    /* top: 0; */
+}
+.Services-design .service-design-innerdiv  .detail-services-design .rack-destructure-design {
+    position: relative;
+    width: 37%;
+    height: 85vh;
+    transform: scale(1.28) translateX(1vw) translateY(4vh);
+}
+.Services-design .service-design-innerdiv .detail-services-design .rack-destructure-design::after {
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: 18%;
+    width: 48%;
+    z-index: -1;
+    height: 50vh;
+    filter: blur(116px);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(35, 176, 255, 1) 44%, rgba(0, 102, 255, 0) 92%);
+}
+
+.Services-design .service-design-innerdiv .detail-services-design .rack-destructure-design .server {
+        position: absolute;
+        top: 12%;
+        left: 32%;
+        width: 30%;
+        transform: scale(1.1) translateY(25vh);
+    }
+    .Services-design .service-design-innerdiv .detail-services-design .rack-destructure-design .top {
+        position: absolute;
+        width: 35.8%;
+        z-index: 2;
+        top: 10.6%;
+        left: 28.7%;
+        opacity: 0;
+    }    
+    .Services-design .service-design-innerdiv .detail-services-design .rack-destructure-design .left {
+        position: absolute;
+        width: 3%;
+        height: 69%;
+        left: 29.2%;
+        top: 11%;
+        opacity: 0;
+    }  
+ .Services-design .service-design-innerdiv  .detail-services-design .rack-destructure-design .left img {
+    width: 100%;
+    height: 100%;
+ }
+ .Services-design .service-design-innerdiv .detail-services-design .rack-destructure-design .right {
+    position: absolute;
+    top: 10.5%;
+    left: 61.5%;
+    width: 3%;
+    height: 69%;
+    opacity: 0;
+}
+ .Services-design .service-design-innerdiv  .detail-services-design .rack-destructure-design .right img {
+    width: 100%;
+    height: 100%;
+ }
+ .Services-design .service-design-innerdiv .detail-services-design .rack-destructure-design .bottom {
+    position: absolute;
+    width: 36%;
+    top: 48%;
+    left: 29%;
+    opacity: 0;
+}
+ .Services-design .service-design-innerdiv .detail-services-design .rack-destructure-design .middle {
+    position: absolute;
+    width: 36%;
+    top: 21%;
+    left: 29%;
+    opacity: 0;
+}
+.Services-design .service-design-innerdiv .detail-services-design .description .description-box .single-server-description-head {
+    font-size: calc(0.2em + 1.4vw + 6px);
+    font-weight: 500;
+    padding-right: 3vw;
+    line-height: 5.5vh;
+    margin-bottom: 2vh;
+}
+.Services-design .service-design-innerdiv .detail-services-design .description .description-box .single-server-description-subhead {
+    font-size: calc(0.2em + 0.8vw + 7px);
+    font-weight: 100;
+    margin-bottom: 5vh;
+}
+.Services-design .service-design-innerdiv .detail-services-design .description .multi-server, .Services-design .service-design-innerdiv .detail-services-design .description .full-rack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.Services-design .service-design-innerdiv .detail-services-design .description {
+    display: flex;
+    align-items: center;
+}
+.Services-design .service-design-innerdiv .detail-services-design .description .description-box button {
+    font-size: 1.8vw;
+  
+}
+.Services-design .service-design-innerdiv .detail-services-design .description .description-box button svg {
+    font-size: 2.8vw;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+.colo-boom {
+    width: 100%;
+    position: relative;
+    background-color: #00050E;
+
+}
+.colo-boom .colo-boom-container {
+    padding: 3vw 5vw;
+}
+.colo-boom .colo-boom-container .heading {
+    position: relative;
+}
+.colo-boom .colo-boom-container .heading h2{
+    font-size: var(--heading-font-size);
+    text-align: center;
+    padding-bottom: 1vw;
+    margin-bottom:3vw ;
+    font-weight: 500;
+    z-index: 2;
+    position: relative;
+}
+.colo-boom .colo-boom-container .description p {
+    font-size: calc(clamp(2.125rem, 3.342vw + 0.264rem, 1.875rem));
+    /* margin-bottom: 1.5vw; */
+    line-height: 4vw;
+}
+.colo-boom .colo-boom-container .description p span 
+{
+    font-weight: 600;
+    background-image: linear-gradient(90deg, #00C2FF 42%, #0596FF 50%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+
+/* Mobile Responsive css start */
+@media (max-width: 1400px){}
+@media (max-width: 1280px){}
+@media (max-width: 1024px){
+.colo-boom .colo-boom-container .description p {font-size: 22px; text-align: center;}
+.powerOfcolocation .PowerOfColocation-innerdiv .colocation-header {padding: 4vw 5vw 5vw 5vw;}
+.Horizontol-slider .slide-list .slide-list-inner {display: flex; justify-content: space-around; flex-wrap: wrap;}
+ .Horizontol-slider .slide-list {margin-left: 0 !important; }
+.Horizontol-slider .slide-list .slide-list-inner .slide-item {width: 100%; height: auto; position: relative; margin: 2vw 2vw;}
+.powerOfcolocation .PowerOfColocation-innerdiv .Horizontol-slider .slide-list .slide-list-inner .slide-item .image-div {height: auto;}
+
+.powerOfcolocation .PowerOfColocation-innerdiv  .Horizontol-slider .slide-list .slide-list-inner .slide-item {width: 100%;height: auto;}
+.powerOfcolocation .PowerOfColocation-innerdiv .colocation-header .third-section-head{font-size: 38px; opacity: 1 !important; margin-bottom: 30px; line-height: 45px;}
+.powerOfcolocation .PowerOfColocation-innerdiv .colocation-header .third-section-subtitle {position: relative; opacity: 1 !important;padding: 0;}
+.powerOfcolocation .PowerOfColocation-innerdiv .colocation-header .third-section-question{opacity: 1 !important; font-size: 23px; margin-bottom: 30px;}
+.powerOfcolocation .PowerOfColocation-innerdiv .Horizontol-slider .slide-list .slide-list-inner .slide-item .slide-title {font-size: 35px;}
+.world-class-data-center {padding: 2vh 0;}
+.DC-map {height: auto;}
+.world-class-data-center .world-class-data-center-innerdiv .Data-center-service-counter {padding: 0 8vw; margin-top: 5vh;}
+.DC-map .nashik-Data-center { top: 20vh;left: 43vw;}
+.DC-map .map-image img {transform: scale(2) translateY(20px);}
+.DC-map::after { background: linear-gradient(180deg, rgba(0, 5, 14, 1) 2%, rgba(0, 0, 0, 0) 79%);}
+.DC-map .mohali-Data-center { top: 8vh;left: 45vw;}
+.DC-map .mumbai-Data-center { top: 22vh; left: 41vw;}
+.DC-map .banglore-Data-center {top: 29vh; left: 47vw;}
+.DC-map .airoli-Data-center {top: 23vh;left: 43vw;}
+.expert-colocation .expert-innerdiv { display: flex; align-items: center; flex-wrap: wrap;}
+.expert-colocation .expert-innerdiv .Description h3 { font-size: 35px;line-height: 45px;}
+.expert-colocation { padding: 8vw 5vw;}
+.expert-colocation .expert-innerdiv .Description ul li{font-size: 20px;}
+.expert-colocation-img {display: none;}
+.explore-plan .plans {display: block; padding:  0 5vw;}
+.explore-plan .plans .plan {width: 100%; padding: 5vw;}
+.explore-plan .plan h2 {font-size: 45px;}
+.explore-plan .plan h2::after{bottom: -1vh;}
+.plan ul li:nth-child(1) {font-size: 30px;}
+.plan ul li {font-size: 25px;}
+.explore-plan .header h3 {font-size: 40px; padding-bottom: 3vw;}
+.explore-plan .plan h2 span{font-size: 22px;}
+.explore-plan .plans .plan-outline{margin-bottom: 2vh;}
+.CTA-bottom-line {width: 25vw; left: 22%;}
+.horizontol-slider {min-block-size: 15vh;}
+.absolute {width: 15vw !important;  left: 0 !important}
+
+
+}
+@media (max-width: 991px){
+.Colocation-banner .banner-video video { position: absolute; top: 0; width: 100%; height: 100%; object-fit: cover;}
+.Colocation-banner .banner-video { width: 100%; height: 100vw; }
+.explore-plan .plan h2 span {
+    display: block;
+}
+
+}
+@media (max-width: 767px){
+.Colocation-banner .banner-content .Manage-secu-banner-text { font-size: 32px; margin-bottom: 4vh; margin-top: 9vh;}
+.colo-boom .colo-boom-container .heading h3{font-size: 25px;}
+.Colocation-banner .banner-video video { position: absolute; top: 0; width: 100%; height: 100vh; object-fit: cover;}
+.Colocation-banner .banner-content {position: absolute; top: 0; right: 0; width: 100%; height: 100%; display: flex; flex-direction: column;
+justify-content: center; padding-right: 5vw;}
+.powerOfcolocation .PowerOfColocation-innerdiv  .Horizontol-slider .slide-list .slide-list-inner .slide-item  .image-div {height: auto;}
+.colo-boom .colo-boom-container .description p {line-height: 38px; margin-top: 2vh;}  
+.world-class-data-center .world-class-data-center-innerdiv .header h3{font-size: 22px;}
+.powerOfcolocation .PowerOfColocation-innerdiv .colocation-header .third-section-subtitle {line-height: 38px;}  
+.world-class-data-center .world-class-data-center-innerdiv .Data-center-service-counter .counter-grid {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; width: 50%; margin: 0 auto;}
+.world-class-data-center .world-class-data-center-innerdiv .Data-center-service-counter { width: 100%; padding: 0 5vw; margin-top: 10vh;}
+.world-class-data-center .world-class-data-center-innerdiv .Data-center-service-counter .counter-grid .counter-box {display: flex;
+align-items: center; width: 100%; justify-content: center; text-wrap: nowrap;}
+.world-class-data-center .world-class-data-center-innerdiv .Data-center-service-counter .counter-grid .counter-box .number-title {font-size: calc(clamp(0.75rem, 1.342vw - 0.111rem, 1.5rem));
+width: 100%; padding-left: 1vw;}
+.expert-colocation .expert-innerdiv {display: flex; flex-wrap: wrap;}
+.expert-colocation .expert-innerdiv .Description {width: 100%;}
+.expert-colocation .expert-innerdiv .Description ul li::before {content: "";position: absolute; top: 7px; left: 0%; width: 4px; height: 4px; border-radius: 50%; background-color: #fff;}
+.expert-colocation .expert-innerdiv .Description h3 {font-size: 25px; line-height: 35px; margin-bottom: 3vh;}
+.explore-plan .plan h2 {font-size: 33px;}
+.plan ul li:nth-child(1) {font-size: 25px;}
+.plan ul li {font-size: 20px;}
+.explore-plan .header h3 {font-size: 30px;}
+.expert-colocation .expert-innerdiv .Description ul li {padding: 0 0 0 15px; font-size: 14px;margin-bottom: 15px;}
+.explore-plan .plans {display: block; gap: 10px; padding: 2vw;}
+/* .explore-plan .plan h2::after { display: none;} */
+.explore-plan .plans .plan {width: 100%; padding: 7vw 5vw;}
+.absolute {width: 100% !important;  left: 0 !important}
+.banner-cta-line {width: 30vw !important;}
+.Horizontol-slider .slide-list .slide-list-inner {display: flex; justify-content: space-around; flex-wrap: wrap;}
+.powerOfcolocation .PowerOfColocation-innerdiv  .Horizontol-slider .slide-list .slide-list-inner .slide-item {width: 100%; margin: 2vw; height: auto;}
+.Horizontol-slider .slide-list {margin-left: 0 !important; }
+.Horizontol-slider .slide-list .slide-list-inner .slide-item {width: 100%; height: 100%; position: relative; margin: 2vw 2vw;}
+.DC-map {height: auto; overflow: hidden;}
+.powerOfcolocation .PowerOfColocation-innerdiv .Horizontol-slider .slide-list .slide-list-inner .slide-item .slide-title {font-size: 25px; text-align: center;}
+.Colocation-banner { height: 100vw;}
+.powerOfcolocation .PowerOfColocation-innerdiv .colocation-header .third-section-head{ opacity: 1 !important; line-height: 45px;}
+.powerOfcolocation .PowerOfColocation-innerdiv .colocation-header .third-section-subtitle {position: relative; opacity: 1 !important; padding: 0;}
+.powerOfcolocation {margin-top: 15%;}
+
+}
+@media (max-width: 667px){
+
+}
+@media (max-width: 480px){
+
+}
+@media (max-width: 360px){}
+

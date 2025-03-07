@@ -1,0 +1,865 @@
+.BFSI-banner {
+    width: 100%;
+    position: relative;
+    padding: 0 5vw;
+   
+}
+.BFSI-container {
+    background-color: #00000b;
+}
+.BFSI-banner::before {
+    content: "";
+    width: 48%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(274deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 11, 1) 88%);
+}
+.BFSI-banner .BFSI-innerdiv video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.BFSI-banner-content {
+    position: relative;
+    padding: 13vw 0 12vw 0;
+    z-index: 5;
+}
+.BFSI-banner-content h1 {
+    font-size: calc(clamp(1.563rem, 2.796vw - 0.231rem, 3.125rem));
+    font-weight: 600;
+    width: 48vw;
+    margin-bottom: 2vw;
+    line-height: 4.5vw;
+}
+.BFSI-banner-content p {
+    font-size: calc(clamp(1rem, 1.79vw - 0.148rem, 2rem));
+    font-weight: 300;
+    padding: 2vw 0;
+    line-height: calc(clamp(1.875rem, 2.685vw + 0.154rem, 3.375rem));
+    width: 38vw;
+}
+
+/* -----------------------------------------------------------------------------------------end banner ---------------------------------------------------- */
+.BFSI-Digital-infrastructure {
+    position: relative;
+    width: 100%;
+    padding: 8vw 5vw 5vw 5vw;
+    display: flex;
+    background: #00000b;
+}
+.BFSI-Digital-infrastructure::before {
+    content: "";
+    position: absolute;
+    top: -23%;
+    width: 100%;
+    height: 12vw;
+    z-index: 2;
+    left: 0;
+    transform: translate(0px, 20px);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 4%, rgba(0, 0, 11, 1) 86%);
+}
+.DI-left-content {
+    width: 55%;
+}
+.DI-left-content .BFSI-DI-question{
+    font-size: calc(clamp(1.125rem, 1.902vw - 0.094rem, 2.188rem));
+    font-weight: 600;
+}
+.DI-left-content h3 {
+  font-size: calc(clamp(2.25rem, 4.027vw - 0.332rem, 4.5rem));
+  font-weight: 600;
+  margin-bottom: 2vw;
+  width: 110%;
+}
+.DI-left-content h3 span {
+    background-image: linear-gradient(40deg, #00FFFF 16%, #0057FF 101%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.DI-left-content h4 {
+    font-size: calc(clamp(0.75rem, 1.342vw - 0.111rem, 1.5rem));
+    font-weight: 400;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.DI-left-content .second-ques{
+    font-size: calc(clamp(1.125rem, 1.902vw - 0.094rem, 2.188rem));;
+    line-height: 3vw;
+    margin-bottom: 1vw;
+    font-weight: 600;
+}
+.DI-left-content .second-answ {
+    font-size: calc(clamp(0.75rem, 1.342vw - 0.111rem, 1.5rem));
+    line-height: 2vw;
+    margin-bottom: 2vw;
+
+}
+.DI-img img {
+    position: absolute;
+    top: 10%;
+    width: 45%;
+    right: 0;
+}
+.DI-CTA button {
+    font-size: calc(clamp(1rem, 1.342vw + 0.139rem, 1.75rem));
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+.BFSI-Why-only-ESDS {
+    position: relative;
+    width: 100%;
+    padding: 5vw 0;
+    background: #00000b;
+    
+}
+.bg-img {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    transform: scaleX(1.4);
+    overflow: hidden;
+}
+/* .bg-img::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(86deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 91%);
+} */
+.bg-img img{
+    width: 64%;
+    border-radius: 20px;
+    opacity: 0.3;
+}
+.BFSI-why-content {
+    position: absolute;
+    bottom: 1%;
+    right: 5%;
+    gap: 5vw;
+    display: flex;
+}
+.why-only-question {
+    font-size: calc(clamp(1.563rem, 1.678vw + 0.487rem, 2.5rem));
+    position: absolute;
+    top: 41%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0 11vw;
+    color: #ffffff;
+    font-weight: 500;
+}
+.why-only-card-title {
+    font-size: calc(clamp(1.563rem, 1.678vw + 0.487rem, 2.5rem));
+    position: absolute;
+    color: #ffffff;
+    top: 45%;
+    opacity: 0;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    padding: 0 10vw;
+}
+.why-only-card-title span {
+    font-size: calc(clamp(1.875rem, 2.237vw + 0.44rem, 3.125rem));
+    font-weight: 700;
+}
+/* 
+.BFSI-why-content p{
+    position: relative;
+    z-index: 2;
+    width: 25vw;
+    padding: 1vw 2vw;
+    background-color: #1251c7;
+    font-size: calc(clamp(0.75rem, 1.342vw - 0.111rem, 1.5rem));
+} */
+.BFSI-why-content p {
+    position: relative;
+    z-index: 2;
+    width: 25vw;
+    padding: 1vw 2vw;
+    background-color: #1251c7;
+    font-size: calc(clamp(0.75rem, 1.342vw - 0.111rem, 1.5rem));
+    background: rgb(33,150,243);
+    background: -moz-linear-gradient(180deg, rgba(33,150,243,1) 0%, rgba(0,81,179,1) 33%, rgba(0,0,11,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(33,150,243,1) 0%, rgba(0,81,179,1) 33%, rgba(0,0,11,1) 100%);
+    background: linear-gradient(180deg, rgba(33,150,243,1) 0%, rgba(0,81,179,1) 33%, rgba(0,0,11,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2196f3",endColorstr="#00000b",GradientType=1);
+    border-radius: 15px;
+    border-top: solid 1.5px #77b7f4;
+}
+.BFSI-why-content p span{
+   font-size: calc(clamp(0.875rem, 1.566vw - 0.129rem, 1.75rem));
+   font-weight: 600;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+.experience-diff {
+    position: relative;
+    width: 100%;
+    padding: 7vw 5vw;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    background-color: #00000b;
+}
+.exper-diif-points .heading {
+    position: relative;
+    margin-bottom: 2vw;
+
+}
+.exper-diif-points {
+    width: 55%;
+}
+.exper-diif-points .heading h3{
+    position: relative;
+    z-index: 2;
+    font-size: calc(clamp(1.063rem, 1.902vw - 0.157rem, 2.125rem));
+    padding-bottom: 1.5vw;
+    text-align: center;
+}
+.exper-diif-points .heading h3 span {
+    font-weight: 600;
+}
+.experience-diff .point-list {
+    margin-top: 4vw;
+    display: grid;
+    column-gap: calc(clamp(1.563rem, 2.796vw - 0.231rem, 3.125rem));
+    row-gap: 3vw;
+    grid-template-columns: auto auto;
+
+}
+.experience-diff .point-list .point{
+    font-size: calc(clamp(0.813rem, 1.454vw - 0.12rem, 1.625rem));
+    padding-left: 2vw;
+    position: relative;
+}
+.experience-diff .point-list .point::before {
+    content: "";
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    width: 0.2vw;
+    height: 32px;
+    background-color: #00B2FF;
+    border-radius: 50px;
+}
+.exper-diff-img {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.exper-diff-img img {
+    width: 95%;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+.banking-reimagined {
+    position: relative;
+    width: 100%;
+    padding: 5vw 5vw;
+    background-color: #00000b;
+}
+.banking-reimagined .heading {
+    width: 100%;
+    position: relative;
+}
+.banking-reimagined .heading h3{
+    padding-bottom: 1vw;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+   font-size: calc(clamp(1.625rem, 2.908vw - 0.24rem, 3.25rem));
+}
+.banking-reimagined .heading h3 span {
+    font-weight: 600;
+}
+.bank-reimagined-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vw;
+    gap: 5vw;
+    padding: 0 2vw;
+}
+.bank-reimagined-list .BR-list{
+    display: flex;
+    gap: 2vw;
+    cursor: pointer;
+}
+.bank-reimagined-list .BR-list .list-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.bank-reimagined-list .BR-list .list-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+.bank-reimagined-list .BR-list .list-content .arrow {
+    font-size: calc(clamp(2.5rem, 4.474vw - 0.369rem, 5rem));
+}
+.bank-reimagined-list .BR-list .list-content p:first-child {
+    font-size: calc(clamp(0.938rem, 1.678vw - 0.138rem, 1.875rem));
+    font-weight: 600;
+    width: 80%;
+    padding-bottom: 0.5vw;
+}
+.bank-reimagined-list .BR-list .list-content p:last-child {
+    font-size: calc(clamp(1.125rem, 0.671vw + 0.695rem, 1.5rem));
+    font-weight: 400;
+
+    padding-bottom: 0.5vw;
+}
+
+.bank-reimagined-list .BR-list .list-content div {
+    width: 70%;
+    margin-bottom: 0.5vw;
+}
+.bank-reimagined-list .BR-list .list-content p span {
+    background-image: linear-gradient(40deg, #00FFFF 16%, #0057FF 101%);
+    background-size: 100%;
+    font-weight: 600;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.banking-reimagined::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 38%;
+    border-radius: 47%;
+    filter: blur(124px);
+    z-index: -2;
+    background: linear-gradient(94deg, rgba(0, 230, 255, 1) 13%, rgba(0, 102, 255, 1) 100%);
+    width: 8vw;
+    height: 39%;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.rupees-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 5vw 5vw;
+    background-color: #00000b;
+    justify-content: space-between;
+}
+.bfsi-banking-DC-DR h4 {
+    font-size: calc(clamp(1.313rem, 2.349vw - 0.194rem, 2.625rem));
+    text-align: center;
+    background-image: linear-gradient(40deg, #00A3FF 16%, #D1D500 101%);
+    background-size: 100%;
+    font-weight: 600;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.bfsi-banking-DC-DR {
+    width: 75%;
+}
+.bfsi-banking-DC-DR p{
+   font-size: calc(clamp(1rem, 1.79vw - 0.148rem, 2rem));
+   padding: 3vw 0;
+   text-align: center;
+}
+.rupees-section .rupees-img img {
+    position: absolute;
+    top: -3%;
+    width: 20%;
+}
+.bfsi-bank-cta {
+    text-align: center;
+}
+.bfsi-bank-cta button {
+    font-size: calc(clamp(1rem, 1.342vw + 0.139rem, 1.75rem));
+}
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+.DC-DR-services {
+    position: relative;
+    width: 100%;
+    background-color: #00000b;
+    padding: 5vw 0;
+    overflow: hidden;
+}
+.BFSI-wrapper-container {
+    text-align: center;
+    padding: 16vw 0vw;
+}
+
+.BFSI-wrapper-container p:nth-child(1) {
+    font-size: calc(clamp(1.563rem, 2.796vw - 0.231rem, 3.125rem));
+    padding-bottom: 0vw;
+    font-weight: 500;
+}
+.BFSI-wrapper-container p:nth-child(2) {
+    font-size: calc(clamp(0.938rem, 1.678vw - 0.138rem, 1.875rem));
+    margin-bottom: 5vw;
+    
+}
+.DC-DR-services .servcies-list {
+    position: absolute;
+    top: 0;
+    padding: 10vw 6vw;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.servcies-list .servcies-top-section, .servcies-list .servcies-bottom-section {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* column-gap: 14vw; */
+    row-gap: 0vw;
+   margin-left: 3vw;
+    background-color: #00000b;
+}
+
+.servcies-list .servcies-bottom-section p, .servcies-list .servcies-top-section p {
+    position: relative;
+    display: flex;
+    width: 80%;
+    font-size: calc(clamp(0.938rem, 1.119vw + 0.22rem, 1.563rem));
+    line-height: calc(clamp(1.125rem, 1.902vw - 0.094rem, 2.188rem));
+    align-items: start;
+    padding-left: 25px;
+}
+.servcies-list .servcies-bottom-section p:nth-child(1){
+    margin-right: 5vw;
+}
+.servcies-list .servcies-bottom-section p:nth-child(2) {
+    margin-right: 4vw;
+}
+
+.servcies-list .servcies-bottom-section p::before, .servcies-list .servcies-top-section p::before{
+    content: "";
+    position: absolute;
+    width:2px;
+    height: 20px;
+    border-radius: 50px;
+    top: 0;
+    background: #fff;
+    left: 0%;
+    box-shadow: 0px 1px 34px 30px rgb(4 76 197);
+    -webkit-box-shadow: 0px 1px 15px 9px rgb(4 76 197);
+}
+.servcies-list .servcies-bottom-section {
+    transform: translateY(55vh);
+}
+.servcies-list .servcies-top-section {
+    transform: translateY(-55vh);
+}
+
+
+
+
+
+/* Mobile Responsive css start */
+@media (max-width: 1400px){}
+@media (max-width: 1280px){
+    .exper-diif-points {
+        width: 70%;
+    }
+}
+@media (max-width: 1199px){
+    .BFSI-banner-content {
+        padding: 180px 0 80px 9px;
+    }
+    .BFSI-banner-content a button {
+        font-size: calc(clamp(1.125rem, 1.079vw + 0.872rem, 1.563rem));
+    }
+    .BFSI-why-content {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        gap: 5vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .BFSI-why-content p {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 1vw 2vw;
+        background-color: #1252c7c7;
+        font-size: 18px;
+        margin: 0 5vw;
+    }
+
+    .why-only-question {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .DI-left-content .second-ques {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+     .DI-left-content .second-answ {
+        line-height: 20px;
+        font-size: 15px;
+        margin-top: 5vw;
+        margin-bottom: 8vw;
+    }
+
+    .why-only-card-title {
+        font-size: calc(clamp(1.125rem, 1.902vw - 0.094rem, 2.188rem));
+        position: relative;
+        color: #ffffff;
+        padding: 5vw 2vw;
+        top: 25%;
+        opacity: 1;
+    }
+
+    .experience-diff {
+        position: relative;
+        width: 100%;
+        padding: 7vw 5vw;
+        display: flex;
+        gap: calc(clamp(1.875rem, 3.082vw + 1.153rem, 3.125rem));
+        justify-content: space-between;
+        background-color: #00000b;
+        flex-wrap: wrap;
+    }
+    .experience-diff .point-list {
+        margin-top: 4vw;
+        display: flex;
+        -moz-column-gap: calc(clamp(1.563rem, 2.796vw - 0.231rem, 3.125rem));
+        column-gap: calc(clamp(1.563rem, 2.796vw - 0.231rem, 3.125rem));
+        row-gap: 6vw;
+        grid-template-columns: auto auto;
+        flex-wrap: wrap;
+    }
+    .experience-diff .point-list .point::before {
+        left: 0;
+    }
+    .exper-diif-points .heading h3 {
+        font-size: calc(clamp(1.375rem, 2.003vw + 0.906rem, 2.188rem));
+ }
+    .exper-diff-img img {
+        width: 100%;
+        margin-top: 45px;
+    }
+    .servcies-list .servcies-top-section, .servcies-list .servcies-bottom-section {
+        transform: none;
+        display: block;
+        padding: 0;
+    }
+
+    .DC-DR-services .servcies-list {
+        position: relative;
+        top: 0;padding-top: 0; padding-bottom: 0;
+    }
+
+    .BFSI-wrapper-container {
+        padding: 5vw;
+    }
+    .servcies-list .servcies-bottom-section {
+        transform: none;
+    }
+    .rupees-section .rupees-img img {
+        position: relative;
+        top: 0%;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .rupees-section {
+        position: relative;
+        width: 100%;
+        display: flex;
+        padding: 5vw 5vw;
+        background-color: #00000b;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .exper-diif-points {
+        width: 100%;
+    }
+    .experience-diff .point-list .point {
+        font-size: calc(clamp(1.125rem, 1.079vw + 0.872rem, 1.563rem));
+    }
+    .bank-reimagined-list .BR-list {
+        display: flex;
+        gap: 2vw;
+        flex-wrap: wrap;
+    }
+    .bank-reimagined-list .BR-list .list-content div {
+        width: 100%;
+        margin-bottom: 0.5vw;
+    }
+
+    .bg-img {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        transform: none;
+        overflow: hidden;
+    }
+
+    .bg-img img {
+        width: 90%;
+        border-radius: 20px;
+        opacity: 1;
+        margin-bottom: 45px;
+    }
+
+    .servcies-list .servcies-bottom-section p, .servcies-list .servcies-top-section p{ font-size: calc(clamp(1.125rem, 1.079vw + 0.872rem, 1.563rem)); margin: calc(clamp(1.563rem, 1.541vw + 1.201rem, 2.188rem)) 0;
+    line-height: calc(clamp(1.563rem, 1.541vw + 1.201rem, 2.188rem)); padding-left: 35px; width: 100%;}
+    .BFSI-wrapper-container p:nth-child(1) {
+        font-size: calc(clamp(1.563rem, 2.311vw + 1.021rem, 2.5rem));
+    }
+    .BFSI-wrapper-container p:nth-child(2) {
+        font-size: calc(clamp(1.125rem, 1.079vw + 0.872rem, 1.563rem));
+        margin: 30px 0;
+    }
+    .banking-reimagined .heading h3 {
+        font-size: 35px;
+    }
+}
+@media (max-width: 991px){
+    .experience-diff .point-list .point::before  {
+        left: -1%;
+    }
+    .BFSI-why-content {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        gap: 5vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .exper-diif-points {
+        width: 100%;
+    }
+    .BFSI-why-content p {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 4vw 2vw;
+        background-color: #1252c7c7;
+        font-size: 18px;
+        margin: 0 5vw;
+    }
+
+    .why-only-question {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .DI-left-content .second-ques, .DI-left-content .second-answ {
+        line-height: 24px;
+    }
+
+    .why-only-card-title {
+        font-size: calc(clamp(1.125rem, 1.902vw - 0.094rem, 2.188rem));
+        position: relative;
+        color: #ffffff;
+        top: 25%;
+        opacity: 1;
+    }
+
+    .experience-diff {
+        position: relative;
+        width: 100%;
+        padding: 7vw 5vw;
+        display: flex;
+        justify-content: space-between;
+        background-color: #00000b;
+        flex-wrap: wrap;
+    }
+    .experience-diff .point-list {
+        margin-top: 10vw;
+        display: flex;
+        -moz-column-gap: calc(clamp(1.563rem, 2.796vw - 0.231rem, 3.125rem));
+        column-gap: calc(clamp(1.563rem, 2.796vw - 0.231rem, 3.125rem));
+        row-gap: 6vw;
+        grid-template-columns: auto auto;
+        flex-wrap: wrap;
+    }
+    .exper-diff-img img {
+        width: 100%;
+        margin-top: 45px;
+    }
+    .servcies-list .servcies-top-section, .servcies-list .servcies-bottom-section {
+        transform: none;
+        display: block;
+        padding: 0;
+    }
+
+    .DC-DR-services .servcies-list {
+        position: relative;
+        top: 0;padding-top: 0; padding-bottom: 0;
+    }
+
+    .BFSI-wrapper-container {
+        padding: 5vw;
+    }
+    .servcies-list .servcies-bottom-section {
+        transform: none;
+    }
+    .rupees-section .rupees-img img {
+        position: relative;
+        top: 0%;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .rupees-section {
+        position: relative;
+        width: 100%;
+        display: flex;
+        padding: 5vw 5vw;
+        background-color: #00000b;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .bank-reimagined-list .BR-list {
+        display: flex;
+        gap: 2vw;
+        flex-wrap: wrap;
+    }
+    .bank-reimagined-list .BR-list .list-content div {
+        width: 100%;
+        margin-bottom: 0.5vw;
+    }
+
+    .bg-img {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        transform: none;
+        overflow: hidden;
+    }
+
+    .bg-img img {
+        width: 90%;
+        border-radius: 20px;
+        opacity: 1;
+        margin-bottom: 45px;
+    }
+
+    .servcies-top-section p{ margin: 15px 0;}
+
+    /***/
+    .BFSI-banner::before {
+        width: 100%;
+    }
+    .BFSI-banner {
+        width: 100%;
+        position: relative;
+        padding: 0 5vw;
+        /* height: 100vw; */
+        display: flex;
+        align-items: center;
+    }
+    .BFSI-banner .BFSI-innerdiv video {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .BFSI-Digital-infrastructure::before{ display: none;}
+
+    .BFSI-banner .BFSI-innerdiv::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 12vw;
+        z-index: 2;
+        left: 0;
+       
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 4%, rgba(0, 0, 11, 1) 86%);
+    }
+
+    .BFSI-Digital-infrastructure::before {
+        content: "";
+        position: absolute;
+        top: -9%;
+        width: 100%;
+        height: 12vw;
+        z-index: 2;
+        left: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 4%, rgba(0, 0, 11, 1) 86%);
+    }
+  
+    
+}
+@media (max-width: 767px){
+    .BFSI-Digital-infrastructure {
+        position: relative;
+        width: 100%;
+        padding: 8vw 5vw 5vw 5vw;
+        display: flex;
+        background: #00000b;
+        flex-wrap: wrap;
+    }
+
+    .DI-left-content {
+        width: 100%;
+    }
+    .BFSI-banner-content {
+        padding: 50vw 0 30vw 0;
+    }
+    .DI-img{ display: none;}
+ 
+}
+@media (max-width: 667px){
+
+    .BFSI-banner-content h3 {
+        width: 100%;
+        line-height: 38px;
+    }
+    .DI-left-content h4 {
+        font-size: 15px;
+        margin-bottom: 10vw;
+    }
+    .DI-left-content .BFSI-DI-question {
+        font-size: 20px;
+    }
+    .bank-reimagined-list {
+        margin-top: 50px!important;
+    }
+    .BFSI-banner-content h1 {
+        line-height: 40px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 480px){}
+@media (max-width: 360px){}

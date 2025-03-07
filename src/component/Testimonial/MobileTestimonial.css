@@ -1,0 +1,132 @@
+.mobile-testimonial {
+    position: relative;
+    width: 100%;
+    padding: 8vh 2vw;
+    overflow: hidden;
+
+}
+.mobile-testimonial-container {
+    width: 100%;
+
+}
+.intro-testimonial h3 {
+    font-size: calc(clamp(3.75rem, 2.841vw + 3.182rem, 5rem));
+    margin-bottom: 2vh;
+    font-weight: 600;
+    text-align: center;
+}
+.mobiletesti-cta {
+    width: 100%;
+    text-align: center;
+}
+.mobiletesti-cta .testimonial-CTA {
+    font-size: 14px;
+}
+.testimonial-review {
+    padding: 8vh 0;
+}
+.testimonial-review h3 {
+    font-size: calc(clamp(1.875rem, 2.841vw + 1.307rem, 3.125rem));
+    text-align: center;
+    padding: 0 7vw;
+    margin-bottom: 5vh;
+}
+.testimonial-review-slider {
+    padding: 2vh ;
+}
+.review-container {
+    width: 100%;
+}
+.client-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+.client-img {
+    width: 20%;
+}
+.client-info h4 {
+    font-size:calc(clamp(1.875rem, 0.71vw + 1.733rem, 2.188rem));
+    padding-top: 1vh;
+    padding-bottom: 0.1vh;
+}
+.client-info p{
+    font-size: 25px;
+    padding-bottom: 2vh;
+    color: rgba(255, 255, 255, 0.664);
+}
+.review-description {
+    font-size: 25px;
+    text-align: center;
+}
+.cloud-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+.mobile-testimonial-container .slick-dots {
+    bottom: -30px !important;
+    width: 100% !important;
+    right: 0 !important;
+}
+
+.mobile-testimonial-container .slick-dots li {
+width: 11px;
+height: 15px;
+}
+
+.cloud-bottom img:first-child {
+    position: absolute;
+    width: 70%;
+    bottom: -85%;
+    right: -10%;
+}
+.cloud-bottom img:nth-child(2) {
+    position: absolute;
+    width: 80%;
+    bottom: -95%;
+    right: 5%;
+}
+.cloud-bottom img:nth-child(3) {
+    position: absolute;
+    width: 50%;
+    bottom: -95%;
+    right: 60%;
+}
+@media (max-width: 1400px){}
+@media (max-width: 1280px){}
+@media (max-width: 1199px){}
+@media (max-width: 991px){
+
+}
+@media (max-width: 767px){
+    .client-info p {
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 2vh;
+        color: rgba(255, 255, 255, 0.664);
+    }
+    
+    
+    .intro-testimonial h3 {
+        font-size: 27px;
+        margin-bottom: 4vh;
+    }
+    /* .mobiletesti-cta .testimonial-CTA {
+        font-size: 35px;
+    } */
+    .testimonial-review h3 {
+        font-size: 22.2px;
+    }
+    .review-description {
+        font-size: 15px;
+    }
+}
+@media (max-width: 667px){
+
+}
+@media (max-width: 480px){}
+@media (max-width: 360px){}

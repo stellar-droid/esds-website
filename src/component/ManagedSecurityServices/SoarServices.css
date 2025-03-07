@@ -1,0 +1,522 @@
+/* .soarcontainer {
+    background-image: url('../assets/images/SoarServices/BgSoar.png');
+    background-size: cover;
+    background-position: center;
+} */
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+:root {
+  --heading-font-size: calc(clamp(1.875rem, 3.356vw - 0.277rem, 3.75rem));
+}
+
+.cyberSecuritySection2 {
+  position: relative;
+  width: 100%;
+}
+.cyberSecuritySection2 .cyberSecurityContainer {
+  display: flex;
+  align-items: center;
+  padding: 3vw 5vw;
+  justify-content: space-between;
+}
+
+.cyberSecuritySection2 .cyberSecurityContainer .cyberSecurityText {
+  width: 50%;
+}
+
+.cyberSecuritySection2 .cyberSecurityContainer .cyberSecurityText .cs-heading {
+  font-size: var(--heading-font-size);
+  font-weight: 500;
+  margin-bottom: 3vw;
+}
+
+.cyberSecuritySection2
+  .cyberSecurityContainer
+  .cyberSecurityText
+  .cs-heading-p {
+  position: relative;
+  font-size: calc(clamp(1.125rem, 1.342vw + 0.264rem, 1.875rem));
+  padding: 0.5vw 0 0.5vw 2vw;
+}
+/* .cyberSecuritySection2 .cyberSecurityContainer .cyberSecurityText .cs-heading-p::before{
+    content: "";
+    position: absolute;
+    width: 0.5vw;
+    top: 45%;
+    left: 0;
+    height: 0.5vw;
+    border-radius: 50%;
+    background-color: #fff;
+} */
+.cyberSecuritySection2 .cyberSecurityContainer .cyberSecurityImg {
+  position: relative;
+  width: 36%;
+  padding-right: 7vw;
+}
+/* .cyberSecuritySection2 .cyberSecurityContainer  .cyberSecurityImg::after{
+    content: "";
+    width: 37vw;
+    height: 10vw;
+    position: absolute;
+    top: 49%;
+    left: 2%;
+    transform: rotate(-35deg);
+    filter: blur(50px);
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(109, 220, 255, 1) 15%, rgba(0, 148, 255, 1) 64%);
+} */
+
+.cs-heading {
+  position: relative;
+  left: 22px;
+  top: 33px;
+}
+
+.cyberSecurityImg img {
+  max-width: 150%;
+  right: 100px;
+  position: relative;
+}
+.securityGradientCard {
+}
+
+.securityCard {
+}
+
+.securityGradientCard .securityCard {
+  width: 20%;
+  position: relative;
+  text-align: center;
+}
+
+.securityCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #0183cd;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  position: relative;
+  overflow: hidden; 
+  font-size: 14px;
+  padding: 10px;
+  
+}
+.waveEffect {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 56%, rgba(0,163,255,1) 89%);
+  background-size: 200% 200%;
+  }
+
+  /* .securityCircleArrow {
+    position: relative;
+    display: block;
+    width: 2px;
+    height: 40px;
+    background: #0183cd;
+    margin: 0 auto;
+    margin-top: -2px;
+    margin-left: 44%;
+    background-image:url('../assets/images/SoarServices/arrow.png');
+    
+  } */
+  
+ 
+  /* .securityCircleArrow::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #0183cd;
+  } */
+  
+  /* Add glow effect */
+  /* .securityCircleArrow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 100%;
+    background: #0183cd;
+    filter: blur(4px);
+    opacity: 0.5;
+  } */
+
+  .securityCircleArrow {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: -2px;
+    background-image: url('../../images/SoarServices/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    right: 10px;
+  }
+  
+  /* Remove just the CSS arrow tip */
+  .securityCircleArrow::after {
+    display: none;
+  }
+  
+  /* Keep the glow effect */
+  .securityCircleArrow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 100%;
+    background: #0183cd;
+    filter: blur(12px);
+    opacity: 0.7;
+    z-index: -1;
+  }
+
+.securityCardText {
+  margin-top: 20px;
+}
+
+.itSecuritySection{
+display: flex;
+flex-direction: row;
+/* width: 100%; */
+position: relative;
+padding-top: 160px;
+}
+
+.itSecurityContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* width: 100%; */
+  padding-bottom: 73px;
+}
+
+.itSecurityImageText{
+  position: relative;
+  width: 50%;
+  margin-left: 108px;
+
+}
+
+/* .itSecurityText {
+  position: relative;
+  left: 100px;
+  top: 50px;
+}*/
+.itSecurityImage{
+  position: relative;
+    max-width: 150%;
+    top: -30px;
+}
+
+.itSecurityImage img{
+ max-width: 100%;
+} 
+
+.itSecurityDescription {
+  position: relative;
+  width: 50%;
+  margin-right: 50px;
+  margin-top: 120px;
+  bottom: 50px;
+}
+
+.itSecurityDescription > span {
+  position: relative;
+  top: 50px;
+}
+
+.itSecurityDescription > ul >li {
+position: relative;
+padding-left: 25px;
+margin-bottom: 10px;
+font-size: 16px;
+
+}
+
+.itSecurityDescription > ul >li::before{
+  content: "\21E2";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #0183cd;
+}
+
+.doUKnowImg {
+  max-width: 150%;
+  /* margin-left: 20%; */
+  padding-bottom: 50px;
+}
+
+.doUKnowImg > img {
+  margin-left: 170px;
+  width: 70%;
+  /* margin-bottom: -32%; */
+  position: relative;
+  /* top: 50px; */
+  /* padding-bottom: 50px; */
+}
+
+.dukInfoCircle {
+  height: 200px;
+  width: 200px;
+  /* background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 56%, rgba(0,163,255,1) 89%); */
+  /* filter: blur(2px); */
+}
+
+section.doUKnowSection {
+  padding-bottom: 50px;
+}
+
+
+.dukInfoCircle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #0183cd;
+  border-top: none;
+  border-right: none;
+  /* border-left: none; */
+  border-bottom:none ;
+  position: relative;
+  overflow: hidden; 
+  font-size: 14px;
+  padding: 10px;
+}
+
+
+.dukInfo.flex.flex-row {
+  padding-left: 150px;
+  padding-right: 200px;
+}
+
+.dukInfoCardContainer.w-6\/12.flex {
+  column-gap: 30px;
+  margin-left: -60px;
+}
+
+.dukInfoCircleText.text-white {
+  margin-top: 20px;
+}
+
+.logoSpan {
+  position: relative;
+  z-index: 2;
+}
+
+.logoSpan::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #00C2FF 0%, rgba(0, 194, 255, 0.5) 40%, rgba(0, 194, 255, 0) 70%);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+
+.managedSecurityOrchestration {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 0;
+  background: #00000b;
+}
+
+.managedSecurityOrchestrationHeadText {
+  position: relative;
+  padding-bottom: 50px;
+  z-index: 5;
+}
+
+.managedSecurityOrchestrationHeadText::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    #00C2FF 20%,
+    #00C2FF 80%,
+    transparent 100%
+  );
+}
+
+.managedSecurityOrchestrationContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 120px;
+  margin-top: 8vw;
+  perspective: 1000px; /* 3D perspective */
+  gap: 40px;
+}
+
+.managedSecurityOrchestrationCard {
+  width: 30%;
+  margin-bottom: 50px;
+  position: relative;
+  transition: transform 0.3s ease;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.cardImg {
+  position: absolute;
+  top: 2%;
+  width: 38%;
+  left: 31%;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.card {
+  height: 100%;
+  padding: 5vw 2vw 2vw;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #00315a, #001220);
+  /* box-shadow: 
+    0 0 25px rgba(0, 132, 255, 0.3),
+    inset 0 -20px 30px -25px rgba(0, 132, 255, 0.5); */
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+  transition:  transform 0.3s ease;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, 
+    rgba(0, 132, 255, 0) 0%,
+    rgba(0, 132, 255, 0.8) 50%,
+    rgba(0, 132, 255, 0) 100%
+  );
+}
+
+.card > h4 {
+  font-size: clamp(1.125rem, 1.902vw - .094rem, 2.188rem);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2vw;
+  color: #00C2FF;
+}
+
+.card > p {
+  font-size: clamp(.75rem, 1.454vw - .182rem, 1.563rem);
+  text-align: center;
+  font-weight: 200;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Hover effect */
+.managedSecurityOrchestrationCard:hover .card {
+  /* box-shadow: 
+    0 0 35px rgba(0, 194, 255, 0.5),
+    inset 0 -20px 30px -25px rgba(0, 194, 255, 0.7); */
+}
+
+.leadingOrganizationSection1>p , .leadingOrganizationSection2>p , .leadingOrganizationSection3>p{
+  font-size: clamp(.938rem, 1.678vw - .138rem, 1.875rem);
+}
+
+.question-answer-section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding: 5vw 4vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+
+}
+.question-answer-section p {
+  text-align: center;
+  font-size: calc(clamp(1.313rem, 2.349vw - 0.194rem, 2.625rem));
+  font-weight: 600;
+  width: 63%;
+  margin-bottom: 3vw;
+}
+.question-answer-section .mobile-cta { 
+  font-size: calc(clamp(1.125rem, 2.013vw - 0.166rem, 2.25rem));
+  color: #00BBFF;
+}
+
+.question-answer-section p {
+  font-size: calc(clamp(1.25rem, 2.311vw + 0.708rem, 2.188rem));
+  width: 100%;
+}
+.question-answer-section p {
+  width: 95%;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1280px) {
+  .managedSecurityOrchestrationContainer {
+    padding: 0 80px;
+  }
+  
+  .managedSecurityOrchestrationCard {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .managedSecurityOrchestrationContainer {
+    padding: 0 40px;
+  }
+  
+  .managedSecurityOrchestrationCard {
+    width: 80%;
+  }
+}
+
+

@@ -1,0 +1,339 @@
+
+.Why-esds {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../images/Why-ESDS-Page/why-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.sticky-and {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  /* height: 10vh; */
+  color: #fff;
+  top: 40vh;
+  justify-content: center;
+  align-items: center;
+}
+.why-heading {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.why-heading .heading {
+  font-size: calc(clamp(2.188rem, 3.915vw - 0.323rem, 4.375rem));
+  padding: 6vw 16vw 3vw 16vw;
+  text-align: center;
+  line-height: 5vw;
+  font-weight: 400;
+}
+.why-heading .heading h1 {
+  font-size: calc(clamp(2.188rem, 3.915vw - 0.323rem, 4.375rem));
+  color: #ffffffb8;
+}
+.why-heading .heading h1 span {
+  color: #fff;
+  transform: scale(1.4);
+}
+.subtitle-div h1 {
+  width: 46%;
+  text-align: center;
+}
+
+
+.monopoly-row {
+  display: flex;
+}
+
+.parent-heading {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.mononpoly-row .inline-block {
+  transition: all 0.5s ease;
+}
+
+.WR div {
+  color: #ffffffb8;
+}
+
+.why, .ESDS{
+  font-size: calc(clamp(2.813rem, 4.474vw - 0.057rem, 5.313rem));
+  position: relative;
+  font-weight: 400;
+}
+
+.why-subtitle {
+  font-size: calc(clamp(1.25rem, 1.678vw + 0.174rem, 2.188rem));
+  font-weight: 200;
+  padding: 0 7vw;
+  width: 46vw;
+  text-align: center;
+}
+.subtitle-why-esds {
+    position: relative;
+
+}
+.bottom-sticky-img {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 50vh;
+}
+.bottom-sticky-img img {
+  width: 100%;
+  height: 100%;
+}
+.circle-animate {
+  width: 18vw;
+  top: 8vh;
+  right: 20vw;
+  rotate: -8deg;
+  height: 21vh;
+  position: absolute;
+}
+.circle-animate img{
+  width: 100%;
+  height: 100%;
+}
+.breaking-monopoly {
+  position: relative;
+  left: 1vw;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+
+}
+.mono-text1 {
+  position: relative;
+ transform: translateX(4vw);
+ margin-bottom: 1vw;
+}
+.mono-text2 {
+  position: relative;
+  transform: translateX(-2vw);
+  margin-bottom: 1vw;
+}
+.mono-text3 {
+  position: relative;
+  transform: translateX(-6vw);
+  margin-bottom: 1vw;
+}
+.mono-text4 {
+  position: relative;
+  transform: translateX(5vw);
+  margin-bottom: 1vw;
+}
+.breaked-monopoly {
+  width: 100vw;
+  height: 50vh;
+
+}
+.monopoly-row {
+font-size:calc(clamp(1.563rem, 2.796vw - 0.231rem, 3.125rem));
+}
+.moving, .beyond-cloud , .breaking, .limitation, .shattering, .dependencies, .disrupting, .foreign-mono {
+
+  z-index: 1;
+  line-height: 6vw;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.innovation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 99vw;
+  justify-content: end;
+  height: 100vh;
+}
+.innovation-heading {
+  position: absolute;
+  right: 2%;
+  width: 60%;
+  font-size: calc(clamp(2.188rem, 2.796vw + 0.394rem, 3.75rem));
+  text-align: right;
+}
+.empower-heading {
+  position: absolute;
+  left: 2%;
+  width: 60%;
+  font-size: calc(clamp(2.188rem, 2.796vw + 0.394rem, 3.75rem));
+  text-align: left;
+}
+
+/* .disrupting-mono {
+  transform: translateX(5vw);
+}
+.shatt-depend {
+  transform: translateX(1vw);
+}
+.moving-beyond {
+  transform: translateX(-10vw);
+}
+ */
+.innovation-section {
+  position: relative;
+right: 5vw;
+}
+
+.innovation-section .parent-heading {
+  justify-content: end;
+}
+/* .innovation-char1 {
+  transform: translate(0px, -3px) skew(10deg, 11deg);
+  opacity: 0;
+} */
+.empowering-india {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5vw;
+  height: 5vw;
+  /* background-color: aqua; */
+  border: 1px solid #fff;
+  border-radius: 50%;
+  z-index: 99;
+  transition: all 0.05s ease-out
+}
+.empower {
+  display: flex;
+  font-size: 3.8vw;
+}
+.empower-section {
+  position: relative;
+  width: 64vw;
+}
+.empower-char1 {
+  opacity: 0;
+}
+
+.why-vertical-slider {
+  position: relative;
+  width: 100%;
+
+}
+.why-vertical-slider  .slider-list {
+  position: relative;
+}
+ .why-slide {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: calc(40 / 1440 * 100vw);;
+  
+}
+.why-slide1 {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: calc(40 / 1440 * 100vw);;
+  
+}
+.why-slide .why-slide-img .why-slide-text, .why-slide1 .why-slide-img .why-slide-text {
+  position: absolute;
+  top: 37%;
+  width: 43%;
+  z-index: 2;
+  padding-left: 2vw;
+  color: #fff;
+ 
+  border-radius: 30px;
+}
+ .why-slide .why-slide-img, .why-slide1 .why-slide-img {
+  position: relative;
+  width: 100%;
+ 
+overflow: hidden;
+  border-radius: 30px;
+}
+ .why-slide .why-slide-img img, .why-slide1 .why-slide-img img {
+  width: 100%;
+
+}
+.why-slide .why-slide-text h2, .why-slide1 .why-slide-text h2 {
+  font-size: calc(clamp(1.875rem, 2.796vw + 0.082rem, 3.438rem));
+  font-weight: 600;
+}
+
+/* Mobile Responsive css start */
+@media (max-width: 1400px){}
+@media (max-width: 1280px){}
+@media (max-width: 1199px){}
+@media (max-width: 991px){
+.why-heading {padding: 20vw 0;}
+.why-heading .heading {line-height: 38px;}
+.why-subtitle {width: 100%;}
+.mono-text1, .mono-text2, .mono-text3, .mono-text4 {transform: inherit; text-align: center;}
+.monopoly-row {display: flex; flex-wrap: wrap; justify-content: center;}
+.why-slide .why-slide-img .why-slide-text, .why-slide1 .why-slide-img .why-slide-text { width: 60%;}
+}
+@media (max-width: 767px){
+.why-heading { padding: 50vw 0; height: auto;}
+.breaking-monopoly {height: auto;}
+.Why-esds{background: none;}
+
+.mono-text1, .mono-text2, .mono-text3, .mono-text4 {margin-bottom: 30px;}
+.why-slide .why-slide-text h2, .why-slide1 .why-slide-text h2 {font-size: 28px; font-weight: 600; line-height: 28px;}
+.why-slide .why-slide-img .why-slide-text, .why-slide1 .why-slide-img .why-slide-text {
+width: 80%;}
+.moving, .beyond-cloud, .breaking, .limitation, .shattering, .dependencies, .disrupting, .foreign-mono { padding: 0 35px; line-height: 38px; font-size: 28px;}
+.why-slide { height: auto; }
+.why-slide1 { height: auto; }
+.why-vertical-slider { position: relative; width: 100%; overflow-y: auto; padding-bottom: 10vw; }
+
+}
+@media (max-width: 667px){
+
+}
+@media (max-width: 480px){
+  .innovation {
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+    height: auto;
+  }
+  .innovation-heading { 
+    position: relative;
+    width: 100%;
+    text-align: center;
+    
+  }
+  .empower-heading { 
+    position: relative;
+    width: 100%;
+    text-align: center;
+    
+  }
+  .empower-char1 {
+    opacity: 1;
+  }
+}
+@media (max-width: 360px){}
