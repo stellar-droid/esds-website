@@ -87,7 +87,7 @@ export default function NavbarInner() {
             },
             {
                 Name : "Managed SOC services",
-                Link : "/soc-as-a-service"
+                Link : "/managed-soc-services"
             },
             {
                 Name : "SOAR Services", 
@@ -110,7 +110,7 @@ export default function NavbarInner() {
             },
             {
                 Name : "Back up as Service", 
-                Link : "/platform-as-a-service"
+                Link : "/baas"
             },
              {
                 Name : "Database as a service",

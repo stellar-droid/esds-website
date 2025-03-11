@@ -33,7 +33,6 @@ import Sidbi from "../../images/partners/partner7.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const SoarServices = () => {
-  const liRefs = React.useRef([]);
  let logos = [
     axisBank,
     UnionBank,
@@ -43,6 +42,9 @@ const SoarServices = () => {
     SBICpas,
     Sidbi,
   ];
+
+  const liRefs = React.useRef([]);
+
   // Text Reveal Animation
   React.useLayoutEffect(() => {
     gsap.fromTo(
@@ -87,6 +89,8 @@ const SoarServices = () => {
       })
       .add(tl1);
   }, []);
+
+  // Card Animation
 
   const sectionRef = useRef(null);
   const containerRef = useRef(null);

@@ -88,7 +88,7 @@
 }
 
 .customizedSocInfo > h3 {
-  padding: 50px 0 4px 0;
+  padding: 20px 0 4px 0;
 }
 
 .customizedSocInfo > :nth-child(3) {
@@ -140,6 +140,12 @@
   width: 50%;
   position: relative;
   top: 80px;
+}
+
+.approachToBuildingInfo > :nth-child(2){
+      /* margin-top: 49px !important; */
+      position: relative;
+      top: 20px;
 }
 
 .approachToBuildingInfo > ul {

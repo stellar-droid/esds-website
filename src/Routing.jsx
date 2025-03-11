@@ -32,6 +32,9 @@ import InnerPageLoader from "./component/Loader/InnerPageLoader"
 import SoarServices from "./component/ManagedSecurityServices/SoarServices"
 import PrivateSocBuild from "./component/ManagedSecurityServices/PrivateSocBuild/PrivateSocBuild"
 import CloudMigration from "./component/Manage Services/CloudMigration/CloudMigration"
+import BaaS from "./component/PaaS/BaaS/BaaS"
+import ManagedSocServices from "./component/ManagedSecurityServices/ManagedSocServices/ManagedSocServices"
+
 export default function Routing() {
   // const location = useLocation()
   // let currentpath = location.pathname
@@ -58,6 +61,8 @@ export default function Routing() {
       <Route path='/soar-services' element={<Suspense fallback={<Loader />}> <SoarServices /></Suspense>} />
       <Route path='/private-soc-build' element={<Suspense fallback={<Loader/>}><PrivateSocBuild/></Suspense>}></Route>
       <Route path='/cloud-migration' element={<Suspense fallback={<Loader />}> <CloudMigration /></Suspense>} />
+      <Route path="/baas" element={<Suspense fallback={<Loader />}> <BaaS /></Suspense>}></Route>
+      <Route path='/managed-soc-services' element={<Suspense fallback={<Loader />}> <ManagedSocServices/></Suspense>} />
       {/* <Route path='/managed-services/:MS_name' element={ <Suspense fallback={<Loader />}><ManageSecuServices /></Suspense>} /> */}
       <Route path='/contact-us' element={ <Suspense fallback={<Loader />}><ContactPage /></Suspense>} />
       <Route path='/soc-as-a-service' element={ <ManageSecurity />} />

@@ -1,0 +1,104 @@
+/* SECTION 1 */
+
+.worldOfLiimitless {
+    background: url("/src/images/manage security/ManagedSocServices/bgManagedSocServices.png")
+    no-repeat center center/cover;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 5vw;
+}
+
+.worldOfLiimitlessText > h3 {
+    font-size: clamp(3.438rem, 0.559vw + 3.079rem, 3.75rem);
+}
+
+.worldOfLiimitlessText > :nth-child(2){
+    line-height: 30px;
+}
+
+.worldOfLiimitlessText > :nth-child(3){
+    position: relative;
+    top: 30px;
+}
+
+/* ///////////////////////////SECTION 2 */
+
+.surviveCyberAttackContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 5vw;
+}
+
+.surviveCyberAttackText {
+    width: 50%;
+    position: relative;
+    /* line-height: normal; */
+    top: 20px;
+}
+
+.surviveCyberAttackText > h3 {
+    font-size: clamp(2.5rem, 0.559vw + 2.141rem, 2.813rem);
+}
+
+.surviveCyberAttackText > :nth-child(2){
+    position: relative !important;
+    top: 30px;
+}
+
+.surviveCyberAttackText > :nth-child(3){
+    position: relative;
+    top: 70px;
+}
+
+.surviveCyberAttackImg {
+    width: 50%;
+    position: relative;
+    bottom: 55px;
+}
+
+            /* ///////////////////////////SECTION 3 */  
+         
+.cyberAttackBusinessContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 5vw;
+    position: relative;
+    padding-top: 80px;
+}
+
+.cyberAttackBusinessText{
+    width: 50%;
+    position: relative;
+    /* line-height: normal; */
+    /* bottom: 17px; */
+    /* left: -21px; */
+    right: 20px;
+}
+
+.cyberAttackBusinessText > h3{
+    font-size: clamp(2.5rem, 1.342vw + 1.639rem, 3.25rem)
+}
+
+.cyberAttackBusinessText > :nth-child(2){
+    position: relative !important;
+    top: 20px;
+}
+
+.cyberAttackBusinessText > :nth-child(3){
+    position: relative;
+    top: 50px;
+}
+
+.cyberAttackBusinessImg {
+    width: 50%;
+    position: relative;
+    bottom: 100px;
+    /* left: 30px; */
+}

@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* SECTION 1 */
+
+.backupAdvantage {
+  /* position: relative; */
+  min-height: 100vh; /* Full viewport height */
+  background: url("../../../images/Paas/BaaS/bgBaaS.jpg") no-repeat center
+    center/cover; /* Replace with your background image path */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #ffffff;
+  /* text-align: center; */
+  padding: 90px;
+  position: relative;
+  width: 100%;
+}
+
+.backupAdvantageContainer {
+  padding: 0 5vw;
+}
+
+.backupAdvantageText {
+  position: relative;
+  right: 100px;
+}
+
+.backupAdvantageText > h3 {
+  font-size: clamp(3.125rem, 2.013vw + 1.834rem, 4.25rem);
+  margin-bottom: 30px;
+}
+
+/* SECTION 2 */
+
+.reallyPreparedInfo > h3 {
+  font-size: clamp(1.875rem, 0.224vw + 1.732rem, 2rem);
+}
+
+.reallyPreparedInfo > :nth-child(2) {
+  position: relative !important;
+}
+
+.reallyPreparedInfo > :nth-child(2) > :nth-child(1) {
+  margin-left: -210px;
+}
+
+.reallyPreparedInfo > :nth-child(3) {
+  font-size: clamp(1.188rem, 0.671vw + 0.757rem, 1.563rem);
+  line-height: normal;
+}
+
+.reallyPreparedInfo > :nth-child(4) {
+  font-size: clamp(1.563rem, 0.783vw + 1.06rem, 2rem);
+}
+
+.reallyPreparedContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 2vw 10vh 5vw;
+}
+.reallyPreparedInfo {
+  width: 50%;
+  /* gap: 20px; */
+  position: relative;
+  top: 100px;
+}
+
+.reallyPreparedImg {
+  width: 50%;
+}
+
+.reallyPreparedImg > img {
+  max-width: 120%;
+  position: relative;
+  right: 65px;
+  bottom: 20px;
+}
+
+/* SECTION 3 */
+.harshRealityContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 5vw 0vh 0vw;
+}
+
+.harshRealityImg {
+  width: 50%;
+  margin-left: -1vw;
+}
+
+.harshRealityImg > img {
+  max-width: 102%;
+}
+
+.harshRealityInfo {
+  width: 50%;
+  margin-top: 85px;
+  line-height: normal;
+}
+
+.harshRealityInfo > h1 {
+  font-size: clamp(2.813rem, 0.783vw + 2.31rem, 3.25rem);
+}
+
+.harshRealityInfo > :nth-child(2) {
+  position: relative !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.harshRealityInfo > :nth-child(3) {
+  font-size: clamp(1.375rem, 0.336vw + 1.16rem, 1.563rem);
+  font-family: Urbanist;
+}
+
+.harshRealityInfo > :nth-child(4) {
+  position: relative;
+  top: 23px;
+}
+
+/* SECTION 4 */
+
+.backupServicesHead > :nth-child(1) {
+  text-align: center;
+  font-size: clamp(2.813rem, 0.783vw + 2.31rem, 3.25rem);
+  /* margin-top: 50px; */
+}
+
+.backupServicesHead > :nth-child(2) {
+  position: relative !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: clamp(1.25rem, 0.447vw + 0.963rem, 1.5rem);
+  width: 40% !important;
+  left: 25% !important;
+}
+
+.backupServicesHead > :nth-child(2) > :nth-child(1) {
+  margin-bottom: 70px !important;
+}
+
+.backupServicesHead > :nth-child(3) {
+  color: #00a3ff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.backupServicesContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 5vw;
+  margin-top: 50px;
+}
+
+.backupServicesCard1 {
+  /* border: 1px solid #0b8dc7; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 32%;
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(4, 146, 239, 0.4962359943977591) 100%
+  );
+  padding: 25px;
+  border-radius: 20px;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.backupServicesCard1 > :nth-child(1) {
+  height: 60px;
+  width: 60px;
+}
+
+.backupServicesCard1 > :nth-child(2) {
+  font-weight: bold;
+}
+
+.backupServicesCard1 > :nth-child(3) {
+  /* padding: 0 2vw;
+    position: relative;
+    margin-left: 20px; */
+  line-height: normal;
+  font-size: clamp(0.938rem, 0.559vw + 0.579rem, 1.25rem);
+  text-align: center;
+}
+
+/* SECTION 5 */
+
+.esdsSolutionsHead > h3 {
+  font-size: clamp(1.25rem, 3.579vw - 1.045rem, 3.25rem);
+  text-align: center;
+}
+
+.esdsSolutionsHead > :nth-child(2) {
+  position: relative !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 40% !important;
+  left: 25% !important;
+}
+
+.esdsSolutionContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 5vw;
+  margin-top: 50px;
+  padding-bottom: 5vh;
+}
+
+.esdsSolutionContainer > :nth-child(1) {
+  width: 32%;
+  /* background: url("../../../images/Paas/BaaS/column1.png") no-repeat center center/cover; */
+
+  min-height: 10vh; /* Full viewport height */
+  background: url("../../../images/Paas/BaaS/column1.png") no-repeat center
+    center/cover;
+}
+
+.esdsSolutionContainer :nth-child(2) {
+  width: 32%;
+  scale: 1.2;
+}
+
+.esdsSolutionContainer :nth-child(3) {
+  width: 32%;
+
+  min-height: 10vh;
+  background: url("../../../images/Paas/BaaS/column3.png") no-repeat center
+    center/cover;
+}
+
+/* SECTION 6 */
+
+.benefitsOfEsds{
+    padding: 0 0 0 5vw;
+    padding-top: 50px;
+}
+
+.benefitsOfEsds > h3 {
+    font-size: clamp(2.188rem, 1.119vw + 1.47rem, 2.813rem);
+    /* font-weight: bold; */
+
+}
+
+.benefitsOfEsds > :nth-child(2){
+    position: relative !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40% !important;
+    left: 5% !important;
+}
+
+.benefitsOfEsdsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 70vh;
+    
+}
+
+.benefitsOfEsdsInfo{
+    width: 50%;
+    line-height: 40px;
+}
+
+.benefitsOfEsdsInfo > ul > li {
+    font-size:clamp(0.938rem, 0.336vw + 0.722rem, 1.125rem);
+    list-style-type: disc;
+}
+
+.benefitsOfEsdsInfo > ul > li::marker{
+    color: #00a3ff;
+}
+
+.benefitsOfEsdsImg {
+    width: 50%;
+    position: relative;
+    bottom: 100px;
+}
+
+
+.lastSegment > :nth-child(3){
+  margin-left: 25%;
+}
+
+.lastSegment > :nth-child(4){
+  margin-top: 20px;
+  text-align: center;
+}

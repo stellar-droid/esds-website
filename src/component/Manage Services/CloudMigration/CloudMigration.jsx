@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import "./CloudMigration.css";
 import Header from "../../Header/Header";
 import CTAButton from "../../../components/ui/CtaButton/CtaButton";
@@ -12,7 +12,191 @@ import logoStep4 from "../../../images/Managed services/logoStep4.svg";
 import logoStep5 from "../../../images/Managed services/logoStep5.svg";
 import logoStep6 from "../../../images/Managed services/logoStep6.svg";
 import FooterFinal from "../../FinalFooter/FooterFinal";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const CloudMigration = () => {
+
+
+  React.useEffect(() => {
+    const Itinfrastructureinfo = document.querySelector(
+      ".itInfraStructureInfo p"
+    );
+    const CloudMigrationSolutions = document.querySelectorAll(
+      ".card1, .card2, .card3, .card4"
+    );
+
+    const trustTeamStats = document.querySelectorAll(".trustTeamInfo h1");
+    
+
+    if (Itinfrastructureinfo) {
+      gsap.fromTo(
+        Itinfrastructureinfo,
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".itInfraStructureInfo",
+            start: "top 70%",
+            toggleActions: "restart none none none",
+          },
+        }
+      );
+    }
+
+    if (CloudMigrationSolutions) {
+      gsap.fromTo(
+        CloudMigrationSolutions,
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".cloudMigrationSolutionContainer",
+            start: "top 70%",
+            toggleActions: "restart none none none",
+          },
+        }
+      );
+    }
+
+     trustTeamStats.forEach((stat) => {
+    let finalValue = parseInt(stat.innerText.replace(/\D/g, ""), 10); // Extract only the number
+    if (!isNaN(finalValue)) {
+      gsap.fromTo(
+        stat,
+        { innerText: 0 },
+        {
+          innerText: finalValue,
+          duration: 2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".trustTeamInfo",
+            start: "top 80%",
+            toggleActions: "restart none none none",
+          },
+          snap: { innerText: 1 },
+          onUpdate: function () {
+            stat.innerText = Math.floor(this.targets()[0].innerText).toLocaleString(); // Format numbers properly
+          },
+        }
+      );
+    }
+  });
+  }, []);
+
+
+  // Card Animation
+
+  const sectionRef = useRef(null);
+  const containerRef = useRef(null);
+  const cardsRef = useRef([]);
+
+
+// Add cards to the ref array
+const addToRefs = (el) => {
+  if (
+    el &&
+    !cardsRef.current.includes(el) &&
+    el.classList.contains("steps")
+  ) {
+    cardsRef.current.push(el);
+  }
+};
+
+React.useLayoutEffect(() => {
+    // Store context to easily kill animations on unmount
+    let ctx = gsap.context(() => {
+      // Clear any existing ScrollTriggers
+      // ScrollTrigger.getAll().forEach(st => st.kill());
+
+      // Reset card refs array for potential re-renders
+      cardsRef.current = cardsRef.current.slice(0, 6);
+
+      // Initial setup - make sure cards are visible but styled
+      cardsRef.current.forEach((card, i) => {
+        gsap.set(card, {
+          transformOrigin: "top center",
+          scale: 0.8,
+          opacity: 0,
+          y: 50,
+        });
+      });
+
+      // Create a separate animation for each card that triggers when the card comes into view
+      cardsRef.current.forEach((card, i) => {
+        gsap.to(card, {
+          opacity: 1,
+          scale: 1,
+          y: 0,
+          rotationX: 0,
+          duration: 0.8,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 80%", // Starts animation when card is 80% from the top of the viewport
+            end: "bottom 20%",
+            toggleActions: "play none none reverse", // play on enter, reverse on leave
+            markers: false, // Remove in production
+          },
+        });
+
+        // Add perspective effect as you scroll
+        gsap.to(card, {
+          rotationX: i % 2 === 0 ? 10 : -10, // Alternate rotation directions
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 1, // Smooth scrubbing effect
+          },
+        });
+      });
+
+      // Add hover effects
+      cardsRef.current.forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          gsap.to(this, {
+            scale: 1.05,
+            rotationX: 0, // Reset rotation on hover
+            // boxShadow: "0 0 35px rgba(0, 194, 255, 0.5)",
+            duration: 0.3,
+            ease: "power1.out",
+            zIndex: 10,
+          });
+        });
+
+        card.addEventListener("mouseleave", function () {
+          gsap.to(this, {
+            scale: 1,
+            // boxShadow: "0 0 25px rgba(0, 132, 255, 0.3)",
+            duration: 0.3,
+            ease: "power1.in",
+            zIndex: 1,
+          });
+        });
+      });
+    }, sectionRef);
+
+    // Cleanup function
+    return () => {
+      ctx.revert(); // This will clean up all GSAP animations created by this context
+    };
+  }, []); // Empty dependency array means it runs once after mount
+
   return (
     <>
       <div className="cloudMigration">
@@ -43,7 +227,12 @@ const CloudMigration = () => {
             </div>
             <div className="itInfraStructureInfo">
               <h3>
-                Is Your Current IT Infrastructure Holding Back Your Growth?
+                Is Your{" "}
+                <span style={{ fontWeight: "bold" }}>
+                  {" "}
+                  Current IT Infrastructure
+                </span>{" "}
+                Holding Back Your Growth?
               </h3>
               <HeadingBottomLine />
               <p>
@@ -205,11 +394,11 @@ const CloudMigration = () => {
           </div>
         </section>
 
-        <section className="sixStepBluePrint" style={{ background: "#000000" }}>
+        <section ref={sectionRef} className="sixStepBluePrint" style={{ background: "#000000" }}>
           <h3>Our 6-Step Blueprint for Seamless Cloud Migration</h3>
           <HeadingBottomLine />
-          <div className="sixSteps">
-            <div className="steps">
+          <div ref={containerRef} className="sixSteps">
+            <div ref={addToRefs} className="steps">
               <div className="innerStep">
                 <span>
                   <img src={logoStep1} alt="Assessment" />
@@ -221,7 +410,7 @@ const CloudMigration = () => {
                 goals.
               </p>
             </div>
-            <div className="steps">
+            <div ref={addToRefs} className="steps">
               <div className="innerStep">
                 <span>
                   <img src={logoStep2} alt="Planning" />
@@ -229,10 +418,10 @@ const CloudMigration = () => {
                 <h3>Planning</h3>
               </div>
               <p>
-              Tailored strategy covering timelines, risks, and priorities.
+                Tailored strategy covering timelines, risks, and priorities.
               </p>
             </div>
-            <div className="steps">
+            <div ref={addToRefs} className="steps">
               <div className="innerStep">
                 <span>
                   <img src={logoStep3} alt="Migration" />
@@ -240,32 +429,28 @@ const CloudMigration = () => {
                 <h3>Migration</h3>
               </div>
               <p>
-              Execute seamless transitions to the cloud with zero data loss.
+                Execute seamless transitions to the cloud with zero data loss.
               </p>
             </div>
-            <div className="steps">
+            <div ref={addToRefs} className="steps">
               <div className="innerStep">
                 <span>
                   <img src={logoStep4} alt="Validation" />
                 </span>
                 <h3>Validation</h3>
               </div>
-              <p>
-              Ensure performance and reliability post-migration.
-              </p>
+              <p>Ensure performance and reliability post-migration.</p>
             </div>
-            <div className="steps">
+            <div ref={addToRefs} className="steps">
               <div className="innerStep">
                 <span>
                   <img src={logoStep5} alt="Optimization" />
                 </span>
                 <h3>Optimization</h3>
               </div>
-              <p>
-              Fine-tune applications and workloads for peak efficiency.
-              </p>
+              <p>Fine-tune applications and workloads for peak efficiency.</p>
             </div>
-            <div className="steps">
+            <div ref={addToRefs} className="steps">
               <div className="innerStep">
                 <span>
                   <img src={logoStep6} alt="Support" />
@@ -273,13 +458,14 @@ const CloudMigration = () => {
                 <h3>Support</h3>
               </div>
               <p>
-              Continuous monitoring and 24x7 assistance for your cloud environment.
+                Continuous monitoring and 24x7 assistance for your cloud
+                environment.
               </p>
             </div>
           </div>
         </section>
 
-        <FooterFinal BgColor=""/>
+        <FooterFinal BgColor="" />
       </div>
     </>
   );

@@ -21,6 +21,10 @@ import DCBBank from "../../../images/partners/partner4.png";
 import TATACapital from "../../../images/partners/partner5.png";
 import SBICpas from "../../../images/partners/partner6.png";
 import Sidbi from "../../../images/partners/partner7.png";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const PrivateSocBuild = () => {
   const features = [
@@ -69,6 +73,83 @@ const PrivateSocBuild = () => {
     SBICpas,
     Sidbi,
   ];
+
+// SECTION 2 TEXT ANIMATION
+React.useEffect(()=>{
+  const headingText = document.querySelector('.customizedSocHead h3');
+  const paragraphText = document.querySelector('.customizedSocInfo p');
+  const ctaText = document.querySelector('.customizedSocInfo h3');
+  const blocks = document.querySelectorAll('.block1, .block2, .block3, .block4, .block5, .block6, .column2');
+  
+  if (paragraphText) {
+    gsap.fromTo(
+      paragraphText,
+      { 
+        opacity: 0,
+        y: 50
+      },
+      { 
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: '.customizedSocInfo',
+          start: "top 70%",
+         toggleActions: "restart none none none"
+        }
+      }
+    );
+  }
+ 
+  if(blocks){
+    gsap.fromTo(
+      blocks,
+      { 
+        opacity: 0,
+        y: 50
+      },
+      { 
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        ease: "power3.out",
+        stagger: 0.5,
+        scrollTrigger: {
+          trigger: '.privateSocContainer',
+          start: "top 70%",
+         toggleActions: "restart none none none"
+        }
+      }
+    );
+  }
+
+},[]);
+
+// SECTION 3 ANIMATION
+  const liRefs = React.useRef([]);
+// Text Reveal Animation
+  React.useLayoutEffect(() => {
+    gsap.fromTo(
+      liRefs.current,
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.5, // Creates a delay between animations
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".approachToBuildingInfo ul li",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "restart none none none",
+        },
+      }
+    );
+  }, []);
+
+  
 
   return (
     <>
@@ -178,27 +259,27 @@ const PrivateSocBuild = () => {
             </div>
             <div className="approachToBuildingInfo">
               <ul>
-                <li>
+                <li key={0} ref={(el) => (liRefs.current[0] = el)}>
                   Assessment and Design: We evaluate your security needs and
                   design a SOC that integrates seamlessly with your
                   infrastructure.
                 </li>
-                <li>
+                <li key={1} ref={(el) => (liRefs.current[1] = el)}>
                   Deployment of Security Tools and Technologies: We implement
                   cutting-edge security tools, including SIEM, threat
                   intelligence, and endpoint detection, for full coverage.
                 </li>
-                <li>
+                <li key={2} ref={(el) => (liRefs.current[2] = el)}>
                   Real-Time Threat Monitoring and Detection: Our SOC uses
                   AI-powered detection systems to continuously monitor and
                   mitigate risks in real-time.
                 </li>
-                <li>
+                <li   key={3} ref={(el) => (liRefs.current[3] = el)}>
                   Incident Response and Mitigation: In case of a breach, we
                   deploy predefined playbooks and custom workflows to neutralize
                   threats swiftly.
                 </li>
-                <li>
+                <li key={4} ref={(el) => (liRefs.current[4] = el)}>
                   Ongoing Management and Optimization: We provide continuous
                   management and regular updates to adapt to evolving threats
                   and business needs.
