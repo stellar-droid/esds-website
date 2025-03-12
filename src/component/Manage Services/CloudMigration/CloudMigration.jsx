@@ -1,4 +1,4 @@
-import React,{useRef} from "react";
+import React, { useRef } from "react";
 import "./CloudMigration.css";
 import Header from "../../Header/Header";
 import CTAButton from "../../../components/ui/CtaButton/CtaButton";
@@ -18,8 +18,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const CloudMigration = () => {
-
-
   React.useEffect(() => {
     const Itinfrastructureinfo = document.querySelector(
       ".itInfraStructureInfo p"
@@ -29,7 +27,10 @@ const CloudMigration = () => {
     );
 
     const trustTeamStats = document.querySelectorAll(".trustTeamInfo h1");
-    
+
+    const itInfraStructureImgFirstChild = document.querySelector(
+      ".itInfraStructureImg > *:nth-child(1)"
+    );
 
     if (Itinfrastructureinfo) {
       gsap.fromTo(
@@ -73,31 +74,54 @@ const CloudMigration = () => {
       );
     }
 
-     trustTeamStats.forEach((stat) => {
-    let finalValue = parseInt(stat.innerText.replace(/\D/g, ""), 10); // Extract only the number
-    if (!isNaN(finalValue)) {
-      gsap.fromTo(
-        stat,
-        { innerText: 0 },
-        {
-          innerText: finalValue,
-          duration: 2,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: ".trustTeamInfo",
-            start: "top 80%",
-            toggleActions: "restart none none none",
-          },
-          snap: { innerText: 1 },
-          onUpdate: function () {
-            stat.innerText = Math.floor(this.targets()[0].innerText).toLocaleString(); // Format numbers properly
-          },
-        }
-      );
-    }
-  });
-  }, []);
+    trustTeamStats.forEach((stat) => {
+      let finalValue = parseInt(stat.innerText.replace(/\D/g, ""), 10); // Extract only the number
+      if (!isNaN(finalValue)) {
+        gsap.fromTo(
+          stat,
+          { innerText: 0 },
+          {
+            innerText: finalValue,
+            duration: 2,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".trustTeamInfo",
+              start: "top 80%",
+              toggleActions: "restart none none none",
+            },
+            snap: { innerText: 1 },
+            onUpdate: function () {
+              stat.innerText = Math.floor(
+                this.targets()[0].innerText
+              ).toLocaleString(); // Format numbers properly
+            },
+          }
+        );
+      }
+    });
 
+    if(itInfraStructureImgFirstChild){
+      gsap.fromTo(
+        itInfraStructureImgFirstChild,
+              {
+                opacity: 0,
+                y: 50,
+              },
+              {
+                opacity: 1,
+                y: 0,
+                duration: 2,
+                ease: "power2.out",
+                // delay: 0.5,
+                scrollTrigger: {
+                  trigger: ".itInfraStructureContainer",
+                  start: "top 70%",
+                  toggleActions: "restart none none none",
+                },
+              }
+            );
+    }
+  }, []);
 
   // Card Animation
 
@@ -105,19 +129,18 @@ const CloudMigration = () => {
   const containerRef = useRef(null);
   const cardsRef = useRef([]);
 
+  // Add cards to the ref array
+  const addToRefs = (el) => {
+    if (
+      el &&
+      !cardsRef.current.includes(el) &&
+      el.classList.contains("steps")
+    ) {
+      cardsRef.current.push(el);
+    }
+  };
 
-// Add cards to the ref array
-const addToRefs = (el) => {
-  if (
-    el &&
-    !cardsRef.current.includes(el) &&
-    el.classList.contains("steps")
-  ) {
-    cardsRef.current.push(el);
-  }
-};
-
-React.useLayoutEffect(() => {
+  React.useLayoutEffect(() => {
     // Store context to easily kill animations on unmount
     let ctx = gsap.context(() => {
       // Clear any existing ScrollTriggers
@@ -223,6 +246,7 @@ React.useLayoutEffect(() => {
         <section className="itInfraStructure" style={{ background: "#000000" }}>
           <div className="itInfraStructureContainer">
             <div className="itInfraStructureImg">
+              <HeadingBottomLine />
               <img src={itInfraStructure} alt="IT Infra Structure" />
             </div>
             <div className="itInfraStructureInfo">
@@ -394,7 +418,11 @@ React.useLayoutEffect(() => {
           </div>
         </section>
 
-        <section ref={sectionRef} className="sixStepBluePrint" style={{ background: "#000000" }}>
+        <section
+          ref={sectionRef}
+          className="sixStepBluePrint"
+          style={{ background: "#000000" }}
+        >
           <h3>Our 6-Step Blueprint for Seamless Cloud Migration</h3>
           <HeadingBottomLine />
           <div ref={containerRef} className="sixSteps">

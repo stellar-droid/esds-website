@@ -183,7 +183,7 @@ React.useEffect(()=>{
                 enabling your organization to operate with confidence and
                 resilience.
               </p>
-              <span className="relative  left-[20px]">
+              <span className="relative  left-[20px] top-[40px]">
                 <CTAButton
                   buttonText={"Get Started"}
                   hoverText={"Get Started"}
@@ -294,7 +294,7 @@ React.useEffect(()=>{
           </div>
         </section>
 
-        <section className="privateSoc" style={{ background: "#000000" }}>
+        <section className="privateSoc" >
           <div className="privateSocContainer">
             <div className="column1">
               <div className="block1">
@@ -418,14 +418,14 @@ React.useEffect(()=>{
             </div>
           </div>
         </section>
-        <section className="privateSocBuildFinalSection" style={{ background: "#000000" }}>
+        <section className="privateSocBuildFinalSection" style={{background:"#000000"}}>
           <div className="clientLogos">
-            <Partner color={"#00000b"} logosArray={logos} />
+            <Partner title={"Partners"} color={"#000000"} logosArray={logos} />
           </div>
           <div className="privateSocCallToAction">
             <h3 className="text-3xl font-light mb-4" >
               Are you ready to take control of your <br className="hidden lg:block" /> <span className="font-bold">organization's cybersecurity
-              with a <br className="hidden lg:block" />customized, private SOC?</span>{" "}
+              with a customized, private SOC?</span>{" "}
             </h3>
             <p>
               Contact us today to discuss your specific security needs, and let

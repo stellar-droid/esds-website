@@ -26,7 +26,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { useLayoutEffect } from "react";
 
-
 const BaaS = () => {
   let logos = [
     axisBank,
@@ -44,7 +43,14 @@ const BaaS = () => {
     const reallyPreparedh3 = document.querySelector(
       ".reallyPreparedInfo h3:last-of-type"
     );
-
+    const reallyPreparedImgSecondChild = document.querySelector(
+      ".reallyPreparedImg > *:nth-child(2)"
+    );
+    const EsdsSolutionsHead = document.querySelector(".esdsSolutionsHead h3");
+    const BenefitsOfEsds = document.querySelector(".benefitsOfEsds h3");
+    const harshRealityImgFirstChild = document.querySelector(
+      ".harshRealityImg > *:first-child"
+    );
     if (reallyPrepared) {
       gsap.fromTo(
         reallyPrepared,
@@ -86,10 +92,125 @@ const BaaS = () => {
         }
       );
     }
+    if (reallyPreparedImgSecondChild) {
+      gsap.fromTo(
+        reallyPreparedImgSecondChild,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 4, // Increased duration for smoother effect
+          ease: "power2.out",
+          delay: 0.5,
+          scrollTrigger: {
+            trigger: ".reallyPreparedContainer",
+            start: "top 70%",
+            onEnter: () => {
+              reallyPreparedImgSecondChild.style.opacity = "1";
+            },
+            onLeave: () => {
+              reallyPreparedImgSecondChild.style.opacity = "0";
+            },
+            onEnterBack: () => {
+              reallyPreparedImgSecondChild.style.opacity = "1";
+            },
+            onLeaveBack: () => {
+              reallyPreparedImgSecondChild.style.opacity = "0";
+            },
+          },
+        }
+      );
+    }
+
+    if (EsdsSolutionsHead) {
+      gsap.fromTo(
+        EsdsSolutionsHead,
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".esdsSolutionsHead",
+            start: "top 70%",
+            toggleActions: "restart none none none",
+          },
+        }
+      );
+    }
+
+    if (BenefitsOfEsds) {
+      gsap.fromTo(
+        BenefitsOfEsds,
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".benefitsOfEsds",
+            start: "top 70%",
+            toggleActions: "restart none none none",
+          },
+        }
+      );
+    }
+
+    if (harshRealityImgFirstChild) {
+      gsap.fromTo(
+        harshRealityImgFirstChild,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 4,
+          ease: "power2.out",
+          delay: 0.5,
+          scrollTrigger: {
+            trigger: ".harshRealityImg",
+            start: "top 70%",
+            onEnter: () => {
+              harshRealityImgFirstChild.style.opacity = "1";
+            },
+            onLeave: () => {
+              harshRealityImgFirstChild.style.opacity = "0";
+            },
+            onEnterBack: () => {
+              harshRealityImgFirstChild.style.opacity = "1";
+            },
+            onLeaveBack: () => {
+              harshRealityImgFirstChild.style.opacity = "0";
+            },
+          },
+        }
+      );
+    }
+  }, []);
+
+  const reallyPreparedRef = useRef(null);
+  React.useEffect(() => {
+    gsap.to(reallyPreparedRef.current, {
+      duration: 1,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: reallyPreparedRef.current,
+        start: "top 70%", // When the top of the element is 70% in viewport
+        toggleActions: "play none none reverse", // Reverts when scrolled out
+      },
+    });
   }, []);
 
   // SECTION 3 ANIMATION
   const liRefs = React.useRef([]);
+  const BenefitsOfEsdsRefs = React.useRef([]);
   // Text Reveal Animation
   React.useLayoutEffect(() => {
     gsap.fromTo(
@@ -103,6 +224,24 @@ const BaaS = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".harshRealityContainer",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "restart none none none",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      BenefitsOfEsdsRefs.current,
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        stagger: 0.5, // Creates a delay between animations
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".benefitsOfEsdsInfo ul li",
           start: "top 80%",
           end: "bottom 20%",
           toggleActions: "restart none none none",
@@ -129,88 +268,85 @@ const BaaS = () => {
     }
   };
 
+  useLayoutEffect(() => {
+    // Store context to easily kill animations on unmount
+    let ctx = gsap.context(() => {
+      // Clear any existing ScrollTriggers
+      // ScrollTrigger.getAll().forEach(st => st.kill());
 
-   useLayoutEffect(() => {
-      // Store context to easily kill animations on unmount
-      let ctx = gsap.context(() => {
-        // Clear any existing ScrollTriggers
-        // ScrollTrigger.getAll().forEach(st => st.kill());
-  
-        // Reset card refs array for potential re-renders
-        cardsRef.current = cardsRef.current.slice(0, 5);
-  
-        // Initial setup - make sure cards are visible but styled
-        cardsRef.current.forEach((card, i) => {
-          gsap.set(card, {
-            transformOrigin: "top center",
-            scale: 0.8,
-            opacity: 0,
-            y: 50,
+      // Reset card refs array for potential re-renders
+      cardsRef.current = cardsRef.current.slice(0, 5);
+
+      // Initial setup - make sure cards are visible but styled
+      cardsRef.current.forEach((card, i) => {
+        gsap.set(card, {
+          transformOrigin: "top center",
+          scale: 0.8,
+          opacity: 0,
+          y: 50,
+        });
+      });
+
+      // Create a separate animation for each card that triggers when the card comes into view
+      cardsRef.current.forEach((card, i) => {
+        gsap.to(card, {
+          opacity: 1,
+          scale: 1,
+          y: 0,
+          rotationX: 0,
+          duration: 2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 80%", // Starts animation when card is 80% from the top of the viewport
+            end: "bottom 20%",
+            toggleActions: "play none none reverse", // play on enter, reverse on leave
+            markers: false, // Remove in production
+          },
+        });
+
+        // Add perspective effect as you scroll
+        gsap.to(card, {
+          rotationX: i % 2 === 0 ? 10 : -10, // Alternate rotation directions
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 1, // Smooth scrubbing effect
+          },
+        });
+      });
+
+      // Add hover effects
+      cardsRef.current.forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          gsap.to(this, {
+            scale: 1.05,
+            rotationX: 0, // Reset rotation on hover
+            // boxShadow: "0 0 35px rgba(0, 194, 255, 0.5)",
+            duration: 0.3,
+            ease: "power1.out",
+            zIndex: 10,
           });
         });
-  
-        // Create a separate animation for each card that triggers when the card comes into view
-        cardsRef.current.forEach((card, i) => {
-          gsap.to(card, {
-            opacity: 1,
+
+        card.addEventListener("mouseleave", function () {
+          gsap.to(this, {
             scale: 1,
-            y: 0,
-            rotationX: 0,
-            duration: 0.8,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: card,
-              start: "top 80%", // Starts animation when card is 80% from the top of the viewport
-              end: "bottom 20%",
-              toggleActions: "play none none reverse", // play on enter, reverse on leave
-              markers: false, // Remove in production
-            },
-          });
-  
-          // Add perspective effect as you scroll
-          gsap.to(card, {
-            rotationX: i % 2 === 0 ? 10 : -10, // Alternate rotation directions
-            scrollTrigger: {
-              trigger: sectionRef.current,
-              start: "top top",
-              end: "bottom bottom",
-              scrub: 1, // Smooth scrubbing effect
-            },
+            // boxShadow: "0 0 25px rgba(0, 132, 255, 0.3)",
+            duration: 0.3,
+            ease: "power1.in",
+            zIndex: 1,
           });
         });
-  
-        // Add hover effects
-        cardsRef.current.forEach((card) => {
-          card.addEventListener("mouseenter", function () {
-            gsap.to(this, {
-              scale: 1.05,
-              rotationX: 0, // Reset rotation on hover
-              // boxShadow: "0 0 35px rgba(0, 194, 255, 0.5)",
-              duration: 0.3,
-              ease: "power1.out",
-              zIndex: 10,
-            });
-          });
-  
-          card.addEventListener("mouseleave", function () {
-            gsap.to(this, {
-              scale: 1,
-              // boxShadow: "0 0 25px rgba(0, 132, 255, 0.3)",
-              duration: 0.3,
-              ease: "power1.in",
-              zIndex: 1,
-            });
-          });
-        });
-      }, sectionRef);
-  
-      // Cleanup function
-      return () => {
-        ctx.revert(); // This will clean up all GSAP animations created by this context
-      };
-    }, []); // Empty dependency array means it runs once after mount
+      });
+    }, sectionRef);
 
-
+    // Cleanup function
+    return () => {
+      ctx.revert(); // This will clean up all GSAP animations created by this context
+    };
+  }, []); // Empty dependency array means it runs once after mount
 
   return (
     <>
@@ -235,7 +371,11 @@ const BaaS = () => {
           </div>
         </section>
 
-        <section className="reallyPrepared" style={{ background: "#000000" }}>
+        <section
+          className="reallyPrepared"
+          ref={reallyPreparedRef}
+          style={{ background: "#000000" }}
+        >
           <div className="reallyPreparedContainer">
             <div className="reallyPreparedInfo">
               <h3>
@@ -268,6 +408,7 @@ const BaaS = () => {
             </div>
             <div className="reallyPreparedImg">
               <img src={reallyPreparedImg} alt=" Are You Really Prepared" />
+              <HeadingBottomLine />
             </div>
           </div>
         </section>
@@ -275,6 +416,7 @@ const BaaS = () => {
         <section className="harshReality" style={{ background: "#000000" }}>
           <div className="harshRealityContainer">
             <div className="harshRealityImg">
+              <HeadingBottomLine />
               <img src={harshRealityImg} alt=" Data is Never Safe" />
             </div>
             <div className="harshRealityInfo">
@@ -305,7 +447,11 @@ const BaaS = () => {
           </div>
         </section>
 
-        <section ref={sectionRef} className="backupServices" style={{ background: "#000000" }}>
+        <section
+          ref={sectionRef}
+          className="backupServices"
+          style={{ background: "#000000" }}
+        >
           <div className="backupServicesHead">
             <h3>How ESDS backup services ensure Data Resilience?</h3>
             <HeadingBottomLine />
@@ -314,7 +460,7 @@ const BaaS = () => {
             </h3>
           </div>
           <div ref={containerRef} className="backupServicesContainer">
-            <div ref={addToRefs}className="backupServicesCard1">
+            <div ref={addToRefs} className="backupServicesCard1">
               <div className="logo">
                 <img src={dataProtection} alt="Data Protection" />
               </div>
@@ -325,7 +471,7 @@ const BaaS = () => {
                 secure storage.
               </p>
             </div>
-            <div ref={addToRefs}className="backupServicesCard1">
+            <div ref={addToRefs} className="backupServicesCard1">
               <div className="logo">
                 <img src={dataRecovery} alt="Data Recovery " />
               </div>
@@ -335,7 +481,7 @@ const BaaS = () => {
                 our seamless recovery mechanisms.
               </p>
             </div>
-            <div ref={addToRefs}className="backupServicesCard1">
+            <div ref={addToRefs} className="backupServicesCard1">
               <div className="logo">
                 <img src={dataLiberation} alt="Data Liberation" />
               </div>
@@ -377,58 +523,57 @@ const BaaS = () => {
           <div className="benefitsOfEsdsContainer">
             <div className="benefitsOfEsdsInfo">
               <ul>
-                {/* add a dot as a bullet for li's */}
-                <li>
+                <li key={0} ref={(el) => (BenefitsOfEsdsRefs.current[0] = el)}>
                   <span style={{ color: "#00a3ff", fontWeight: "bold" }}>
                     Ransomware Protection –
                   </span>{" "}
                   SSL/TLS encrypted port in transit
                 </li>
-                <li>
+                <li key={1} ref={(el) => (BenefitsOfEsdsRefs.current[1] = el)}>
                   {" "}
                   <span style={{ color: "#00a3ff", fontWeight: "bold" }}>
                     Reliable Data Recovery –
                   </span>{" "}
                   No VPN required for access
                 </li>
-                <li>
+                <li key={2} ref={(el) => (BenefitsOfEsdsRefs.current[2] = el)}>
                   {" "}
                   <span style={{ color: "#00a3ff", fontWeight: "bold" }}>
                     Disaster Recovery Readiness -
                   </span>{" "}
                   Offsite storage in secure cloud repository
                 </li>
-                <li>
+                <li key={3} ref={(el) => (BenefitsOfEsdsRefs.current[3] = el)}>
                   <span style={{ color: "#00a3ff", fontWeight: "bold" }}>
                     Data Security -
                   </span>{" "}
                   AES-256 encryption for all stored data
                 </li>
-                <li>
+                <li key={4} ref={(el) => (BenefitsOfEsdsRefs.current[4] = el)}>
                   <span style={{ color: "#00a3ff", fontWeight: "bold" }}>
                     Improved Compliance -
                   </span>{" "}
                   Firewall security with IDS & IPS protection
                 </li>
-                <li>
+                <li key={5} ref={(el) => (BenefitsOfEsdsRefs.current[5] = el)}>
                   <span style={{ color: "#00a3ff", fontWeight: "bold" }}>
                     Optimized Bandwidth Usage -
                   </span>{" "}
                   Source-level de-duplication & compression
                 </li>
-                <li>
+                <li key={6} ref={(el) => (BenefitsOfEsdsRefs.current[6] = el)}>
                   <span style={{ color: "#00a3ff", fontWeight: "bold" }}>
                     Dual Data Copy for Redundancy -
                   </span>{" "}
                   Ensuring geographic diversity
                 </li>
-                <li>
+                <li key={7} ref={(el) => (BenefitsOfEsdsRefs.current[7] = el)}>
                   <span style={{ color: "#00a3ff", fontWeight: "bold" }}>
                     O365 Backup & Kubernetes Support -
                   </span>{" "}
                   Expanded protection for cloud workloads
                 </li>
-                <li>
+                <li key={8} ref={(el) => (BenefitsOfEsdsRefs.current[8] = el)}>
                   <span style={{ color: "#00a3ff", fontWeight: "bold" }}>
                     Guaranteed Backup & Restoration -
                   </span>{" "}

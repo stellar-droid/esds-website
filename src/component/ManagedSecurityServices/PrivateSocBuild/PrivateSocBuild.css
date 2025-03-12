@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   padding: 10vw 5vw;
+  padding-bottom: 50px;
   justify-content: space-between;
   background-image: url("../../../images/PrivateSocBuild/bgUniqueBuisnessNeeds.jpg");
   background-size: contain;
@@ -24,6 +25,7 @@
   font-size: clamp(1.875rem, 4.251vw - 0.851rem, 4.25rem);
   font-weight: 500;
   margin-bottom: 3vw;
+  line-height: 55px;
 }
 
 .uniqueBuisnessNeeds
@@ -78,13 +80,13 @@
 }
 
 .customizedSocInfo {
-  width: 60%;
+  width: 50%;
 }
 
 .customizedSocImg {
-  width: 40%;
+  width: 50%;
   position: relative;
-  bottom: 60px;
+  bottom: 70px;
 }
 
 .customizedSocInfo > h3 {
@@ -94,7 +96,7 @@
 .customizedSocInfo > :nth-child(3) {
   padding-top: 31px;
   position: relative;
-  top: 48px;
+  top: 30px;
 }
 
 /* SECTION 3 */

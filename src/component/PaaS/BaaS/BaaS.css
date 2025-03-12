@@ -36,10 +36,12 @@
 
 .reallyPreparedInfo > h3 {
   font-size: clamp(1.875rem, 0.224vw + 1.732rem, 2rem);
+  margin-bottom: 20px;
 }
 
 .reallyPreparedInfo > :nth-child(2) {
   position: relative !important;
+  margin-bottom: 15px;
 }
 
 .reallyPreparedInfo > :nth-child(2) > :nth-child(1) {
@@ -47,8 +49,9 @@
 }
 
 .reallyPreparedInfo > :nth-child(3) {
-  font-size: clamp(1.188rem, 0.671vw + 0.757rem, 1.563rem);
+  font-size: clamp(0.625rem, 2.237vw - 0.81rem, 1.875rem);
   line-height: normal;
+  margin-bottom:20px;
 }
 
 .reallyPreparedInfo > :nth-child(4) {
@@ -73,10 +76,25 @@
 }
 
 .reallyPreparedImg > img {
-  max-width: 120%;
+  max-width: 100%;
   position: relative;
   right: 65px;
-  bottom: 20px;
+  top: 65px;
+  z-index: 99;
+}
+
+.reallyPreparedImg > :nth-child(2) {
+  position: relative !important;
+  width: 0 !important;
+  left: 75% !important;
+  bottom: 25% !important;
+  opacity: var(--opacity, 0); /* Default to 0 */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.reallyPreparedImg > :nth-child(2) > :nth-child(1) {
+  background: linear-gradient(94deg, #2086f2, #2086f2) !important;
+  height: 20vh !important;
 }
 
 /* SECTION 3 */
@@ -84,16 +102,36 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0 5vw 0vh 0vw;
+  padding: 0 5vw 20vh 0vw;
 }
 
 .harshRealityImg {
   width: 50%;
   margin-left: -1vw;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.harshRealityImg > :nth-child(1){
+  position: relative !important;
+  width: 0 !important;
+  top: 20px !important;
+  opacity: var(--opacity, 0); /* Default to 0 */
+  transition: opacity 0.5s ease-in-out;
+  
+}
+
+.harshRealityImg > :nth-child(1) > :nth-child(1) {
+  background: linear-gradient(94deg, #2086f2, #2086f2) !important;
+  height: 20vh !important;
 }
 
 .harshRealityImg > img {
-  max-width: 102%;
+  max-width: 80%;
+  position: relative;
+  top: 25px;
+  left: 25%;
 }
 
 .harshRealityInfo {
@@ -244,59 +282,58 @@
 
 /* SECTION 6 */
 
-.benefitsOfEsds{
-    padding: 0 0 0 5vw;
-    padding-top: 50px;
+.benefitsOfEsds {
+  padding: 0 0 0 5vw;
+  padding-top: 50px;
 }
 
 .benefitsOfEsds > h3 {
-    font-size: clamp(2.188rem, 1.119vw + 1.47rem, 2.813rem);
-    /* font-weight: bold; */
-
+  font-size: clamp(2.188rem, 1.119vw + 1.47rem, 2.813rem);
+  /* font-weight: bold; */
 }
 
-.benefitsOfEsds > :nth-child(2){
-    position: relative !important;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 40% !important;
-    left: 5% !important;
+.benefitsOfEsds > :nth-child(2) {
+  position: relative !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 40% !important;
+  left: 5% !important;
+  /* opacity: 0 !important; */
 }
 
-.benefitsOfEsdsContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 70vh;
-    
+.benefitsOfEsdsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 70vh;
 }
 
-.benefitsOfEsdsInfo{
-    width: 50%;
-    line-height: 40px;
+.benefitsOfEsdsInfo {
+  width: 50%;
+  line-height: 40px;
 }
 
 .benefitsOfEsdsInfo > ul > li {
-    font-size:clamp(0.938rem, 0.336vw + 0.722rem, 1.125rem);
-    list-style-type: disc;
+  font-size: clamp(0.938rem, 0.336vw + 0.722rem, 1.125rem);
+  list-style-type: disc;
 }
 
-.benefitsOfEsdsInfo > ul > li::marker{
-    color: #00a3ff;
+.benefitsOfEsdsInfo > ul > li::marker {
+  color: #00a3ff;
 }
 
 .benefitsOfEsdsImg {
-    width: 50%;
-    position: relative;
-    bottom: 100px;
+  width: 50%;
+  position: relative;
+  bottom: 100px;
+  right: 80px;
 }
 
-
-.lastSegment > :nth-child(3){
+.lastSegment > :nth-child(3) {
   margin-left: 25%;
 }
 
-.lastSegment > :nth-child(4){
+.lastSegment > :nth-child(4) {
   margin-top: 20px;
   text-align: center;
 }

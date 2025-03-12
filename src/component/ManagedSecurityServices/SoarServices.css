@@ -170,7 +170,7 @@ body,
     height: 40px;
     margin: 0 auto;
     margin-top: -2px;
-    background-image: url('../../images/SoarServices/arrow.png');
+    background-image: url('../../images/SoarServices/Arrow.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -497,25 +497,133 @@ section.doUKnowSection {
 .question-answer-section p {
   width: 95%;
 }
+/* Base styles (mobile first) */
+.cyberSecuritySection2 {
+  padding: 2rem 1rem;
+}
 
-/* Media queries for responsive design */
-@media (max-width: 1280px) {
-  .managedSecurityOrchestrationContainer {
-    padding: 0 80px;
+.cyberSecurityContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cyberSecurityText, 
+.cyberSecurityImg {
+  width: 100%;
+}
+
+.cyberSecurityText {
+  order: 2;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.cyberSecurityImg {
+  order: 1;
+  margin-bottom: 1.5rem;
+}
+
+.cs-heading {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.cs-heading-p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+h1.relative {
+  position: relative;
+  left: 0;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+span.relative {
+  position: relative;
+  left: 0;
+  display: block;
+  text-align: center;
+}
+
+/* Small tablets (576px and up) */
+@media (min-width: 576px) {
+  .cyberSecuritySection2 {
+    padding: 3rem 1.5rem;
   }
   
-  .managedSecurityOrchestrationCard {
-    width: 45%;
+  .cs-heading {
+    font-size: 2rem;
   }
 }
 
-@media (max-width: 768px) {
-  .managedSecurityOrchestrationContainer {
-    padding: 0 40px;
+/* Medium tablets (768px and up) */
+@media (min-width: 768px) {
+  .cyberSecurityContainer {
+    flex-direction: row;
   }
   
-  .managedSecurityOrchestrationCard {
-    width: 80%;
+  .cyberSecurityText, 
+  .cyberSecurityImg {
+    width: 50%;
+  }
+  
+  .cyberSecurityText {
+    order: 1;
+    padding: 0 2rem 0 0;
+    text-align: left;
+  }
+  
+  .cyberSecurityImg {
+    order: 2;
+    margin-bottom: 0;
+  }
+  
+  .cs-heading {
+    font-size: 2.25rem;
+  }
+  
+  h1.relative {
+    left: 27px;
+    text-align: left;
+  }
+  
+  span.relative {
+    left: 20px;
+    text-align: left;
+  }
+}
+
+/* Large tablets and laptops (992px and up) */
+@media (min-width: 992px) {
+  .cyberSecuritySection2 {
+    padding: 4rem 2rem;
+  }
+  
+  .cs-heading {
+    font-size: 2.5rem;
+  }
+  
+  .cs-heading-p br.hidden {
+    display: block;
+  }
+}
+
+/* Desktops (1200px and up) */
+@media (min-width: 1200px) {
+  .cyberSecuritySection2 {
+    padding: 5rem 2rem;
+  }
+  
+  .cs-heading {
+    font-size: 2.75rem;
   }
 }
 

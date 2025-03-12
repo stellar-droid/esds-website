@@ -29,11 +29,11 @@ import { Helmet } from "react-helmet"
 import { useLocation } from "react-router-dom"
 // const LandingPage = lazy(() => import("./component/Banner/LandingPage"))
 import InnerPageLoader from "./component/Loader/InnerPageLoader"
-import SoarServices from "./component/ManagedSecurityServices/SoarServices"
-import PrivateSocBuild from "./component/ManagedSecurityServices/PrivateSocBuild/PrivateSocBuild"
-import CloudMigration from "./component/Manage Services/CloudMigration/CloudMigration"
-import BaaS from "./component/PaaS/BaaS/BaaS"
-import ManagedSocServices from "./component/ManagedSecurityServices/ManagedSocServices/ManagedSocServices"
+const SoarServices = lazy(() => import("./component/ManagedSecurityServices/SoarServices"));
+const PrivateSocBuild = lazy(() => import("./component/ManagedSecurityServices/PrivateSocBuild/PrivateSocBuild"));
+const CloudMigration = lazy(() => import("./component/Manage Services/CloudMigration/CloudMigration"));
+const BaaS = lazy(() => import("./component/PaaS/BaaS/BaaS"));
+const ManagedSocServices = lazy(() => import("./component/ManagedSecurityServices/ManagedSocServices/ManagedSocServices"));
 
 export default function Routing() {
   // const location = useLocation()

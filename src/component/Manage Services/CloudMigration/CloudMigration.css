@@ -45,6 +45,29 @@
 
 .itInfraStructureImg {
   width: 50%;
+  padding: 40px;
+  margin-top: -14px;
+  position: relative;
+  left: 70px;
+  display: flex;
+  flex-direction: row;
+}
+
+.itInfraStructureImg > :nth-child(1){
+  position: relative !important;
+  float: left !important;
+  left: -30% !important;
+  width: 0 !important;
+  
+}
+
+.itInfraStructureImg > :nth-child(1) > :nth-child(1){
+  background: linear-gradient(94deg, #2086F2, #2086F2) !important;
+  height: 14vh !important;
+}
+
+.itInfraStructureImg > img  {
+  z-index: 9;
 }
 
 .itInfraStructureInfo {
@@ -257,6 +280,7 @@
     font-family: "Chakra Petch", sans-serif;
     font-weight: 700;
     text-align: center;
+    font-size: 24px;
 }
 
 .trustTeamInfo > .info1 > p , .trustTeamInfo > .info2 > p , .trustTeamInfo > .info3 > p , .trustTeamInfo > .info4 > p , .trustTeamInfo > .info5 > p , .trustTeamInfo > .info6 > p {
